@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const adsenseId = process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID;
   return {
     metadataBase: new URL(siteUrl),
-    title: { default: "Ragdoll Reality Wiki - Weapons, Zombies & Updates", template: "%s" },
+    title: { default: "Ragdoll Reality Wiki", template: "%s | Ragdoll Reality Wiki" },
     description: "Explore Ragdoll Reality guides, weapons, zombie waves, physics gameplay, controls, unlocks, and weekly update details for the Roblox ragdoll sandbox game.",
     applicationName: siteConfig.name,
     manifest: "/manifest.json",

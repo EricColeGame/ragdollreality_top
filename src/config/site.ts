@@ -25,10 +25,13 @@ export const siteConfig: SiteConfig = {
   tagline: "Weapons, Zombies, Physics & Updates",
   description: "Explore Ragdoll Reality on Roblox with weapon unlocks, ragdoll physics, zombie horde survival, playground hazards, controls, and weekly update guides.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://ragdollreality.top",
-  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://ragdollreality.top").hostname.replace(/^www\./, "")}`,
+  supportEmail: "support@ragdollreality.top",
   gameUrl: "https://www.roblox.com/games/127932298993998/Ragdoll-Reality",
   heroVideoId: "7whZLVq5kGg", // Roblox Ragdoll Reality gameplay showcase
-  social: {},
+  social: {
+    discord: "https://www.roblox.com/communities/849865166/I-am-eating",
+    youtube: "https://www.youtube.com/watch?v=7whZLVq5kGg",
+  },
   locales: ["en", "es", "pt", "de", "fr"],
   defaultLocale: "en",
 };
