@@ -9,10 +9,17 @@ import { notFound } from "next/navigation";
 import { ThemeProvider } from "next-themes";
 import { JsonLd, SiteFooter, SiteHeader } from "@/components/site";
 import { routing } from "@/i18n/routing";
+import en from "@/locales/en.json";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ragdollreality.top";
+const OPEN_GRAPH_LOCALES: Record<string, string> = {
+  en: "en_US",
+  es: "es_ES",
+  "pt-br": "pt_BR",
+  ja: "ja_JP",
+};
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -20,21 +27,22 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
+  const messages = (await getMessages({ locale })) as typeof en;
   const image = `${siteUrl}/images/hero.webp`;
   const adsenseId = process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_ID;
   return {
     metadataBase: new URL(siteUrl),
-    title: { default: "Ragdoll Reality Wiki", template: "%s | Ragdoll Reality Wiki" },
-    description: "Explore Ragdoll Reality guides, weapons, zombie waves, physics gameplay, controls, unlocks, and weekly update details for the Roblox ragdoll sandbox game.",
-    applicationName: siteConfig.name,
+    title: { default: messages.site.name, template: `%s | ${messages.site.name}` },
+    description: messages.site.description,
+    applicationName: messages.site.name,
     manifest: "/manifest.json",
     icons: {
       icon: [{ url: "/favicon.ico", sizes: "any" }, { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" }, { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" }],
       shortcut: ["/favicon.ico"],
       apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
     },
-    appleWebApp: { capable: true, title: siteConfig.shortName, statusBarStyle: "black-translucent" },
-    openGraph: { type: "website", locale, url: siteUrl, siteName: siteConfig.name, images: [{ url: image }] },
+    appleWebApp: { capable: true, title: messages.site.shortName, statusBarStyle: "black-translucent" },
+    openGraph: { type: "website", locale: OPEN_GRAPH_LOCALES[locale] ?? locale, url: siteUrl, siteName: messages.site.name, images: [{ url: image }] },
     twitter: { card: "summary_large_image", images: [image] },
     ...(adsenseId ? { other: { "google-adsense-account": adsenseId } } : {}),
   };

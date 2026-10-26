@@ -13,12 +13,13 @@ import type { ContentItem } from "@/lib/content";
 import en from "@/locales/en.json";
 
 type Home = typeof en.home;
+type Nav = typeof en.nav;
 
 const icons: LucideIcon[] = [BookOpen, Shield, Compass, Boxes, Flame, Code2, Swords, MapIcon, Users, Trophy, Skull, Zap, CircleHelp, ScrollText];
 const YOUTUBE_VIDEO_ID = "7whZLVq5kGg";
 
 
-export default function HomePageClient({ home, locale, articles, recentArticles }: { home: Home; locale: string; articles: ContentItem[]; recentArticles: ContentItem[] }) {
+export default function HomePageClient({ home, nav, locale, articles, recentArticles }: { home: Home; nav: Nav; locale: string; articles: ContentItem[]; recentArticles: ContentItem[] }) {
   return (
     <div className="min-w-0 space-y-16">
       {/* Sticky 320x50 banner — top revenue slot, dismissable (course §4.3/4.4) */}
@@ -41,8 +42,8 @@ export default function HomePageClient({ home, locale, articles, recentArticles 
 
       {/* Gameplay preview immediately after the hero */}
       {YOUTUBE_VIDEO_ID && (
-        <section aria-label="Ragdoll Reality gameplay preview" className="mx-auto w-full max-w-5xl">
-          <TrailerButton videoId={YOUTUBE_VIDEO_ID} />
+        <section aria-label={`Ragdoll Reality ${home.hero.videoLabel}`} className="mx-auto w-full max-w-5xl">
+          <TrailerButton videoId={YOUTUBE_VIDEO_ID} label={home.hero.videoLabel} closeLabel={home.hero.closeLabel} />
         </section>
       )}
 
@@ -62,7 +63,7 @@ export default function HomePageClient({ home, locale, articles, recentArticles 
                 className="block rounded-xl border border-border bg-background p-4 transition hover:border-[hsl(var(--nav-theme-light))]"
               >
                 <div className="mb-2 flex items-center justify-between">
-                  <Badge className="bg-[hsl(var(--nav-theme))] text-primary-foreground">{article.contentType.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}</Badge>
+                  <Badge className="bg-[hsl(var(--nav-theme))] text-primary-foreground">{nav[article.contentType as keyof Nav] ?? article.contentType.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}</Badge>
                   <span className="text-xs text-muted-foreground">{article.metadata.date}</span>
                 </div>
                 <p className="font-semibold text-foreground">{article.metadata.title}</p>
@@ -211,7 +212,7 @@ export default function HomePageClient({ home, locale, articles, recentArticles 
                           "text-muted-foreground";
                         return (
                           <div key={i} className={`rounded-xl border p-4 ${tierColor}`}>
-                            <span className={`text-sm font-bold ${tierText}`}>{h.label} Tier</span>
+                            <span className={`text-sm font-bold ${tierText}`}>{h.label} {home.explore.tierLabel}</span>
                             <p className="mt-1.5 text-xs leading-5 text-muted-foreground">{h.detail}</p>
                           </div>
                         );
@@ -235,7 +236,7 @@ export default function HomePageClient({ home, locale, articles, recentArticles 
                     href={localizeHref(mod.href, locale)}
                     className="mt-5 inline-flex items-center text-sm font-semibold text-[hsl(var(--nav-theme))] hover:underline"
                   >
-                    Read Full Guide <ChevronRight className="ml-1 h-4 w-4" />
+                    {home.explore.readFullGuide} <ChevronRight className="ml-1 h-4 w-4" />
                   </Link>
                 </div>
               </div>

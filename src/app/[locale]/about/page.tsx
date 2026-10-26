@@ -1,10 +1,14 @@
 import { LegalPage } from "@/components/legal-page";
+import { getMessages } from "next-intl/server";
+import en from "@/locales/en.json";
 
-export default function AboutPage() {
+export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const messages = (await getMessages({ locale })) as typeof en;
+  const page = messages.legal.about;
   return (
-    <LegalPage title="About">
-      <p>Ragdoll Reality Wiki is an independent fan-built guide hub covering weapon unlocks, ragdoll physics, zombie horde survival, playground hazards, controls, and weekly updates for the Roblox game Ragdoll Reality.</p>
-      <p>Our guides help new and veteran players understand core mechanics, discover efficient strategies, and keep track of new content. We are not affiliated with Roblox or the Ragdoll Reality development team.</p>
+    <LegalPage title={page.title}>
+      {page.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
     </LegalPage>
   );
 }

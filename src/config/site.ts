@@ -32,6 +32,6 @@ export const siteConfig: SiteConfig = {
     discord: "https://www.roblox.com/communities/849865166/I-am-eating",
     youtube: "https://www.youtube.com/watch?v=7whZLVq5kGg",
   },
-  locales: ["en", "es", "pt", "de", "fr"],
+  locales: ["en", "es", "pt-br", "ja"],
   defaultLocale: "en",
 };

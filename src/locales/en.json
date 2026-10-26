@@ -36,7 +36,8 @@
       "primaryCta": "Beginner Guide",
       "secondaryCta": "Weapons & Unlocks",
       "tertiaryCta": "Play on Roblox",
-      "videoLabel": "Gameplay Showcase"
+      "videoLabel": "Gameplay Showcase",
+      "closeLabel": "Close"
     },
     "updates": {
       "title": "Latest Updates",
@@ -176,6 +177,8 @@
     "explore": {
       "title": "Explore Ragdoll Reality Wiki",
       "description": "Learn how Ragdoll Reality works through focused guides on first-session testing, weapon unlocks, zombie hordes, playground hazards, controls, and updates.",
+      "readFullGuide": "Read Full Guide",
+      "tierLabel": "Tier",
       "modules": [
         {
           "order": 1,
@@ -507,7 +510,48 @@
     "readMore": "Read more",
     "officialMedia": "Official media",
     "home": "Home",
-    "noGuidesAvailable": "No guides available yet. Check back soon!"
+    "noGuidesAvailable": "No guides available yet. Check back soon!",
+    "noActiveCodes": "No active codes currently available",
+    "checkBackSoon": "Check back soon for new codes",
+    "close": "Close"
+  },
+  "legal": {
+    "about": {
+      "title": "About",
+      "paragraphs": [
+        "Ragdoll Reality Wiki is an independent fan-built guide hub covering weapon unlocks, ragdoll physics, zombie horde survival, playground hazards, controls, and weekly updates for the Roblox game Ragdoll Reality.",
+        "Our guides help new and veteran players understand core mechanics, discover efficient strategies, and keep track of new content. We are not affiliated with Roblox or the Ragdoll Reality development team."
+      ]
+    },
+    "copyright": {
+      "title": "Copyright",
+      "paragraphs": [
+        "Ragdoll Reality, Roblox, associated logos, game assets, and related media belong to their respective owners, including the Ragdoll Reality creator and Roblox Corporation.",
+        "Ragdoll Reality Wiki is an independent, non-official fan guide. Game names and trademarks are used only to identify the subject of our coverage.",
+        "If you own rights to content displayed here and have a concern, please contact the site operator for review."
+      ]
+    },
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "paragraphs": [
+        "This fan wiki provides informational game guides for Ragdoll Reality. We do not request account credentials, Roblox passwords, or private payment information.",
+        "Basic analytics, advertising, and hosting providers may process standard technical information such as device type, browser, approximate region, and visited pages.",
+        "External links may lead to Roblox, Discord, YouTube, or community tools. Those services are governed by their own privacy policies."
+      ]
+    },
+    "termsOfService": {
+      "title": "Terms of Service",
+      "paragraphs": [
+        "This site is an independent fan-made guide hub. Content is provided for informational and entertainment purposes only.",
+        "Game systems, codes, drops, and update details may change without notice. Always verify important information in-game or through official channels.",
+        "By using this site, you agree not to misuse it, attempt unauthorized access, or present this fan wiki as an official Ragdoll Reality, I am eating, or Roblox property."
+      ]
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The guide you are looking for may have moved or has not been added yet.",
+    "browse": "Browse Ragdoll Reality Guides"
   },
   "footer": {
     "aboutTitle": "Ragdoll Reality Wiki",

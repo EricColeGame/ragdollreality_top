@@ -1,1 +1,575 @@
-{}
+{
+  "site": {
+    "name": "Ragdoll Reality Wiki",
+    "shortName": "Ragdoll Reality",
+    "tagline": "武器、ゾンビ、物理、アップデート",
+    "description": "RobloxのRagdoll Realityを、武器の解放、ラグドール物理、ゾンビの大群からの生存、遊び場の危険、操作、週次アップデートガイドとともに紹介します。",
+    "legalNotice": "RobloxのRagdoll Realityを扱う非公式ファンWikiです。プレイヤーがプレイヤーのために制作しています。"
+  },
+  "nav": {
+    "guide": "ガイド",
+    "mechanics": "メカニクス",
+    "combat": "戦闘",
+    "modes": "モード",
+    "updates": "アップデート",
+    "community": "コミュニティ",
+    "codes": "コード",
+    "home": "ホーム",
+    "menu": "メニュー",
+    "toggleTheme": "テーマを切り替える"
+  },
+  "home": {
+    "meta": {
+      "title": "Ragdoll Reality Wiki：武器、ゾンビ、アップデート",
+      "description": "Robloxのラグドールサンドボックスゲーム、Ragdoll Realityのガイド、武器、ゾンビウェーブ、物理挙動、操作、解放要素、週次アップデートの詳細を紹介します。"
+    },
+    "hero": {
+      "eyebrow": "物理ラグドールサンドボックス",
+      "title": "Ragdoll Reality Wiki",
+      "description": "リアルな物理反応、武器の解放、混沌とした遊び場の危険、ゾンビ生存ウェーブを備えたRobloxのラグドールサンドボックス、Ragdoll Realityを紹介します。武器、ゲームメカニクス、操作、最新アップデートを確認しましょう。",
+      "stats": [
+        "20種類以上の武器",
+        "週次アップデート",
+        "ゾンビの大群",
+        "物理サンドボックス"
+      ],
+      "primaryCta": "初心者ガイド",
+      "secondaryCta": "武器と解放",
+      "tertiaryCta": "Robloxでプレイ",
+      "videoLabel": "ゲームプレイ紹介",
+      "closeLabel": "閉じる"
+    },
+    "updates": {
+      "title": "最新アップデート",
+      "browse": "すべてのガイドを見る",
+      "viewAll": "すべて見る"
+    },
+    "start": {
+      "eyebrow": "ここから始める",
+      "title": "Ragdoll Realityの旅",
+      "cards": [
+        {
+          "number": "1",
+          "title": "初心者ガイド",
+          "description": "命中部位、1変数だけを変える検証ループ、実践的な45分の初回セッションを学びます。"
+        },
+        {
+          "number": "2",
+          "title": "武器と解放",
+          "description": "近接武器、遠距離武器、爆発物を比較し、キルを重ねて新しい武器を解放します。"
+        },
+        {
+          "number": "3",
+          "title": "ゾンビの大群",
+          "description": "墓地でダミーを変換し、3つの速度クラスを読み分け、ホードウェーブを生き延びます。"
+        },
+        {
+          "number": "4",
+          "title": "操作と設定",
+          "description": "安定したカメラを設定し、一定の距離で試し、Ragdoll Realityで再現できる照準を作ります。"
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "人気ページ",
+      "title": "今注目の内容",
+      "quickLinks": [
+        "初心者ガイド",
+        "武器の解放",
+        "ゾンビの大群",
+        "遊び場の危険"
+      ],
+      "cards": [
+        {
+          "badge": "初心者",
+          "title": "初心者ガイド",
+          "description": "ダミーを使ったきれいな基準を作り、毎回同じ結果を出せる初回セッションの練習を学びます。",
+          "href": "/guide/ragdoll-reality-beginner-guide"
+        },
+        {
+          "badge": "更新済み",
+          "title": "Ragdoll Reality コード",
+          "description": "現在のコード状況と、将来の公式発表を確認すべき場所を紹介します。",
+          "href": "/codes/ragdoll-reality-codes"
+        },
+        {
+          "badge": "人気",
+          "title": "武器と解放",
+          "description": "近接武器、遠距離武器、爆発物を比較し、キルで武器庫がどう広がるかを学びます。",
+          "href": "/combat/ragdoll-reality-weapons"
+        },
+        {
+          "badge": "人気",
+          "title": "ゾンビホードガイド",
+          "description": "墓地での変換、感染の広がり、速度クラス、ホードボタンの流れを追います。",
+          "href": "/updates/ragdoll-reality-halloween-update"
+        },
+        {
+          "badge": "ガイド",
+          "title": "ゲームモード",
+          "description": "ダミー検証から遊び場の危険、塔からの落下、ゾンビ生存へと進みます。",
+          "href": "/modes/ragdoll-reality-game-modes"
+        },
+        {
+          "badge": "人気",
+          "title": "ラグドール物理",
+          "description": "落下を追うだけでなく、手足の反応、よろめき、切断、復帰を読み取ります。",
+          "href": "/mechanics/ragdoll-reality-ragdoll-physics"
+        },
+        {
+          "badge": "人気",
+          "title": "操作と設定",
+          "description": "カメラを固定し、変数を1つずつ試して、Ragdoll Realityの衝撃フィードバックを読みやすくします。",
+          "href": "/guide/ragdoll-reality-best-settings"
+        },
+        {
+          "badge": "新着",
+          "title": "最新機能",
+          "description": "部位ごとのダメージ、遊び場の危険、ゾンビ変換、ホードウェーブを確認します。",
+          "href": "/updates/ragdoll-reality-latest-features"
+        },
+        {
+          "badge": "コミュニティ",
+          "title": "Discordとコミュニティ",
+          "description": "プレイヤーが検証やゲームプレイ動画を共有するRagdoll Realityのコミュニティチャンネルを見つけます。",
+          "href": "/community/ragdoll-reality-discord"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "Ragdoll Realityとは？",
+      "paragraphs": [
+        "Ragdoll Realityは、クリエイターI am eatingによるRobloxの物理サンドボックスです。すべての攻撃は部位に依存します。脚を打てばダミーは足を引きずったり這ったりし、腕を打てばダミーが傷を守りながら腕が垂れ下がります。強い衝撃ではよろめき、切断、出血が起こることもあります。",
+        "この体験は、ダミー検証エリア、危険に満ちた遊び場、ダミーがゾンビとして起き上がる墓地を組み合わせています。銃器、近接ツール、爆発物を含む20種類以上の武器がキルで解放され、ホードモードでは遅い、普通、速い敵が追跡し、飛びかかり、噛みついてきます。"
+      ],
+      "stats": [
+        {
+          "label": "開発者",
+          "value": "I am eating"
+        },
+        {
+          "label": "プラットフォーム",
+          "value": "Roblox"
+        },
+        {
+          "label": "ジャンル",
+          "value": "物理サンドボックス"
+        },
+        {
+          "label": "訪問数",
+          "value": "1,200万+"
+        },
+        {
+          "label": "お気に入り",
+          "value": "4.18万+"
+        },
+        {
+          "label": "武器",
+          "value": "20種類以上"
+        },
+        {
+          "label": "アップデート",
+          "value": "毎週"
+        }
+      ],
+      "cta": "すべてのガイドを見る"
+    },
+    "explore": {
+      "title": "Ragdoll Reality Wikiを探索",
+      "description": "初回セッションの検証、武器の解放、ゾンビの大群、遊び場の危険、操作、アップデートに焦点を当てたガイドでRagdoll Realityの仕組みを学びます。",
+      "readFullGuide": "ガイド全文を読む",
+      "tierLabel": "ティア",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Ragdoll Reality 初心者ガイド",
+          "description": "ダミー検証サンドボックスから始め、拳、押し、つかみを学び、武器や危険に進む前に再現できる初回セッションを作ります。",
+          "href": "/guide/ragdoll-reality-beginner-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "ダミー1体、武器1つ、慣れた近距離を選びます。"
+            },
+            {
+              "label": "2",
+              "detail": "ダミーが倒れたかだけを見ず、1つの部位を狙って最初の反応を観察します。"
+            },
+            {
+              "label": "3",
+              "detail": "新しい試行ごとに、武器、距離、ターゲット、テンポのうち1つだけを変えます。"
+            },
+            {
+              "label": "4",
+              "detail": "脚、腕、胴体、頭への攻撃を、結果が再現できるまで練習します。"
+            },
+            {
+              "label": "5",
+              "detail": "照準が安定してから、遊び場の危険を1つ試し、その後に墓地へ進みます。"
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Ragdoll Reality 武器と解放",
+          "description": "Ragdoll Realityの20種類以上の武器が近接、遠距離、爆発の役割にどう収まるか、キルで新しい検証ツールがどう解放されるかを学びます。",
+          "href": "/combat/ragdoll-reality-weapons",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "拳",
+              "detail": "部位ごとの反応を試すための初期近距離ツール。"
+            },
+            {
+              "label": "ピストル",
+              "detail": "固定ターゲットで照準と距離を比較する遠距離用の副武器。"
+            },
+            {
+              "label": "バット",
+              "detail": "スイングのタイミングと手足への当て方を学ぶシンプルな近接武器。"
+            },
+            {
+              "label": "マチェーテ",
+              "detail": "選んだ部位に制御した攻撃を入れる近距離の刃物。"
+            },
+            {
+              "label": "ショットガン",
+              "detail": "近距離で衝撃と反動を試す銃器。"
+            },
+            {
+              "label": "スナイパー",
+              "detail": "距離によって命中位置がどう変わるかを確認する長距離武器。"
+            },
+            {
+              "label": "ミニガン",
+              "detail": "集団への継続的な圧力を試す重量級の遠距離ツール。"
+            },
+            {
+              "label": "ロケット",
+              "detail": "遊び場やホードでエリアを制圧する爆発ランチャー。"
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Ragdoll Reality コード",
+          "description": "Ragdoll Realityの現在のコード状況を確認し、将来の公式リリースをどこで追うかを学びます。",
+          "href": "/codes/ragdoll-reality-codes",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "状況",
+              "detail": "2026年10月26日時点で、公開されているRagdoll Realityのコードはありません。"
+            },
+            {
+              "label": "発表",
+              "detail": "Ragdoll Realityのコード発表は、Robloxの公式体験ページを確認してください。"
+            },
+            {
+              "label": "引き換え",
+              "detail": "第三者のコードページにアカウント情報を入力せず、Robloxの公式チャンネルだけを使用してください。"
+            },
+            {
+              "label": "報酬",
+              "detail": "公式ゲーム説明にはプレミアム通貨やコード報酬の段階は記載されていません。"
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Ragdoll Reality 武器ティアリスト",
+          "description": "役割、扱いやすさ、遊び場やゾンビ戦での有用性に基づく編集部の武器ランキングです。公式のダメージ表はないため、各ツールを自分で試してください。",
+          "href": "/combat/ragdoll-reality-weapons",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "ロケットランチャー：密集したホードウェーブや遊び場の仕掛けに対するエリア制圧。"
+            },
+            {
+              "label": "A",
+              "detail": "ショットガンとミニガン：間合いを管理すれば近～中距離で強い圧力をかけられる。"
+            },
+            {
+              "label": "B",
+              "detail": "バット、マチェーテ、大鎌：軌道、タイミング、部位への当て方を学ぶ近接ツール。"
+            },
+            {
+              "label": "C",
+              "detail": "拳と押し：きれいな基準検証のための初期インタラクション。"
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Ragdoll Reality ゾンビホードガイド",
+          "description": "墓地での変換ループを追い、3つのゾンビ速度クラスを読み分け、制御されたホード挑戦を準備します。",
+          "href": "/updates/ragdoll-reality-halloween-update",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "何かを攻撃する前に墓地の変換ゾーンを観察します。"
+            },
+            {
+              "label": "2",
+              "detail": "ダミーをつかむかゾーンへ放り込み、ゾンビとして起き上がるのを待ちます。"
+            },
+            {
+              "label": "3",
+              "detail": "新しいゾンビが遅い、普通、速いのどの速度で動くかを見分けます。"
+            },
+            {
+              "label": "4",
+              "detail": "ウェーブ中は動き続け、速度クラスを分けて飛びかかりを見やすくします。"
+            },
+            {
+              "label": "5",
+              "detail": "変換を1つ明確に読めるようになってからホードボタンを使います。"
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Ragdoll Reality 遊び場と危険",
+          "description": "Ragdoll Realityのダミーサンドボックスをタイミングと間合いの検証に変える、インタラクティブな危険を探索します。",
+          "href": "/guide/ragdoll-reality-how-to-play",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "シュレッダー",
+              "detail": "送り込みのタイミングを計り、ダミーを入れる前に退路を確保します。"
+            },
+            {
+              "label": "列車",
+              "detail": "サイクル全体を観察し、線路が空いている時だけ投げ込みを試します。"
+            },
+            {
+              "label": "鉄球",
+              "detail": "ダミーを鉄球の衝撃範囲に置く前に、振りの軌道を読みます。"
+            },
+            {
+              "label": "トゲの穴",
+              "detail": "ダミーを穴の上に配置し、自分の足は縁から離しておきます。"
+            },
+            {
+              "label": "大砲",
+              "detail": "人間大砲の各検証では、発射角度とタイミングを変数として扱います。"
+            },
+            {
+              "label": "シーソー",
+              "detail": "重りとタイミングを使い、ダミーが台から離れる動きを制御します。"
+            },
+            {
+              "label": "塔",
+              "detail": "80スタッドの塔からの落下を試す前に、着地点を確認します。"
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Ragdoll Reality 操作と設定",
+          "description": "Roblox標準の移動とカメラ操作を使い、1つの設定を固定してRagdoll Realityの命中反応を読みやすくします。",
+          "href": "/guide/ragdoll-reality-best-settings",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "WASD",
+              "detail": "Roblox標準の移動でダミーエリアと遊び場を移動します。"
+            },
+            {
+              "label": "マウス",
+              "detail": "意図した攻撃の前に、カメラの向きと照準を操作します。"
+            },
+            {
+              "label": "スペース",
+              "detail": "プラットフォームに飛び乗り、検証エリア周辺で位置を調整します。"
+            },
+            {
+              "label": "カメラ",
+              "detail": "ダミー全体を映し、足の引きずり、よろめき、垂れた腕を読み取りやすくします。"
+            },
+            {
+              "label": "距離",
+              "detail": "射程を広げる前に、同じターゲットを1つの距離から試します。"
+            },
+            {
+              "label": "リセット",
+              "detail": "各攻撃の後に一度止まり、狙い直し、すでに動いているダミーを追いかけません。"
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Ragdoll Reality アップデートと新機能",
+          "description": "現在のハロウィン追加要素、武器オプション、物理変更、週次アップデートのペースを確認します。",
+          "href": "/updates/ragdoll-reality-latest-features",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "ハロウィン",
+              "detail": "ハロウィンアップデートでは墓地、ゾンビ変換、感染、ホードウェーブが追加されます。"
+            },
+            {
+              "label": "武器",
+              "detail": "銃器、近接武器、爆発物を含む既存のラインナップに新しいツールが加わります。"
+            },
+            {
+              "label": "物理",
+              "detail": "部位別ダメージにより、足の引きずり、垂れた腕、切断、出血が起こります。"
+            },
+            {
+              "label": "ホード",
+              "detail": "遅い、普通、速いゾンビが生存ウェーブ中に追跡し、飛びかかり、噛みつきます。"
+            },
+            {
+              "label": "毎週",
+              "detail": "公式ゲームページではRagdoll Realityの週次アップデートペースが説明されています。"
+            },
+            {
+              "label": "季節",
+              "detail": "ハロウィンコンテンツは別の有料モードではなく、基本ゲームの一部です。"
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "よくある質問",
+      "description": "Ragdoll Realityに関するよくある質問への簡潔な回答です。",
+      "items": [
+        {
+          "question": "Ragdoll Realityとは何ですか？",
+          "answer": "Ragdoll Realityは、攻撃した正確な部位にダミーが反応するRobloxの物理サンドボックスです。脚なら足を引きずったり這ったりし、腕なら垂れ下がり、強い衝撃ではよろめき、切断、出血が起こります。"
+        },
+        {
+          "question": "Ragdoll Realityで武器を解放する方法は？",
+          "answer": "Ragdoll Realityではキルを重ねると新しい武器が与えられます。公式説明には拳、押し、つかみ、ピストル、バット、マチェーテ、ショットガン、スナイパー、ミニガン、ロケットランチャー、火炎放射器、C4が記載されています。"
+        },
+        {
+          "question": "Ragdoll Realityでゾンビホードを始める方法は？",
+          "answer": "Ragdoll Realityの墓地にダミーを投げ入れ、ゾンビとして起き上がるのを見ます。変換と遅い、普通、速いの速度クラスを理解したら、ホードボタンでウェーブを開始します。"
+        },
+        {
+          "question": "Ragdoll Realityにコードはありますか？",
+          "answer": "現在、公開されているRagdoll Realityのコードはありません。他のサイトの報酬リストを信じる前に、Robloxの公式体験ページで発表を確認してください。"
+        },
+        {
+          "question": "Ragdoll Realityの初心者は何から練習すべきですか？",
+          "answer": "ダミー1体、武器1つ、近距離から始めます。脚、腕、胴体、頭を個別に試し、1回ごとに変数を1つだけ変えて、Ragdoll Realityの反応ごとに明確な原因が分かるようにします。"
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "Ragdoll Realityを極める準備はできましたか？",
+      "description": "無料で最新のRagdoll Realityガイドを使って、武器の解放、ラグドール物理、ゾンビウェーブ、生存戦略を探索しましょう。",
+      "primary": "初心者ガイドを読む",
+      "secondary": "Robloxでプレイ"
+    }
+  },
+  "guide": {
+    "overviewTitle": "Ragdoll Reality ガイド",
+    "overviewDescription": "Robloxの物理サンドボックス、Ragdoll Realityのチュートリアル、初心者向けのコツ、操作、設定、実践的な攻略を始めましょう。"
+  },
+  "mechanics": {
+    "overviewTitle": "Ragdoll Reality メカニクス",
+    "overviewDescription": "Ragdoll Realityの物理、ダメージ反応、出血表現、落下ダメージ、NPCの挙動、あらゆる衝撃の背後にあるシステムを理解します。"
+  },
+  "combat": {
+    "overviewTitle": "Ragdoll Reality 戦闘ガイド",
+    "overviewDescription": "読み取りやすい物理反応を中心に、Ragdoll Realityの武器、命中部位、グレネード、近接手段、戦闘戦術を学びます。"
+  },
+  "modes": {
+    "overviewTitle": "Ragdoll Reality ゲームモード",
+    "overviewDescription": "一人でも友達とも遊べるよう、Ragdoll Realityのマルチプレイ、PvP、プライベートサーバー、協力プレイ、ゲームモードガイドを比較します。"
+  },
+  "updates": {
+    "overviewTitle": "Ragdoll Reality アップデート",
+    "overviewDescription": "Ragdoll Realityのパッチノート、新武器、季節イベント、最新の機能変更を一か所で追跡します。"
+  },
+  "community": {
+    "overviewTitle": "Ragdoll Reality コミュニティ",
+    "overviewDescription": "Ragdoll Realityのコミュニティハブ、DiscordやRedditの議論、ゲームプレイ動画、他のプレイヤーと発見を共有する方法を見つけます。"
+  },
+  "codes": {
+    "overviewTitle": "Ragdoll Reality コード",
+    "overviewDescription": "Ragdoll Realityの現在のコード状況を確認し、安全な引き換え方法と、確認済み報酬が最初に現れる場所を学びます。"
+  },
+  "shared": {
+    "wikiNavigation": "Wikiナビゲーション",
+    "activeCodes": "有効なコード",
+    "updated": "更新済み",
+    "viewAllCodes": "すべてのコードを見る",
+    "playOnRoblox": "Robloxでプレイ",
+    "inThisSection": "このセクション",
+    "tableOfContents": "目次",
+    "nextSteps": "次のステップ",
+    "needHelp": "助けが必要ですか？",
+    "relatedReading": "関連記事",
+    "relatedGuides": "関連ガイド",
+    "readMore": "続きを読む",
+    "officialMedia": "公式メディア",
+    "home": "ホーム",
+    "noGuidesAvailable": "利用できるガイドはまだありません。後ほど確認してください。",
+    "noActiveCodes": "現在利用できる有効なコードはありません",
+    "checkBackSoon": "新しいコードは後ほど確認してください",
+    "close": "閉じる"
+  },
+  "legal": {
+    "about": {
+      "title": "このサイトについて",
+      "paragraphs": [
+        "Ragdoll Reality Wikiは、RobloxゲームRagdoll Realityの武器の解放、ラグドール物理、ゾンビの大群からの生存、遊び場の危険、操作、週次アップデートを扱う独立したファン制作のガイドハブです。",
+        "当サイトのガイドは、新しいプレイヤーと経験豊富なプレイヤーの両方が基本メカニクスを理解し、効率的な戦略を見つけ、新コンテンツを追えるようにします。RobloxやRagdoll Reality開発チームとは提携していません。"
+      ]
+    },
+    "copyright": {
+      "title": "著作権",
+      "paragraphs": [
+        "Ragdoll Reality、Roblox、関連ロゴ、ゲーム素材、関連メディアは、Ragdoll RealityのクリエイターやRoblox Corporationを含む各権利者に帰属します。",
+        "Ragdoll Reality Wikiは独立した非公式ファンガイドです。ゲーム名と商標は、当サイトが扱う対象を識別する目的でのみ使用しています。",
+        "掲載内容の権利を所有し懸念がある場合は、確認のためサイト運営者にご連絡ください。"
+      ]
+    },
+    "privacyPolicy": {
+      "title": "プライバシーポリシー",
+      "paragraphs": [
+        "このファンWikiはRagdoll Realityの情報ガイドを提供します。アカウント認証情報、Robloxのパスワード、非公開の支払い情報を求めることはありません。",
+        "基本的な分析、広告、ホスティング事業者は、デバイスの種類、ブラウザ、おおよその地域、閲覧ページなどの標準的な技術情報を処理する場合があります。",
+        "外部リンクからRoblox、Discord、YouTube、コミュニティツールへ移動する場合があります。これらのサービスには各社のプライバシーポリシーが適用されます。"
+      ]
+    },
+    "termsOfService": {
+      "title": "利用規約",
+      "paragraphs": [
+        "このサイトはファン制作の独立したガイドハブです。コンテンツは情報提供と娯楽のみを目的としています。",
+        "ゲームシステム、コード、ドロップ、アップデートの詳細は予告なく変更される場合があります。重要な情報は必ずゲーム内または公式チャンネルで確認してください。",
+        "このサイトを利用することで、不正利用、無許可のアクセス試行、このファンWikiをRagdoll Reality、I am eating、Robloxの公式財産として提示する行為を行わないことに同意します。"
+      ]
+    }
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "description": "探しているガイドは移動したか、まだ追加されていない可能性があります。",
+    "browse": "Ragdoll Realityのガイドを見る"
+  },
+  "footer": {
+    "aboutTitle": "Ragdoll Reality Wiki",
+    "about": "Ragdoll Reality Wikiは、新しいプレイヤーにも経験豊富なプレイヤーにも役立つ、武器の解放、ラグドール物理、ゾンビの大群、遊び場の危険、操作、週次アップデートを扱う独立したファン制作のガイドハブです。",
+    "quickLinks": "クイックリンク",
+    "guides": "ガイド",
+    "legal": "法的情報",
+    "copyright": "2026 Ragdoll Reality Wiki。RobloxおよびI am eatingとは提携していません。",
+    "description": "Ragdoll Realityは、武器の解放、ゾンビの大群、混沌とした遊び場の危険を備えた、Robloxの物理駆動ラグドールサンドボックスです。",
+    "playGame": "RobloxでRagdoll Realityをプレイ",
+    "officialDiscord": "Robloxコミュニティ",
+    "officialYoutube": "ゲームプレイ動画",
+    "vvBuilder": "Ragdoll Realityガイド",
+    "beginnerGuide": "初心者ガイド",
+    "mechanicsGuides": "メカニクスガイド",
+    "combatGuides": "戦闘ガイド",
+    "updatesGuides": "アップデートとパッチノート",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約"
+  }
+}

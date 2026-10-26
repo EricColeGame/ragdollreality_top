@@ -1,11 +1,14 @@
 import { LegalPage } from "@/components/legal-page";
+import { getMessages } from "next-intl/server";
+import en from "@/locales/en.json";
 
-export default function PrivacyPolicyPage() {
+export default async function PrivacyPolicyPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const messages = (await getMessages({ locale })) as typeof en;
+  const page = messages.legal.privacyPolicy;
   return (
-    <LegalPage title="Privacy Policy">
-      <p>This fan wiki provides informational game guides for Ragdoll Reality. We do not request account credentials, Roblox passwords, or private payment information.</p>
-      <p>Basic analytics, advertising, and hosting providers may process standard technical information such as device type, browser, approximate region, and visited pages.</p>
-      <p>External links may lead to Roblox, Discord, YouTube, or community tools. Those services are governed by their own privacy policies.</p>
+    <LegalPage title={page.title}>
+      {page.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
     </LegalPage>
   );
 }

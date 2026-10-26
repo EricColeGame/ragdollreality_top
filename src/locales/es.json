@@ -1,1 +1,575 @@
-{}
+{
+  "site": {
+    "name": "Ragdoll Reality Wiki",
+    "shortName": "Ragdoll Reality",
+    "tagline": "Armas, zombis, física y actualizaciones",
+    "description": "Explora Ragdoll Reality en Roblox con desbloqueos de armas, física ragdoll, supervivencia ante hordas de zombis, peligros del patio de juegos, controles y guías de actualizaciones semanales.",
+    "legalNotice": "Wiki de fans no oficial de Ragdoll Reality en Roblox. Hecha por jugadores, para jugadores."
+  },
+  "nav": {
+    "guide": "Guía",
+    "mechanics": "Mecánicas",
+    "combat": "Combate",
+    "modes": "Modos",
+    "updates": "Actualizaciones",
+    "community": "Comunidad",
+    "codes": "Códigos",
+    "home": "Inicio",
+    "menu": "Menú",
+    "toggleTheme": "Cambiar tema"
+  },
+  "home": {
+    "meta": {
+      "title": "Ragdoll Reality Wiki: armas, zombis y actualizaciones",
+      "description": "Explora guías de Ragdoll Reality, armas, oleadas de zombis, jugabilidad física, controles, desbloqueos y detalles de las actualizaciones semanales del sandbox ragdoll de Roblox."
+    },
+    "hero": {
+      "eyebrow": "Sandbox de física ragdoll",
+      "title": "Ragdoll Reality Wiki",
+      "description": "Explora Ragdoll Reality, un sandbox ragdoll de Roblox con reacciones físicas realistas, desbloqueos de armas, peligros caóticos del patio de juegos y oleadas de supervivencia zombi. Descubre armas, mecánicas de juego, controles y las últimas actualizaciones.",
+      "stats": [
+        "Más de 20 armas",
+        "Actualizaciones semanales",
+        "Hordas de zombis",
+        "Sandbox de física"
+      ],
+      "primaryCta": "Guía para principiantes",
+      "secondaryCta": "Armas y desbloqueos",
+      "tertiaryCta": "Jugar en Roblox",
+      "videoLabel": "Demostración de juego",
+      "closeLabel": "Cerrar"
+    },
+    "updates": {
+      "title": "Últimas actualizaciones",
+      "browse": "Ver todas las guías",
+      "viewAll": "Ver todo"
+    },
+    "start": {
+      "eyebrow": "Empieza aquí",
+      "title": "Tu recorrido por Ragdoll Reality",
+      "cards": [
+        {
+          "number": "1",
+          "title": "Guía para principiantes",
+          "description": "Aprende las zonas de impacto, el bucle de pruebas con una sola variable y una primera sesión práctica de 45 minutos."
+        },
+        {
+          "number": "2",
+          "title": "Armas y desbloqueos",
+          "description": "Compara herramientas cuerpo a cuerpo, a distancia y explosivas, y consigue nuevas armas acumulando eliminaciones."
+        },
+        {
+          "number": "3",
+          "title": "Hordas de zombis",
+          "description": "Convierte muñecos en el cementerio, distingue las tres clases de velocidad y sobrevive a una oleada de horda."
+        },
+        {
+          "number": "4",
+          "title": "Controles y ajustes",
+          "description": "Fija una cámara estable, prueba siempre a la misma distancia y crea una puntería repetible en Ragdoll Reality."
+        }
+      ]
+    },
+    "popular": {
+      "eyebrow": "Páginas populares",
+      "title": "Tendencias",
+      "quickLinks": [
+        "Guía para principiantes",
+        "Desbloqueos de armas",
+        "Hordas de zombis",
+        "Peligros del patio"
+      ],
+      "cards": [
+        {
+          "badge": "Principiante",
+          "title": "Guía para principiantes",
+          "description": "Crea una base limpia con un muñeco y aprende los ejercicios de la primera sesión para repetir cada golpe.",
+          "href": "/guide/ragdoll-reality-beginner-guide"
+        },
+        {
+          "badge": "Actualizado",
+          "title": "Códigos de Ragdoll Reality",
+          "description": "Consulta el estado actual de los códigos y los lugares oficiales donde se anunciarían futuros lanzamientos.",
+          "href": "/codes/ragdoll-reality-codes"
+        },
+        {
+          "badge": "Popular",
+          "title": "Armas y desbloqueos",
+          "description": "Compara herramientas cuerpo a cuerpo, a distancia y explosivas, y descubre cómo las eliminaciones amplían tu arsenal.",
+          "href": "/combat/ragdoll-reality-weapons"
+        },
+        {
+          "badge": "Popular",
+          "title": "Guía de la horda zombi",
+          "description": "Sigue la conversión del cementerio, la propagación de la infección, las clases de velocidad y el botón de horda.",
+          "href": "/updates/ragdoll-reality-halloween-update"
+        },
+        {
+          "badge": "Guía",
+          "title": "Modos de juego",
+          "description": "Pasa de las pruebas con muñecos a los peligros del patio, las caídas desde la torre y la supervivencia zombi.",
+          "href": "/modes/ragdoll-reality-game-modes"
+        },
+        {
+          "badge": "Popular",
+          "title": "Física ragdoll",
+          "description": "Observa las reacciones de las extremidades, el tambaleo, el desmembramiento y la recuperación en lugar de perseguir una caída.",
+          "href": "/mechanics/ragdoll-reality-ragdoll-physics"
+        },
+        {
+          "badge": "Popular",
+          "title": "Controles y ajustes",
+          "description": "Bloquea la cámara y cambia una variable a la vez para que la respuesta al impacto siga siendo clara.",
+          "href": "/guide/ragdoll-reality-best-settings"
+        },
+        {
+          "badge": "Nuevo",
+          "title": "Últimas novedades",
+          "description": "Repasa el daño por zona, los peligros del patio, la conversión zombi y las oleadas de horda.",
+          "href": "/updates/ragdoll-reality-latest-features"
+        },
+        {
+          "badge": "Comunidad",
+          "title": "Discord y comunidad",
+          "description": "Encuentra los canales de la comunidad de Ragdoll Reality donde los jugadores comparten pruebas y clips.",
+          "href": "/community/ragdoll-reality-discord"
+        }
+      ]
+    },
+    "aboutGame": {
+      "title": "¿Qué es Ragdoll Reality?",
+      "paragraphs": [
+        "Ragdoll Reality es un sandbox de física de Roblox creado por I am eating. Cada golpe depende de la zona: si aciertas en una pierna, el muñeco cojea o se arrastra; si das en un brazo, este cuelga mientras el muñeco protege la herida; y los impactos más fuertes pueden hacerlo tambalearse, desmembrarlo o provocar hemorragias.",
+        "La experiencia combina una zona de pruebas con muñecos, un patio lleno de peligros y un cementerio donde los muñecos se alzan como zombis. Más de 20 armas, incluidas armas de fuego, herramientas cuerpo a cuerpo y explosivos, se desbloquean con eliminaciones, mientras que el modo Horda añade enemigos lentos, normales y rápidos que persiguen, saltan y muerden."
+      ],
+      "stats": [
+        {
+          "label": "Desarrollador",
+          "value": "I am eating"
+        },
+        {
+          "label": "Plataforma",
+          "value": "Roblox"
+        },
+        {
+          "label": "Género",
+          "value": "Sandbox de física"
+        },
+        {
+          "label": "Visitas",
+          "value": "12,0 M+"
+        },
+        {
+          "label": "Favoritos",
+          "value": "41,8 K+"
+        },
+        {
+          "label": "Armas",
+          "value": "Más de 20"
+        },
+        {
+          "label": "Actualizaciones",
+          "value": "Semanales"
+        }
+      ],
+      "cta": "Explorar todas las guías"
+    },
+    "explore": {
+      "title": "Explora Ragdoll Reality Wiki",
+      "description": "Aprende cómo funciona Ragdoll Reality con guías centradas en las pruebas de la primera sesión, los desbloqueos de armas, las hordas de zombis, los peligros del patio, los controles y las actualizaciones.",
+      "readFullGuide": "Leer la guía completa",
+      "tierLabel": "nivel",
+      "modules": [
+        {
+          "order": 1,
+          "name": "Guía para principiantes de Ragdoll Reality",
+          "description": "Empieza en el sandbox de pruebas con muñecos, aprende Puños, Empujar y Agarrar, y crea una primera sesión repetible antes de pasar a las armas y los peligros.",
+          "href": "/guide/ragdoll-reality-beginner-guide",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Elige un muñeco, un arma y una distancia cercana que conozcas."
+            },
+            {
+              "label": "2",
+              "detail": "Apunta a una sola zona del cuerpo y observa la primera reacción en vez de fijarte solo en si el muñeco cae."
+            },
+            {
+              "label": "3",
+              "detail": "Cambia únicamente el arma, la distancia, el objetivo o el ritmo en cada nueva prueba."
+            },
+            {
+              "label": "4",
+              "detail": "Practica golpes en piernas, brazos, torso y cabeza hasta que el resultado sea repetible."
+            },
+            {
+              "label": "5",
+              "detail": "Pasa a un peligro del patio y después al cementerio solo cuando tu puntería sea estable."
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "name": "Armas y desbloqueos de Ragdoll Reality",
+          "description": "Descubre cómo encajan las más de 20 armas de Ragdoll Reality en los roles cuerpo a cuerpo, a distancia y explosivo, y cómo las eliminaciones desbloquean nuevas herramientas de prueba.",
+          "href": "/combat/ragdoll-reality-weapons",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Puños",
+              "detail": "Herramienta inicial de corto alcance para probar reacciones por zona del cuerpo."
+            },
+            {
+              "label": "Pistola",
+              "detail": "Arma lateral a distancia para comparar puntería y distancia sobre un objetivo fijo."
+            },
+            {
+              "label": "Bate",
+              "detail": "Opción cuerpo a cuerpo sencilla para aprender el ritmo del golpe y la colocación en las extremidades."
+            },
+            {
+              "label": "Machete",
+              "detail": "Hoja de corto alcance para golpes controlados en una zona elegida."
+            },
+            {
+              "label": "Escopeta",
+              "detail": "Arma de fuego de corto alcance para probar impacto y retroceso a poca distancia."
+            },
+            {
+              "label": "Francotirador",
+              "detail": "Opción de largo alcance para comprobar cómo cambia la colocación con la distancia."
+            },
+            {
+              "label": "Minigun",
+              "detail": "Herramienta pesada a distancia para probar presión sostenida contra un grupo."
+            },
+            {
+              "label": "Cohete",
+              "detail": "Lanzador explosivo para controlar zonas del patio y de la horda."
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "name": "Códigos de Ragdoll Reality",
+          "description": "Consulta el estado actual de los códigos de Ragdoll Reality y descubre dónde seguir un futuro lanzamiento oficial.",
+          "href": "/codes/ragdoll-reality-codes",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "ESTADO",
+              "detail": "A 26 de octubre de 2026 no hay códigos públicos de Ragdoll Reality."
+            },
+            {
+              "label": "ANUNCIOS",
+              "detail": "Sigue la página oficial de la experiencia en Roblox para ver anuncios de códigos de Ragdoll Reality."
+            },
+            {
+              "label": "CANJE",
+              "detail": "No introduzcas datos de cuenta en páginas de códigos de terceros; usa solo canales oficiales de Roblox."
+            },
+            {
+              "label": "RECOMPENSAS",
+              "detail": "La descripción oficial del juego no menciona moneda premium ni una escala de recompensas por códigos."
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "name": "Lista de niveles de armas de Ragdoll Reality",
+          "description": "Una clasificación editorial de armas según su función, control y utilidad en el patio y contra zombis; prueba cada herramienta porque no se publica una tabla oficial de daño.",
+          "href": "/combat/ragdoll-reality-weapons",
+          "displayType": "tier-grid",
+          "highlights": [
+            {
+              "label": "S",
+              "detail": "Lanzacohetes: control de zonas para oleadas densas de horda y montajes del patio."
+            },
+            {
+              "label": "A",
+              "detail": "Escopeta y minigun: presión fuerte de corta a media distancia cuando mantienes el espaciado."
+            },
+            {
+              "label": "B",
+              "detail": "Bate, machete y guadaña: herramientas cuerpo a cuerpo para aprender arcos, tiempos y colocación en extremidades."
+            },
+            {
+              "label": "C",
+              "detail": "Puños y Empujar: interacciones iniciales para pruebas de base limpias."
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "name": "Guía de la horda zombi de Ragdoll Reality",
+          "description": "Sigue el bucle de conversión del cementerio, distingue las tres clases de velocidad zombi y prepara un intento de horda controlado.",
+          "href": "/updates/ragdoll-reality-halloween-update",
+          "displayType": "step-by-step",
+          "highlights": [
+            {
+              "label": "1",
+              "detail": "Observa la zona de conversión del cementerio antes de atacar."
+            },
+            {
+              "label": "2",
+              "detail": "Agarra o lanza un muñeco a la zona y deja que se alce como zombi."
+            },
+            {
+              "label": "3",
+              "detail": "Identifica si el nuevo zombi se mueve a velocidad lenta, normal o rápida."
+            },
+            {
+              "label": "4",
+              "detail": "Sigue moviéndote durante la oleada para separar las clases de velocidad y ver los saltos."
+            },
+            {
+              "label": "5",
+              "detail": "Usa el botón de horda solo cuando puedas leer una conversión con claridad."
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "name": "Patio y peligros de Ragdoll Reality",
+          "description": "Explora los peligros interactivos que convierten el sandbox de muñecos de Ragdoll Reality en una prueba de tiempos y espaciado.",
+          "href": "/guide/ragdoll-reality-how-to-play",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Trituradora",
+              "detail": "Calcula el avance y mantén una vía de retirada libre antes de enviar un muñeco."
+            },
+            {
+              "label": "Tren",
+              "detail": "Observa el ciclo completo y prueba un lanzamiento solo cuando la vía esté despejada."
+            },
+            {
+              "label": "Bola de demolición",
+              "detail": "Lee el arco del balanceo antes de colocar un muñeco en la zona de impacto."
+            },
+            {
+              "label": "Foso de pinchos",
+              "detail": "Coloca el muñeco sobre el foso y mantén tus pies lejos del borde."
+            },
+            {
+              "label": "Cañón",
+              "detail": "Trata el ángulo de lanzamiento y el momento como las variables de cada prueba de cañón humano."
+            },
+            {
+              "label": "Balancín",
+              "detail": "Usa el contrapeso y el tiempo para controlar cómo sale el muñeco de la plataforma."
+            },
+            {
+              "label": "Torre",
+              "detail": "Comprueba la zona de aterrizaje antes de probar una caída desde la torre de 80 studs."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Controles y ajustes de Ragdoll Reality",
+          "description": "Usa los controles estándar de movimiento y cámara de Roblox, y fija una configuración para que las reacciones a los golpes sigan siendo legibles.",
+          "href": "/guide/ragdoll-reality-best-settings",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "WASD",
+              "detail": "Muévete por la zona de muñecos y el patio con el movimiento estándar de Roblox."
+            },
+            {
+              "label": "Ratón",
+              "detail": "Controla la dirección de la cámara y apunta antes de cada golpe deliberado."
+            },
+            {
+              "label": "Espacio",
+              "detail": "Salta a las plataformas y recoloca tu posición alrededor de una zona de prueba."
+            },
+            {
+              "label": "Cámara",
+              "detail": "Mantén el muñeco completo a la vista para leer con facilidad una cojera, un tambaleo o un brazo colgante."
+            },
+            {
+              "label": "Distancia",
+              "detail": "Prueba el mismo objetivo desde una distancia antes de ampliar el alcance."
+            },
+            {
+              "label": "Reinicio",
+              "detail": "Haz una pausa tras cada golpe, vuelve a apuntar y no persigas a un muñeco que ya se mueve."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Actualizaciones y novedades de Ragdoll Reality",
+          "description": "Repasa las novedades actuales de Halloween, las opciones de armas, los cambios de física y el ritmo semanal de actualizaciones.",
+          "href": "/updates/ragdoll-reality-latest-features",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Halloween",
+              "detail": "La actualización de Halloween añade un cementerio, conversión zombi, infección y oleadas de horda."
+            },
+            {
+              "label": "Armas",
+              "detail": "Las nuevas herramientas se suman a un repertorio que ya incluye armas de fuego, cuerpo a cuerpo y explosivos."
+            },
+            {
+              "label": "Física",
+              "detail": "El daño por zona provoca cojeras, brazos colgantes, desmembramiento y hemorragias."
+            },
+            {
+              "label": "Horda",
+              "detail": "Los zombis lentos, normales y rápidos persiguen, saltan y muerden durante las oleadas."
+            },
+            {
+              "label": "Semanal",
+              "detail": "La página oficial del juego describe un ritmo semanal de actualizaciones para Ragdoll Reality."
+            },
+            {
+              "label": "Temporal",
+              "detail": "El contenido de Halloween forma parte del juego base, no de un modo de pago separado."
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "description": "Respuestas rápidas a las preguntas más comunes sobre Ragdoll Reality.",
+      "items": [
+        {
+          "question": "¿Qué es Ragdoll Reality?",
+          "answer": "Ragdoll Reality es un sandbox de física de Roblox donde los muñecos reaccionan a la zona exacta del cuerpo que golpeas. Las piernas pueden cojear o arrastrarse, los brazos pueden colgar y los impactos fuertes pueden hacer tambalear, desmembrar o provocar hemorragias."
+        },
+        {
+          "question": "¿Cómo se desbloquean armas en Ragdoll Reality?",
+          "answer": "Ragdoll Reality concede nuevas armas al acumular eliminaciones. La descripción oficial incluye Puños, Empujar, Agarrar, Pistola, Bate, Machete, Escopeta, Francotirador, Minigun, Lanzacohetes, Lanzallamas y C4."
+        },
+        {
+          "question": "¿Cómo se inicia una horda zombi en Ragdoll Reality?",
+          "answer": "Lanza un muñeco al cementerio de Ragdoll Reality y observa cómo se alza como zombi. Cuando entiendas la conversión y las clases de velocidad lenta, normal y rápida, usa el botón de horda para iniciar una oleada."
+        },
+        {
+          "question": "¿Ragdoll Reality tiene códigos?",
+          "answer": "Actualmente no se conocen códigos públicos de Ragdoll Reality. Consulta la página oficial de la experiencia en Roblox para ver anuncios antes de confiar en listas de recompensas de otros sitios."
+        },
+        {
+          "question": "¿Qué deben practicar primero los principiantes en Ragdoll Reality?",
+          "answer": "Empieza con un muñeco, un arma y poca distancia. Prueba por separado piernas, brazos, torso y cabeza, y cambia solo una variable por intento para que cada reacción de Ragdoll Reality tenga una causa clara."
+        }
+      ]
+    },
+    "finalCta": {
+      "title": "¿Listo para dominar Ragdoll Reality?",
+      "description": "Explora desbloqueos de armas, física ragdoll, oleadas de zombis y estrategias de supervivencia con nuestras guías gratuitas y actualizadas de Ragdoll Reality.",
+      "primary": "Leer la guía para principiantes",
+      "secondary": "Jugar en Roblox"
+    }
+  },
+  "guide": {
+    "overviewTitle": "Guías de Ragdoll Reality",
+    "overviewDescription": "Empieza con tutoriales, consejos para principiantes, controles, ajustes y recorridos prácticos de Ragdoll Reality para el sandbox de física de Roblox."
+  },
+  "mechanics": {
+    "overviewTitle": "Mecánicas de Ragdoll Reality",
+    "overviewDescription": "Entiende la física, las reacciones al daño, los efectos de sangre, el daño por caída, el comportamiento de los NPC y los sistemas detrás de cada impacto en Ragdoll Reality."
+  },
+  "combat": {
+    "overviewTitle": "Guías de combate de Ragdoll Reality",
+    "overviewDescription": "Aprende sobre las armas, las zonas de impacto, las granadas, las opciones cuerpo a cuerpo y las tácticas de combate de Ragdoll Reality basadas en reacciones físicas legibles."
+  },
+  "modes": {
+    "overviewTitle": "Modos de juego de Ragdoll Reality",
+    "overviewDescription": "Compara las guías de multijugador, PvP, servidor privado, cooperativo y modos de juego de Ragdoll Reality para jugar solo o con amigos."
+  },
+  "updates": {
+    "overviewTitle": "Actualizaciones de Ragdoll Reality",
+    "overviewDescription": "Sigue en un solo lugar las notas de parche, las nuevas armas, los eventos de temporada y los últimos cambios de Ragdoll Reality."
+  },
+  "community": {
+    "overviewTitle": "Comunidad de Ragdoll Reality",
+    "overviewDescription": "Encuentra centros comunitarios de Ragdoll Reality, debates en Discord y Reddit, vídeos de juego y formas de compartir descubrimientos con otros jugadores."
+  },
+  "codes": {
+    "overviewTitle": "Códigos de Ragdoll Reality",
+    "overviewDescription": "Consulta el estado actual de los códigos de Ragdoll Reality, aprende a canjearlos de forma segura y descubre dónde aparecerían primero las recompensas verificadas."
+  },
+  "shared": {
+    "wikiNavigation": "Navegación de la wiki",
+    "activeCodes": "Códigos activos",
+    "updated": "Actualizado",
+    "viewAllCodes": "Ver todos los códigos",
+    "playOnRoblox": "Jugar en Roblox",
+    "inThisSection": "En esta sección",
+    "tableOfContents": "Índice",
+    "nextSteps": "Siguientes pasos",
+    "needHelp": "¿Necesitas ayuda?",
+    "relatedReading": "Lecturas relacionadas",
+    "relatedGuides": "Guías relacionadas",
+    "readMore": "Leer más",
+    "officialMedia": "Medios oficiales",
+    "home": "Inicio",
+    "noGuidesAvailable": "Aún no hay guías disponibles. ¡Vuelve pronto!",
+    "noActiveCodes": "No hay códigos activos disponibles en este momento",
+    "checkBackSoon": "Vuelve pronto para ver nuevos códigos",
+    "close": "Cerrar"
+  },
+  "legal": {
+    "about": {
+      "title": "Acerca de",
+      "paragraphs": [
+        "Ragdoll Reality Wiki es un centro de guías independiente creado por fans que cubre desbloqueos de armas, física ragdoll, supervivencia ante hordas de zombis, peligros del patio, controles y actualizaciones semanales del juego de Roblox Ragdoll Reality.",
+        "Nuestras guías ayudan a jugadores nuevos y veteranos a entender las mecánicas principales, descubrir estrategias eficientes y seguir el contenido nuevo. No estamos afiliados a Roblox ni al equipo de desarrollo de Ragdoll Reality."
+      ]
+    },
+    "copyright": {
+      "title": "Derechos de autor",
+      "paragraphs": [
+        "Ragdoll Reality, Roblox, los logotipos asociados, los recursos del juego y los medios relacionados pertenecen a sus respectivos propietarios, incluidos el creador de Ragdoll Reality y Roblox Corporation.",
+        "Ragdoll Reality Wiki es una guía de fans independiente y no oficial. Los nombres de los juegos y las marcas se usan solo para identificar el tema de nuestra cobertura.",
+        "Si posees derechos sobre contenido mostrado aquí y tienes alguna inquietud, contacta al operador del sitio para que lo revise."
+      ]
+    },
+    "privacyPolicy": {
+      "title": "Política de privacidad",
+      "paragraphs": [
+        "Esta wiki de fans ofrece guías informativas sobre Ragdoll Reality. No solicitamos credenciales de cuenta, contraseñas de Roblox ni información de pago privada.",
+        "Los proveedores básicos de analítica, publicidad y alojamiento pueden procesar información técnica estándar, como el tipo de dispositivo, el navegador, la región aproximada y las páginas visitadas.",
+        "Los enlaces externos pueden llevar a Roblox, Discord, YouTube o herramientas comunitarias. Esos servicios se rigen por sus propias políticas de privacidad."
+      ]
+    },
+    "termsOfService": {
+      "title": "Términos de servicio",
+      "paragraphs": [
+        "Este sitio es un centro de guías independiente hecho por fans. El contenido se ofrece únicamente con fines informativos y de entretenimiento.",
+        "Los sistemas del juego, los códigos, las recompensas y los detalles de las actualizaciones pueden cambiar sin aviso. Verifica siempre la información importante dentro del juego o en canales oficiales.",
+        "Al usar este sitio, aceptas no hacer un uso indebido, no intentar accesos no autorizados y no presentar esta wiki de fans como propiedad oficial de Ragdoll Reality, I am eating o Roblox."
+      ]
+    }
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La guía que buscas puede haberse movido o aún no haberse añadido.",
+    "browse": "Explorar las guías de Ragdoll Reality"
+  },
+  "footer": {
+    "aboutTitle": "Ragdoll Reality Wiki",
+    "about": "Ragdoll Reality Wiki es un centro de guías independiente creado por fans que cubre desbloqueos de armas, física ragdoll, hordas de zombis, peligros del patio, controles y actualizaciones semanales para jugadores nuevos y veteranos.",
+    "quickLinks": "Enlaces rápidos",
+    "guides": "Guías",
+    "legal": "Legal",
+    "copyright": "2026 Ragdoll Reality Wiki. No está afiliada a Roblox ni a I am eating.",
+    "description": "Ragdoll Reality es un sandbox ragdoll impulsado por la física en Roblox con desbloqueos de armas, hordas de zombis y peligros caóticos en el patio de juegos.",
+    "playGame": "Jugar a Ragdoll Reality en Roblox",
+    "officialDiscord": "Comunidad de Roblox",
+    "officialYoutube": "Vídeo de juego",
+    "vvBuilder": "Guía de Ragdoll Reality",
+    "beginnerGuide": "Guía para principiantes",
+    "mechanicsGuides": "Guías de mecánicas",
+    "combatGuides": "Guías de combate",
+    "updatesGuides": "Actualizaciones y notas de parche",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos de servicio"
+  }
+}

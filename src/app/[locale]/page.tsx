@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const messages = (await getMessages({ locale })) as Messages;
   return {
-    title: messages.home.meta.title,
+    title: { absolute: messages.home.meta.title },
     description: messages.home.meta.description,
     alternates: { canonical: `/${locale}`, languages: Object.fromEntries(routing.locales.map((loc) => [loc, `/${loc}`])) },
     openGraph: { title: messages.home.meta.title, description: messages.home.meta.description, url: `${siteUrl}/${locale}`, images: [`${siteUrl}/images/hero.webp`] },
@@ -49,7 +49,7 @@ export default async function LocaleHomePage({ params }: { params: Promise<{ loc
     <main className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
       <JsonLd data={webSite} />
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_300px]">
-        <HomePageClient home={messages.home} locale={locale} articles={allArticles} recentArticles={recentArticles} />
+        <HomePageClient home={messages.home} nav={messages.nav} locale={locale} articles={allArticles} recentArticles={recentArticles} />
         <WikiSidebar locale={locale} navGroups={navGroups} />
       </div>
     </main>
