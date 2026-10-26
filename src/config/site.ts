@@ -19,19 +19,16 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "My Seafood Stand Wiki",
-  shortName: "My Seafood Stand",
-  logoText: "SS",
-  tagline: "Complete Guides, Codes, Recipes & Tier Lists",
-  description: "Your ultimate guide to My Seafood Stand on Roblox! Explore active working codes, seafood recipes, best upgrades, profit strategies, and progression guides.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top",
-  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://myseafoodstand.top").hostname.replace(/^www\./, "")}`,
-  gameUrl: "https://www.roblox.com/games/my-seafood-stand",
-  heroVideoId: "M8DvcwoFRrk", // Roblox My Seafood Stand codes & gameplay video
-  social: {
-    discord: "https://discord.gg/roblox",
-    youtube: "https://www.youtube.com/@roblox",
-  },
+  name: "Ragdoll Reality Wiki",
+  shortName: "Ragdoll Reality",
+  logoText: "RR",
+  tagline: "Weapons, Zombies, Physics & Updates",
+  description: "Explore Ragdoll Reality on Roblox with weapon unlocks, ragdoll physics, zombie horde survival, playground hazards, controls, and weekly update guides.",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://ragdollreality.top",
+  supportEmail: `support@${new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://ragdollreality.top").hostname.replace(/^www\./, "")}`,
+  gameUrl: "https://www.roblox.com/games/127932298993998/Ragdoll-Reality",
+  heroVideoId: "7whZLVq5kGg", // Roblox Ragdoll Reality gameplay showcase
+  social: {},
   locales: ["en", "es", "pt", "de", "fr"],
   defaultLocale: "en",
 };
