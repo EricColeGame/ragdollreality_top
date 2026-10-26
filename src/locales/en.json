@@ -39,22 +39,22 @@
         {
           "number": "1",
           "title": "Beginner Guide",
-          "description": "Master the Spirit World from day one with our comprehensive beginner guide covering controls, combat, and early progression."
+          "description": "Learn hit locations, the one-variable testing loop, and a practical 45-minute first session."
         },
         {
           "number": "2",
-          "title": "Fastest Leveling",
-          "description": "Dominate early game and max your progression with the most efficient leveling routes and strategies."
+          "title": "Weapons & Unlocks",
+          "description": "Compare melee, ranged, and explosive tools, then earn new weapons by racking up kills."
         },
         {
           "number": "3",
-          "title": "Best Farming Spots",
-          "description": "Maximize your Soul Essence and EXP gains with optimal farming locations for every stage."
+          "title": "Zombie Hordes",
+          "description": "Convert dummies in the graveyard, read the three speed classes, and survive a Horde wave."
         },
         {
           "number": "4",
-          "title": "How to Extract",
-          "description": "Learn the best methods and locations for extracting resources in Ragdoll Reality."
+          "title": "Controls & Settings",
+          "description": "Set a stable camera, test at a consistent range, and build repeatable aim in Ragdoll Reality."
         }
       ]
     },
@@ -62,78 +62,78 @@
       "eyebrow": "Popular Pages",
       "title": "Trending Now",
       "quickLinks": [
-        "Hollow Progression",
-        "Fastest Leveling",
-        "Spirit Charms",
-        "All Boss Guides"
+        "Beginner Guide",
+        "Weapon Unlocks",
+        "Zombie Hordes",
+        "Playground Hazards"
       ],
       "cards": [
         {
           "badge": "Beginner",
           "title": "Beginner Guide",
-          "description": "Everything you need from your first login to mastering the basics of combat and progression.",
-          "href": "/beginner-guide"
+          "description": "Build a clean dummy baseline and learn the first-session drills that make every hit repeatable.",
+          "href": "/guide/ragdoll-reality-beginner-guide"
         },
         {
           "badge": "Updated",
-          "title": "Active Codes",
-          "description": "All working codes with rewards redeem before they expire.",
-          "href": "/codes"
-        },
-        {
-          "badge": "Updated",
-          "title": "Equipment Database",
-          "description": "94 items across 5 slots complete gear database with stats, rarity, and sources.",
-          "href": "/equipment"
+          "title": "Ragdoll Reality Codes",
+          "description": "Check the current code status and the official places to watch for future announcements.",
+          "href": "/codes/ragdoll-reality-codes"
         },
         {
           "badge": "Popular",
-          "title": "Which Race Should You Pick?",
-          "description": "Shinigami, Quincy, or Hollow compare all three and find your perfect playstyle.",
-          "href": "/races/best-race"
-        },
-        {
-          "badge": "New",
-          "title": "Enemies & Monsters",
-          "description": "23 enemy types across 5 regions drops, locations, and farming tips.",
-          "href": "/enemies"
+          "title": "Weapons and Unlocks",
+          "description": "Compare melee, ranged, and explosive tools and learn how kills expand your arsenal.",
+          "href": "/combat/ragdoll-reality-weapons"
         },
         {
           "badge": "Popular",
-          "title": "Boss Locations & Drops",
-          "description": "Every boss location, drop table, and respawn timer in one reference.",
-          "href": "/boss-locations-drops-respawn-times"
+          "title": "Zombie Horde Guide",
+          "description": "Follow graveyard conversion, infection spread, speed classes, and the Horde button.",
+          "href": "/updates/ragdoll-reality-halloween-update"
+        },
+        {
+          "badge": "Guide",
+          "title": "Game Modes",
+          "description": "Move from dummy testing to playground hazards, tower drops, and zombie survival.",
+          "href": "/modes/ragdoll-reality-game-modes"
         },
         {
           "badge": "Popular",
-          "title": "Best Builds",
-          "description": "Optimal stat allocation, skill tree picks, and Charm combos for every playstyle.",
-          "href": "/builds/best-builds"
+          "title": "Ragdoll Physics",
+          "description": "Read limb reactions, stagger, dismemberment, and recovery instead of chasing a fall.",
+          "href": "/mechanics/ragdoll-reality-ragdoll-physics"
+        },
+        {
+          "badge": "Popular",
+          "title": "Controls and Settings",
+          "description": "Lock your camera and test variables so Ragdoll Reality's impact feedback stays readable.",
+          "href": "/guide/ragdoll-reality-best-settings"
         },
         {
           "badge": "New",
-          "title": "Shikai Tier List",
-          "description": "All 6 Shinigami Shikai types ranked by PvP and PvE performance.",
-          "href": "/tier-list/shikai"
+          "title": "Latest Features",
+          "description": "Review location-based damage, playground hazards, zombie conversion, and Horde waves.",
+          "href": "/updates/ragdoll-reality-latest-features"
         },
         {
-          "badge": "New",
-          "title": "World Events Guide",
-          "description": "Supply Caches, Raids, and endgame world events with rare rewards.",
-          "href": "/world-events"
+          "badge": "Community",
+          "title": "Discord and Community",
+          "description": "Find the Ragdoll Reality community channels where players share tests and gameplay clips.",
+          "href": "/community/ragdoll-reality-discord"
         }
       ]
     },
     "aboutGame": {
       "title": "What is Ragdoll Reality?",
       "paragraphs": [
-        "Ragdoll Reality is a stylized fighting RPG on Roblox inspired by the Bleach anime universe. Choose from three playable races Shinigami, Quincy, or Hollow each with unique progression systems, unlockable abilities, and evolution paths. Master over 130 skills as you fight your way to the level 100 cap.",
-        "Whether you're unlocking your first Shikai, evolving from a base Hollow into an Arrancar, or grinding Quincy Lieutenant missions, our wiki covers every system with detailed guides, data tables, and step-by-step walkthroughs."
+        "Ragdoll Reality is a physics sandbox on Roblox from creator I am eating. Every hit is location-based: strike a leg and a dummy limps or crawls, hit an arm and it hangs while the dummy protects the wound, and heavier impacts can stagger, dismember, or cause bleeding.",
+        "The experience combines a dummy testing area, a playground full of hazards, and a graveyard where dummies rise as zombies. More than 20 weapons, including firearms, melee tools, and explosives, unlock through kills, while the Horde mode adds slow, normal, and fast enemies that chase, pounce, and bite."
       ],
       "stats": [
         {
           "label": "Developer",
-          "value": "Midnight Continent"
+          "value": "I am eating"
         },
         {
           "label": "Platform",
@@ -141,158 +141,280 @@
         },
         {
           "label": "Genre",
-          "value": "Fighting RPG"
+          "value": "Physics Sandbox"
         },
         {
           "label": "Visits",
-          "value": "12.6M+"
+          "value": "12.0M+"
         },
         {
           "label": "Favorites",
-          "value": "243K+"
+          "value": "41.8K+"
         },
         {
-          "label": "Total Skills",
-          "value": "130+"
+          "label": "Weapons",
+          "value": "20+"
         },
         {
-          "label": "Level Cap",
-          "value": "100"
+          "label": "Updates",
+          "value": "Weekly"
         }
       ],
       "cta": "Explore All Guides"
     },
     "explore": {
       "title": "Explore Ragdoll Reality Wiki",
-      "description": "Master your seafood restaurant on Roblox with essential progression guides, active codes, complete fish & recipe catalogs, and optimal upgrade strategies.",
+      "description": "Learn how Ragdoll Reality works through focused guides on first-session testing, weapon unlocks, zombie hordes, playground hazards, controls, and updates.",
       "modules": [
         {
           "order": 1,
-          "name": "Ragdoll Reality Working Codes",
-          "description": "Redeem the latest working codes to claim free coins, gems, exclusive cosmetics, and boost items before they expire.",
-          "href": "/codes",
-          "displayType": "code-box",
+          "name": "Ragdoll Reality Beginner Guide",
+          "description": "Start with the dummy testing sandbox, learn Fists, Push, and Grab, and build a repeatable first session before moving on to weapons and hazards.",
+          "href": "/guide/ragdoll-reality-beginner-guide",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Code",
-              "detail": "FULLRELEASE — Free Cash & Rewards"
+              "label": "1",
+              "detail": "Pick one dummy, one weapon, and a familiar close range."
             },
             {
-              "label": "Code",
-              "detail": "75KLIKES — Exclusive Ability Reroll"
+              "label": "2",
+              "detail": "Aim at one body area and watch the first reaction instead of only checking whether the dummy falls."
             },
             {
-              "label": "Tip",
-              "detail": "Codes are case-sensitive; enter them in the Settings menu"
+              "label": "3",
+              "detail": "Change only the weapon, distance, target, or tempo in each new trial."
+            },
+            {
+              "label": "4",
+              "detail": "Practice leg, arm, torso, and head hits until the result is repeatable."
+            },
+            {
+              "label": "5",
+              "detail": "Move to one playground hazard, then the graveyard, only after your aim holds."
             }
           ]
         },
         {
           "order": 2,
-          "name": "Beginner Guide: How to Start & Serve Customers",
-          "description": "Step-by-step beginner guide covering customer ordering, food prep, station management, and cashier checkout mechanics.",
-          "href": "/guide",
-          "displayType": "feature-cards",
+          "name": "Ragdoll Reality Weapons and Unlocks",
+          "description": "Learn how Ragdoll Reality's 20+ weapons fit melee, ranged, and explosive roles, and how kills unlock new tools for testing.",
+          "href": "/combat/ragdoll-reality-weapons",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Take customer order at the stall front"
+              "label": "Fists",
+              "detail": "Starter close-range tool for testing body-area reactions."
             },
             {
-              "label": "Step 2",
-              "detail": "Cook seafood on the grill or boil station"
+              "label": "Pistol",
+              "detail": "Ranged sidearm for comparing aim and distance at a fixed target."
             },
             {
-              "label": "Step 3",
-              "detail": "Serve warm food promptly for maximum customer tips"
+              "label": "Bat",
+              "detail": "Simple melee option for learning swing timing and limb placement."
+            },
+            {
+              "label": "Machete",
+              "detail": "Close-range blade for controlled strikes on a chosen body area."
+            },
+            {
+              "label": "Shotgun",
+              "detail": "Short-range firearm for testing impact and recoil at close distance."
+            },
+            {
+              "label": "Sniper",
+              "detail": "Long-range option for checking how distance changes placement."
+            },
+            {
+              "label": "Minigun",
+              "detail": "Heavy ranged tool for testing sustained pressure on a group."
+            },
+            {
+              "label": "Rocket",
+              "detail": "Explosive launcher for area control in the playground and Horde."
             }
           ]
         },
         {
           "order": 3,
-          "name": "Seafood & Fish Tier List",
-          "description": "Complete breakdown of all catchable fish and seafood ranked by market value, customer demand, and profit margins.",
-          "href": "/tier-list",
-          "displayType": "tier-grid",
+          "name": "Ragdoll Reality Codes",
+          "description": "Check the current code status for Ragdoll Reality and learn where to watch for a future official release.",
+          "href": "/codes/ragdoll-reality-codes",
+          "displayType": "code-cards",
           "highlights": [
             {
-              "label": "S Tier",
-              "detail": "King Crab · Lobster Boil — Highest profit per customer"
+              "label": "STATUS",
+              "detail": "No public Ragdoll Reality codes are listed as of October 26, 2026."
             },
             {
-              "label": "A Tier",
-              "detail": "Salmon · Jumbo Shrimp · Tuna Steak — Reliable fast earners"
+              "label": "ANNOUNCE",
+              "detail": "Watch the official Roblox experience page for Ragdoll Reality code announcements."
             },
             {
-              "label": "B Tier",
-              "detail": "Clams · Oysters · Squid — Great mid-game margin"
+              "label": "REDEEM",
+              "detail": "Do not enter account details on third-party code pages; use only official Roblox channels."
             },
             {
-              "label": "C Tier",
-              "detail": "Common Sardines · Small Crab — Starter seafood"
+              "label": "REWARDS",
+              "detail": "The official game description does not list a premium currency or a code reward ladder."
             }
           ]
         },
         {
           "order": 4,
-          "name": "Best Upgrades Progression",
-          "description": "Optimal order to spend your cash: expand kitchen stations, hire waitstaff, speed up grills, and upgrade seating.",
-          "href": "/skills",
-          "displayType": "feature-cards",
+          "name": "Ragdoll Reality Weapon Tier List",
+          "description": "An editorial weapon ranking based on role, control, and usefulness in playground and zombie encounters; test each tool yourself because no official damage table is published.",
+          "href": "/combat/ragdoll-reality-weapons",
+          "displayType": "tier-grid",
           "highlights": [
             {
-              "label": "Priority 1",
-              "detail": "Cooking Speed & Extra Burners — Clears customer backlog"
+              "label": "S",
+              "detail": "Rocket Launcher - area control for crowded Horde waves and playground setups."
             },
             {
-              "label": "Priority 2",
-              "detail": "Customer Seating Capacity — Increases simultaneous diners"
+              "label": "A",
+              "detail": "Shotgun and Minigun - strong close-to-mid-range pressure when spacing stays controlled."
             },
             {
-              "label": "Priority 3",
-              "detail": "Auto-Chef / Waiter Staff — Passive hands-free revenue"
+              "label": "B",
+              "detail": "Bat, Machete, and Scythe - melee tools for learning arcs, timing, and limb placement."
+            },
+            {
+              "label": "C",
+              "detail": "Fists and Push - starter interactions for clean baseline tests."
             }
           ]
         },
         {
           "order": 5,
-          "name": "How to Get Cash Fast",
-          "description": "Top money-making strategies, VIP evaluation, tip maximization, and high-efficiency serving tips.",
-          "href": "/guide",
-          "displayType": "feature-cards",
+          "name": "Ragdoll Reality Zombie Horde Guide",
+          "description": "Follow the graveyard conversion loop, read the three zombie speed classes, and prepare a controlled Horde attempt.",
+          "href": "/updates/ragdoll-reality-halloween-update",
+          "displayType": "step-by-step",
           "highlights": [
             {
-              "label": "Combo",
-              "detail": "Chain orders quickly to build the Customer Happiness multiplier"
+              "label": "1",
+              "detail": "Watch the graveyard conversion zone before you attack anything."
             },
             {
-              "label": "High Margin",
-              "detail": "Focus high-tier seafood boils during peak customer rush hours"
+              "label": "2",
+              "detail": "Grab or launch a dummy into the zone and let it rise as a zombie."
             },
             {
-              "label": "Reinvest",
-              "detail": "Keep 20% cash reserve for fresh ingredient replenishment"
+              "label": "3",
+              "detail": "Identify whether the new zombie moves at slow, normal, or fast speed."
+            },
+            {
+              "label": "4",
+              "detail": "Keep moving during a wave so speed classes separate and pounces stay visible."
+            },
+            {
+              "label": "5",
+              "detail": "Use the Horde button only after you can read one conversion cleanly."
             }
           ]
         },
         {
           "order": 6,
-          "name": "Plot Expansion & Stand Customization",
-          "description": "Unlock bigger land plots, arrange optimal cooking layouts, and add high-value decorative upgrades.",
-          "href": "/guide",
-          "displayType": "feature-cards",
+          "name": "Ragdoll Reality Playground and Hazards",
+          "description": "Explore the interactive hazards that turn Ragdoll Reality's dummy sandbox into a timing and spacing test.",
+          "href": "/guide/ragdoll-reality-how-to-play",
+          "displayType": "card-list",
           "highlights": [
             {
-              "label": "Plot 1",
-              "detail": "Starter Beach Stand (3 Tables, 1 Grill)"
+              "label": "Shredder",
+              "detail": "Time the feed and keep a clear retreat line before sending a dummy through."
             },
             {
-              "label": "Plot 2",
-              "detail": "Boardwalk Restaurant (6 Tables, 2 Grills, Boil Station)"
+              "label": "Train",
+              "detail": "Watch the full cycle and test a throw only when the track is clear."
             },
             {
-              "label": "Plot 3",
-              "detail": "Luxury Pier Seafood Pavilion (Full Automation & VIP Seating)"
+              "label": "Wrecking",
+              "detail": "Read the swing arc before placing a dummy in the wrecking ball's impact zone."
+            },
+            {
+              "label": "Spike Pit",
+              "detail": "Position the dummy over the pit and keep your own footing away from the edge."
+            },
+            {
+              "label": "Cannon",
+              "detail": "Treat launch angle and timing as the variables in each human cannon test."
+            },
+            {
+              "label": "Seesaw",
+              "detail": "Use counterweight and timing to control how the dummy leaves the platform."
+            },
+            {
+              "label": "Tower",
+              "detail": "Check the landing zone before testing a fall from the 80-stud tower."
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "name": "Ragdoll Reality Controls and Settings",
+          "description": "Use standard Roblox movement and camera inputs, then lock one setup so Ragdoll Reality's hit reactions stay readable.",
+          "href": "/guide/ragdoll-reality-best-settings",
+          "displayType": "code-cards",
+          "highlights": [
+            {
+              "label": "WASD",
+              "detail": "Move around the dummy area and playground with standard Roblox movement."
+            },
+            {
+              "label": "Mouse",
+              "detail": "Control camera direction and aim before each deliberate strike."
+            },
+            {
+              "label": "Space",
+              "detail": "Jump onto platforms and reset your position around a test area."
+            },
+            {
+              "label": "Camera",
+              "detail": "Keep the whole dummy in view so a limp, stagger, or hanging arm is easy to read."
+            },
+            {
+              "label": "Range",
+              "detail": "Test the same target from one distance before extending your range."
+            },
+            {
+              "label": "Reset",
+              "detail": "Pause after each strike, re-aim, and avoid chasing a dummy that is already moving."
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "name": "Ragdoll Reality Updates and New Features",
+          "description": "Review the current Halloween additions, weapon options, physics changes, and weekly update cadence.",
+          "href": "/updates/ragdoll-reality-latest-features",
+          "displayType": "card-list",
+          "highlights": [
+            {
+              "label": "Halloween",
+              "detail": "The Halloween update adds a graveyard, zombie conversion, infection, and Horde waves."
+            },
+            {
+              "label": "Weapons",
+              "detail": "New tools join a roster that already includes firearms, melee weapons, and explosives."
+            },
+            {
+              "label": "Physics",
+              "detail": "Location-based damage drives limps, hanging arms, dismemberment, and bleeding."
+            },
+            {
+              "label": "Horde",
+              "detail": "Slow, normal, and fast zombies chase, pounce, and bite during survival waves."
+            },
+            {
+              "label": "Weekly",
+              "detail": "The official game page describes a weekly update cadence for Ragdoll Reality."
+            },
+            {
+              "label": "Seasonal",
+              "detail": "Halloween content remains part of the base game rather than a separate paid mode."
             }
           ]
         }
@@ -304,23 +426,23 @@
       "items": [
         {
           "question": "What is Ragdoll Reality?",
-          "answer": "Ragdoll Reality is a free-to-play fighting RPG on Roblox based on the Bleach anime. You choose one of game mechanics Shinigami (Soul Reaper), Quincy, or Hollow each with unique progression, combat abilities, and evolution systems. The game features 130+ skills, a level 100 cap, boss fights, and deep build customization."
+          "answer": "Ragdoll Reality is a Roblox physics sandbox where dummies react to the exact body area you hit. Legs can limp or crawl, arms can hang, and heavy impacts can stagger, dismember, or cause bleeding."
         },
         {
-          "question": "Which race should beginners pick?",
-          "answer": "Shinigami is the most straightforward starter race, while Hollow and Quincy offer more specialized progression routes. Compare their abilities before committing."
+          "question": "How do you unlock weapons in Ragdoll Reality?",
+          "answer": "Ragdoll Reality awards new weapons as you earn kills. The official description lists Fists, Push, Grab, Pistol, Bat, Machete, Shotgun, Sniper, Minigun, Rocket Launcher, Flamethrower, and C4."
         },
         {
-          "question": "What is the current level cap?",
-          "answer": "The current level cap is 100, with more than 130 skills available across trees and race progression systems."
+          "question": "How do you start a zombie horde in Ragdoll Reality?",
+          "answer": "Throw a dummy into the Ragdoll Reality graveyard and watch it rise as a zombie. Once you understand the conversion and the slow, normal, and fast speed classes, use the Horde button to begin a wave."
         },
         {
-          "question": "Where do I find active codes?",
-          "answer": "Use the Codes page for working codes, rewards, expiration notes, and redeem instructions."
+          "question": "Does Ragdoll Reality have codes?",
+          "answer": "No public Ragdoll Reality codes are listed at this time. Check the official Roblox experience page for announcements before trusting reward lists from other sites."
         },
         {
-          "question": "Are boss guides updated?",
-          "answer": "Boss pages are organized with spawn notes, attack patterns, strategies, drop tables, and related next steps for progression."
+          "question": "What should beginners practice first in Ragdoll Reality?",
+          "answer": "Start with one dummy, one weapon, and close range. Test the legs, arms, torso, and head separately, then change only one variable per trial so every Ragdoll Reality reaction has a clear cause."
         }
       ]
     },
