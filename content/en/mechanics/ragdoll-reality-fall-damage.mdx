@@ -1,0 +1,135 @@
+export const metadata = {
+  title: "Ragdoll Reality Fall Damage Explained: Height, Impact, and Safe Testing",
+  description: "Learn how Ragdoll Reality fall damage works, how height, posture, and surface change the landing, and how to test drops without guessing.",
+  category: "mechanics",
+  date: "2026-10-26",
+}
+
+## How Ragdoll Reality Fall Damage Actually Works
+
+Drop a dummy off the tower and it rarely lands the same way twice. That inconsistency is the whole point: **Ragdoll Reality fall damage** is not a single hidden number applied at the moment of touchdown. It is the sum of every collision the ragdoll makes on the way down and at the moment of impact — which limb hits first, how fast it was moving, and what it lands on.
+
+Understanding **Ragdoll Reality fall damage** changes how you test hazards. Instead of asking "how high can I drop this before it breaks," you start asking "which body part absorbed the landing, and what did that do to the rest of the ragdoll?"
+
+The game's own design supports this. The official game guide describes location-based reactions: leg impacts leave a dummy limping or crawling, arm impacts leave the arm hanging, and targets clutch injuries. A fall is simply a fast chain of those same location-based impacts, delivered by gravity rather than by your weapon.
+
+That is why the official material never publishes a damage table. Exact health values, per-height damage, and failure thresholds are not documented anywhere official. Treat any "X studs equals Y damage" chart you see as player experience rather than fact, and verify it yourself in a controlled test.
+
+### Why the landing order matters more than the drop height
+
+A dummy that lands feet-first and folds into a crawl has taken the impact through its legs. A dummy that lands flat on its back has taken it through the torso and head. Same height, same surface, very different outcome — and very different follow-up behavior. The height set the speed; the posture decided where that speed went.
+
+| Variable | Why it changes the result | How to control it |
+| --- | --- | --- |
+| Drop height | Sets impact speed | Change in small, recorded increments |
+| Launch posture | Decides which limb contacts first | Release the dummy the same way each trial |
+| Surface | Some surfaces absorb, others redirect | Test one surface per session segment |
+| Horizontal momentum | Turns a drop into a tumble | Walk, don't sprint, into the edge |
+| Held weapon | Adds mass and changes limb position | Repeat with empty hands as a baseline |
+| Limb contact order | Determines limp, crawl, or collapse | Watch the first frame of contact |
+
+## The Height Ladder: Testing Fall Damage Step by Step
+
+The fastest way to learn fall damage behavior is to build a ladder of heights and climb it one rung at a time. Change nothing but the height between trials. Keep the same dummy, the same launch method, and the same landing surface.
+
+Start at a low platform where the dummy barely reacts, then move up in small steps. A useful ladder looks like this:
+
+| Rung | Height reference | What you are checking | Move up when |
+| --- | --- | --- | --- |
+| 1 | Small ledge | Does the dummy react at all? | You see a consistent first reaction |
+| 2 | Low platform | Leg-only reaction, limp or stumble | The result repeats three times |
+| 3 | Mid-height drop | Crawl, collapse, or limb loss | You can name the contact limb |
+| 4 | Tower drop | Full-body reaction and recovery time | You can predict the landing signature |
+| 5 | The tall tower | Maximum impact and survivability | You have a written record of the result |
+
+The tall tower in the playground is the natural top rung — it gives you the longest fall in the game and the clearest difference between a feet-first landing and a flat one. Player experience suggests the difference between rung 3 and rung 5 is not just severity but *type*: lower falls tend to produce limps and crawls, while long falls are where limb detachment and heavy collapse show up.
+
+Keep your ladder notes simple. Height, launch posture, surface, first contact limb, and the dummy's first reaction after it stops moving. Five columns, thirty seconds per trial.
+
+### Don't skip the middle rungs
+
+Jumping straight to the tallest tower teaches you almost nothing, because too many things happen at once. If the dummy loses a limb on the way down, you cannot tell whether the height, the surface, or the tumble caused it. Climb the ladder, and every result stays readable.
+
+## Reading the Landing: What Fall Damage Looks Like
+
+Fall damage in Ragdoll Reality rarely announces itself with a health bar. It shows up as a change in how the ragdoll behaves afterward. Learn to read the signature, and you can diagnose the drop without repeating it.
+
+| Landing signature | Likely cause | What to test next |
+| --- | --- | --- |
+| Limping, still upright | Leg absorbed the impact | Same height, opposite leg first |
+| Crawling | Both legs compromised | Slightly higher drop |
+| Stagger then recover | Torso took the blow | Same height, flat landing |
+| Collapse with no rise | Heavy body-wide impact | Confirm surface, then repeat once |
+| Detached limb | Extreme impact or bad angle | Lower the height one rung |
+| Bleeding after landing | Limb separation, not just force | Stop attacking and observe |
+
+Two habits make these readings reliable:
+
+- **Watch the first frame of contact.** The limb that touches first is usually the one that defines the outcome.
+- **Wait for the full recovery cycle.** A dummy that rises again took less structural damage than one that stays down, even if the first hit looked dramatic.
+
+Dummies can also stagger, retreat, retaliate, and get back up. If yours starts moving away from the drop zone before you have finished observing, reset it and repeat the trial rather than chasing it. A chaotic second attempt tells you less than a clean reset.
+
+## Playground Hazards That Combine Fall Damage With Other Forces
+
+The playground is where fall damage stops being a clean experiment. Each hazard adds a second force — spin, launch, or pierce — on top of the drop.
+
+| Hazard | Fall component | What it actually tests |
+| --- | --- | --- |
+| Tower drop | Pure vertical fall | Baseline fall damage |
+| The tall tower | Maximum height | Impact limits and limb loss |
+| Wrecking ball | Fall plus lateral force | Directional impact on a falling ragdoll |
+| Human cannon | Launch plus landing | Momentum carried into the ground |
+| Spike pit | Fall plus surface hazard | Surface type versus raw speed |
+| Shredder | Fall plus continuous contact | Damage over time rather than one hit |
+
+Treat each one as a separate experiment. The wrecking ball and the human cannon both involve a fall, but the horizontal momentum changes which body part leads the landing, so results from one do not transfer to the other.
+
+The spike pit is worth special attention because it isolates the surface variable. If you can find two heights that produce the same reaction on a flat floor and in the pit, you have measured how much the surface itself contributes — without ever touching a damage formula.
+
+## Building a Fall Damage Test Routine
+
+You do not need a long session to get useful data. Twenty focused minutes beats an hour of random dropping.
+
+| Minutes | Activity | What to record |
+| --- | --- | --- |
+| 0–5 | Rungs 1–2 of the height ladder | First reaction and contact limb |
+| 5–10 | Rungs 3–4, same launch method | Landing signature per height |
+| 10–15 | Repeat rung 4 with a different posture | How posture changes the outcome |
+| 15–20 | One hazard, one attempt | Hazard result versus clean drop |
+| 20–25 | Graveyard conversion after a fall | Whether a damaged dummy converts differently |
+
+That last row is worth testing on its own. The official material notes that a dummy thrown into the graveyard becomes a zombie, and zombies come in slow, normal, and fast speed classes. Community reports suggest a dummy's condition at conversion may influence what you get — but this is player experience, not documented fact, so verify it yourself before building a strategy around it.
+
+Finish every session with a written record. A short list of heights, postures, surfaces, and outcomes is more valuable than a memory of "the big tower hurt a lot."
+
+## Common Fall Damage Mistakes
+
+| Mistake | Why it ruins the test | Fix |
+| --- | --- | --- |
+| Changing height and surface together | Two variables, one result | One change per trial |
+| Sprinting into the drop | Adds momentum you did not measure | Walk off the edge |
+| Judging only by the final pose | Hides the contact sequence | Watch the first frame of impact |
+| Assuming a chart is official | No damage values are published | Label estimates as community data |
+| Testing the tall tower first | Too many simultaneous forces | Climb the ladder from the bottom |
+| Ignoring recovery time | Misses the difference between stagger and collapse | Wait for the full cycle |
+
+If your results keep contradicting each other, the problem is usually the setup rather than the game. The [Ragdoll Reality game guide on the community wiki](https://ragdollreality.wiki/en/guides/ragdoll-reality-game-guide/) lays out a controlled testing loop that pairs well with this height ladder — dummy, one weapon, one variable at a time.
+
+## FAQ
+
+**Does Ragdoll Reality fall damage depend on height or on landing posture?**
+
+Both, but posture is the variable most players ignore. Height sets how fast the ragdoll is moving; posture decides which body part absorbs that speed. Two identical drops with different launch angles can produce completely different results, which is why you should hold posture constant while testing Ragdoll Reality fall damage at new heights.
+
+**Is there an official fall damage chart for Ragdoll Reality?**
+
+No. The official material describes location-based reactions and lists the playground hazards, but it does not publish damage values, health totals, or per-height thresholds. Any numbers you find online are community estimates, so verify them with your own controlled drops before relying on them.
+
+**Which hazard is best for testing fall damage first?**
+
+The plain tower drop, because it isolates gravity. The wrecking ball, human cannon, and spike pit all add a second force or surface effect. Get a clean baseline from a vertical drop before combining height with anything else.
+
+**Why does my dummy survive a huge fall but collapse from a small one?**
+
+Check the landing signature. A dummy that lands feet-first can absorb a long fall through its legs, while a short drop onto an awkward angle can fold the torso and end the attempt immediately. In Ragdoll Reality, fall damage follows contact order, not just distance.

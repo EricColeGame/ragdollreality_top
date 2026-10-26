@@ -1,0 +1,128 @@
+export const metadata = {
+  title: "Recursos Mais Recentes de Ragdoll Reality: Dano nos Membros, Perigos e Hordas de Zumbis",
+  description: "Uma análise prática dos recursos mais recentes de Ragdoll Reality — dano localizado no ragdoll, perigos do playground, zumbis do cemitério e ondas da Horda — além de como testá-los.",
+  category: "updates",
+  date: "2026-10-26",
+}
+
+Ragdoll Reality recompensa jogadores que testam em vez de adivinhar: cada golpe, arremesso e queda produz uma reação física que você pode ler, comparar e repetir. É por isso que os recursos mais recentes de Ragdoll Reality importam além de uma lista de patch notes — cada adição muda o que você pode experimentar, de dano específico por membro a perigos do playground e hordas de zumbis. Esta análise cobre os recursos mais recentes de Ragdoll Reality como eles realmente funcionam na build atual, e mostra como verificar cada um deles em uma única sessão, em vez de ficar vagando entre áreas.
+
+## O Que os Recursos Mais Recentes de Ragdoll Reality Realmente Mudam
+
+A maioria das atualizações de sandbox adiciona conteúdo. Esta adiciona variáveis. O loop central continua o mesmo e é deliberadamente simples: escolha um boneco, mire em uma área específica do corpo, observe o que acontece e repita com uma arma, ângulo ou distância diferente. O que cresceu foi o número de forças agindo sobre esse loop.
+
+O jogo foi construído como uma experiência single-player, o que importa mais do que parece. Você pode reiniciar um teste vinte vezes sem combinar nada com ninguém, e cada tentativa dá feedback visual imediato. Isso torna o conjunto atual de recursos excepcionalmente fácil de estudar — desde que você mantenha seu método limpo.
+
+| Área do recurso | O que acrescenta | Melhor primeiro teste |
+| --- | --- | --- |
+| Dano localizado | Reações específicas por membro e proteção da ferida | Acerte uma perna duas vezes com a mesma arma |
+| Perigos do playground | Obstáculos movidos por física e timing | Observe um ciclo completo antes de entrar |
+| Queda da torre | Altura e impacto como variáveis | Uma queda controlada, uma variável alterada |
+| Conversão no cemitério | Transição de boneco para zumbi | Coloque um único boneco e observe |
+| Ondas da Horda | Vários perseguidores com velocidades variadas | Uma onda curta focada em espaçamento |
+| Estrutura single-player | Testes repetíveis e sem interrupções | Uma passada completa de comparação |
+
+## O Dano Localizado Continua Sendo a Base
+
+A coisa mais importante a entender sobre a build atual é que o dano é posicional, não numérico. Um acerto na perna pode deixar o boneco mancando ou rastejando. Um acerto no braço pode deixar aquele braço pendurado enquanto o alvo segura a ferida. Impactos no torso tendem a produzir um cambaleio ou uma queda, e membros destacados sangram.
+
+Isso significa que "ele caiu?" é uma pergunta de teste ruim. Um boneco rastejando provavelmente foi atingido na parte de baixo; um alvo de pé, mas cambaleando, provavelmente foi atingido por algo mais pesado do que você imagina. Ler a reação mostra onde seu impacto realmente acertou.
+
+| Área atingida | Reação esperada | O que isso indica |
+| --- | --- | --- |
+| Perna | Mancar, rastejar, perder o equilíbrio | O posicionamento na parte inferior do corpo está funcionando |
+| Braço | O braço fica pendurado, o alvo protege a ferida | Sua mira é precisa o suficiente para membros |
+| Torso | Cambaleio ou movimento para trás | Boa base para impactos mais pesados |
+| Cabeça | Resposta forte em todo o corpo | Poderoso, mas difícil de comparar com membros |
+| Membro destacado | Sangramento, perda de fixação | Pare de golpear e observe o resultado |
+
+### Leia a reação, não a queda
+
+Preveja o resultado antes de cada golpe e depois confira. Se você mirou na perna direita e viu o torso cambalear, sua mira desviou — isso é uma informação mais útil do que um golpe mais rápido lhe daria. Alguns bonecos também resistem: eles se afastam, levantam os braços ou mudam de direção. Quando isso acontecer, pause e reinicie em vez de continuar uma sequência caótica de golpes. Uma nova tentativa limpa vale mais do que dez improvisadas.
+
+### Fixe uma variável por vez
+
+Escolha um boneco, uma arma e uma distância familiar. Registre a área atingida, o tipo de impacto e a primeira reação que você vê. Anotações escritas ou um comentário falado em tempo real funcionam; o ponto é a estabilidade. Relatos da comunidade sobre o comportamento das reações só são comparáveis quando a arma, o alcance e a área do corpo são idênticos, então crie esse hábito desde cedo.
+
+## Perigos do Playground: Onde a Física Fica Barulhenta
+
+O playground é onde o conjunto atual de recursos deixa de ser um laboratório e passa a ser um teste de estresse. A página oficial do jogo lista um triturador, uma bola de demolição, um fosso com espinhos, um canhão humano, uma queda da torre e uma torre de 80 studs. Cada um introduz uma força que você não consegue reproduzir com uma arma na mão.
+
+Valores exatos de dano e regras de falha não são publicados, então trate o que acontece na tela como a fonte da verdade. A experiência do jogador também varia entre plataformas e builds, por isso você deve rotular qualquer número específico que vir em um tópico da comunidade como dependente da versão, e não como fixo.
+
+| Perigo | Variável principal | Primeiro objetivo | Erro comum |
+| --- | --- | --- | --- |
+| Triturador | Contato e timing | Observe um ciclo completo primeiro | Entrar antes de observar o ritmo |
+| Bola de demolição | Arco do balanço e momento | Cronometre uma passada limpa | Ficar onde o arco reinicia |
+| Fosso com espinhos | Posicionamento | Atravesse com cuidado, não rápido | Correr e perder o alinhamento |
+| Canhão humano | Ângulo de lançamento | Um disparo controlado | Mudar ângulo e potência juntos |
+| Queda da torre | Altura e impacto | Teste uma altura por vez | Pular a área de preparação |
+| Torre de 80 studs | Distância da queda | Confirme um pouso controlado | Pular sem verificar a borda |
+
+Uma regra útil: passe por um perigo antes de tocar em um segundo. Se você falhar na bola de demolição e imediatamente tentar o canhão, não aprendeu nada sobre nenhum dos dois. Isole, repita e depois siga em frente.
+
+## Conversão no Cemitério, Velocidades dos Zumbis e Ondas da Horda
+
+O cemitério adiciona uma força oposta em vez de uma passiva. De acordo com a página oficial do jogo, um boneco arremessado no cemitério se transforma em zumbi. A página também identifica três classes de velocidade de zumbi — lento, normal e rápido — e observa que zumbis podem perseguir, dar botes e morder.
+
+Valores de vida, dano de mordida e população das ondas não são publicados. Relatos da comunidade sobre esses números devem ser tratados como estimativas ligadas a uma build específica, e não como regras fixas com as quais você pode planejar.
+
+| Classe de zumbi | Comportamento a observar | Resposta de espaçamento |
+| --- | --- | --- |
+| Lento | Aproximação previsível | Separe-o do grupo e teste golpes limpos |
+| Normal | Perseguição constante | Mantenha um alvo entre você e a multidão |
+| Rápido | Fecha a distância rapidamente | Observe o espaço logo à frente, não a borda distante |
+| Inimigo que dá bote | Se compromete com um salto | Recue em vez de golpear dentro do arco |
+
+### Prepare sua primeira conversão
+
+Observe a zona de conversão sem atacar. Coloque ou arremesse um único boneco na área marcada. Identifique a velocidade de movimento do zumbi resultante antes de golpeá-lo. Depois teste se a posição inicial do boneco muda a transição. Executar essa sequência uma vez torna o cemitério previsível, o que importa muito antes de você apertar o botão da Horda.
+
+### Trate a Horda como um treino de espaçamento
+
+A sobrevivência em ondas pune quem fica parado. Mova-se entre confrontos para que zumbis lentos se separem dos rápidos, e mantenha a câmera apontada para o espaço imediato à frente, de onde vêm os botes. Uma tentativa curta de onda é um teste legítimo mesmo se você perder — você está coletando informações sobre a velocidade de aproximação e seu próprio tempo de reinício, não perseguindo uma pontuação.
+
+## Testando os Recursos Mais Recentes de Ragdoll Reality em 45 Minutos
+
+Uma sessão focada vale mais do que uma longa. A estrutura abaixo mantém cada teste comparável, para que as anotações que você faz no minuto cinco ainda signifiquem algo no minuto quarenta.
+
+| Minutos | Foco | O que mudar | Evidência a manter |
+| --- | --- | --- | --- |
+| 1–10 | Reações de base | Nada — uma arma, curta distância | Área do corpo e primeira reação |
+| 11–20 | Comparação de armas | Apenas a ferramenta | Avaliação de controle e consistência |
+| 20–30 | Alcance e movimento | Distância, depois um passo lateral | Contagem de erros em cada alcance |
+| 30–40 | Perigos do playground | Um perigo por tentativa | Abordagem e resultado |
+| 40–45 | Cemitério e Horda | Conversão, depois uma onda curta | Velocidade do inimigo e ponto de falha |
+
+Dois detalhes fazem este cronograma funcionar. Primeiro, aumente o alcance em passos pequenos — até uma perda modesta de precisão muda como o boneco se centraliza. Segundo, não corra durante a primeira passada de alcance; o momento do seu avatar empurra a câmera e dificulta confirmar um acerto limpo. Se um disparo errar, pause e mire de novo em vez de seguir com um golpe às cegas.
+
+Se você quiser uma segunda opinião sobre o que priorizar, o [guia de jogo da wiki de Ragdoll Reality](https://ragdollreality.wiki/en/guides/ragdoll-reality-game-guide/) detalha a mesma sequência inicial.
+
+## Erros Que Fazem os Novos Recursos Parecerem Aleatórios
+
+- **Mudar duas variáveis ao mesmo tempo.** Uma arma nova mais uma área de alvo nova produz um resultado que você não pode atribuir a nenhuma das duas.
+- **Julgar apenas a pose final.** Um boneco de pé ainda pode ter cambaleado; um rastejando provavelmente foi atingido na parte de baixo.
+- **Pular a base.** Sem uma reação de controle, toda comparação posterior é adivinhação.
+- **Confiar nos números da comunidade como fixos.** Vida, dano e totais de onda não são publicados e variam por build.
+- **Entrar em perigos sem observar o timing.** Todo obstáculo do playground tem um ritmo que vale a pena observar primeiro.
+- **Tratar uma onda perdida como um veredito.** Falhas iniciais na Horda geralmente são problemas de espaçamento, não paredes de dificuldade.
+
+Corrija os três primeiros e o resto tende a se resolver sozinho. Precisão primeiro, velocidade depois.
+
+## Perguntas Frequentes
+
+**Quais são os recursos mais recentes de Ragdoll Reality mais importantes para testar primeiro?**
+
+Comece pelo dano localizado, porque todo o resto se apoia nele. Acerte uma perna, um braço, o torso e a cabeça com a mesma arma, na mesma distância, e registre cada reação. Depois que você conseguir prever esses quatro resultados, armas, perigos e o comportamento dos zumbis se tornam muito mais fáceis de avaliar.
+
+**Os recursos mais recentes de Ragdoll Reality incluem novos tipos de zumbi?**
+
+A página oficial descreve três classes de velocidade — lento, normal e rápido — junto com comportamentos de perseguição, bote e mordida. Valores específicos de vida e dano não são publicados, então trate as estimativas da comunidade como dependentes da build, e não como fixas.
+
+**Quanto tempo leva para ver o novo conteúdo?**
+
+Uma única sessão de 30 a 45 minutos é suficiente para tocar todas as áreas principais: bonecos, um perigo do playground, uma conversão no cemitério e uma tentativa curta na Horda. O objetivo é um resultado repetível, não cobertura total.
+
+**Os recursos mais recentes de Ragdoll Reality são amigáveis para iniciantes?**
+
+Sim. A estrutura single-player significa que você pode repetir um teste quantas vezes quiser sem combinar nada com ninguém, e as reações físicas dão feedback visual imediato. Comece com os bonecos, aumente a distância aos poucos e deixe o playground e o modo Horda para quando a mira básica parecer consistente.

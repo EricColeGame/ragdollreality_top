@@ -1,0 +1,126 @@
+export const metadata = {
+  title: "Nuevas armas de Ragdoll Reality: cómo probar correctamente cada incorporación de las actualizaciones",
+  description: "Una rutina práctica de pruebas para las nuevas armas de Ragdoll Reality: aísla variables, puntúa control y consistencia, y decide qué se gana un lugar en tu equipamiento.",
+  category: "updates",
+  date: "2026-10-26",
+}
+
+Cada vez que una herramienta llega al patio de maniquíes, la curva de aprendizaje se reinicia; por eso las nuevas armas de Ragdoll Reality merecen un plan en lugar de un golpe rápido. Un arma recién añadida cambia los tiempos, el alcance y el tipo de reacción que puedes leer en un objetivo, así que los jugadores que prueban con método conservan su precisión mientras los demás siguen adivinando. Esta guía aborda las nuevas armas de Ragdoll Reality como un problema de pruebas: mantén una variable fija, conserva estable tu referencia y solo entonces decide si una herramienta merece un lugar permanente en tu rotación.
+
+## Qué cambia realmente un arma nueva
+
+Un arma en Ragdoll Reality no es solo una cifra de daño. Es un conjunto de alcance, arco de golpe, velocidad de recuperación y comportamiento del impacto, y cada una de esas piezas interactúa con el sistema de reacciones basado en la ubicación del juego. Un golpe en la pierna puede dejar a un maniquí cojeando o arrastrándose; un golpe en el brazo puede dejar ese brazo colgando mientras el objetivo se agarra la herida; y los impactos más fuertes pueden provocar un tambaleo o un colapso completo.
+
+Eso significa que la primera pregunta sobre cualquier incorporación no es «¿qué tan fuerte es?», sino «¿qué me permite reproducir?». Si una herramienta facilita los golpes limpios en la pierna pero se desvía hacia arriba en los golpes al torso, es más útil saberlo que tener una vaga sensación de que golpea fuerte.
+
+| Variable | Por qué importa | Comprobación rápida |
+| --- | --- | --- |
+| Alcance | Cambia dónde se sitúa tu rango cómodo | Golpea la misma pierna desde cerca y a media distancia |
+| Arco de golpe | Determina si la puntería se desvía de la extremidad | Tres golpes al torso; observa si fallas por arriba o por abajo |
+| Velocidad de recuperación | Controla con qué rapidez puedes reiniciar para la siguiente prueba | Cuenta la pausa entre dos golpes limpios |
+| Gravedad del impacto | Afecta el tambaleo, el colapso y la separación de extremidades | Compara la primera reacción, no solo la pose final |
+| Sensación de movimiento | Revela si puedes apuntar mientras te reposicionas | Repite un ciclo con un paso lateral entre golpes |
+
+## Una prueba de cuatro pasadas para las nuevas armas de Ragdoll Reality
+
+La tentación con cualquier incorporación es blandirla contra todo lo que se vea. Resiste. En su lugar, realiza cuatro pasadas cortas, cada una con una sola variable modificada, para que los resultados sigan siendo comparables con tu referencia actual.
+
+1. **Pasada de calentamiento.** Usa tu arma más familiar en una pierna y luego en el torso, a corta distancia. Esto confirma que el maniquí y tu puntería se comportan con normalidad.
+2. **Pasada de primer contacto.** Cambia a la nueva herramienta y repite exactamente los mismos dos objetivos a la misma distancia.
+3. **Pasada de distancia.** Mantén constantes la herramienta y el objetivo, y luego retrocede en pequeños incrementos.
+4. **Pasada de movimiento.** Repite un ciclo mientras te desplazas lateralmente y luego compara tu número de fallos con la versión estática.
+
+La razón por la que esto funciona es que Ragdoll Reality recompensa las pruebas deliberadas. Si un maniquí se tambalea tras un golpe al torso a corta distancia pero no a media distancia, la distancia es la variable decisiva, y solo lo sabrás si no cambiaste también de objetivo ni alteraste tu ritmo de golpe a mitad de la prueba.
+
+| Pasada | Se mantiene constante | Se cambia | Pregunta que responde |
+| --- | --- | --- | --- |
+| Calentamiento | Maniquí, distancia | Nada | ¿Sigue siendo fiable mi referencia? |
+| Primer contacto | Zona objetivo, distancia | Arma | ¿Coloca la nueva herramienta los golpes donde apunto? |
+| Distancia | Arma, objetivo | Distancia | ¿Dónde se rompe la colocación? |
+| Movimiento | Arma, objetivo | Estático vs. desplazamiento lateral | ¿Puedo apuntar mientras me reposiciono? |
+
+## Puntuar las nuevas armas de Ragdoll Reality frente a tu arma principal
+
+Una vez que tengas datos de cuatro pasadas, puntúa la herramienta en lugar de describirla. Una sencilla escala de uno a cinco en cuatro categorías mantiene tus notas honestas y facilita comparar dos incorporaciones con semanas de diferencia.
+
+| Categoría | Qué puntúas | Pregunta práctica |
+| --- | --- | --- |
+| Control | Facilidad para colocar el impacto | ¿Puedo golpear la misma extremidad dos veces seguidas? |
+| Consistencia | Repetibilidad del resultado | ¿Coincide el tercer golpe con el primero? |
+| Recuperación | Velocidad de reinicio entre pruebas | ¿Estoy listo antes de que se estabilice el maniquí? |
+| Claridad de reacción | Legibilidad del resultado | ¿Sé qué golpe causó cada cosa? |
+
+Una herramienta que puntúa alto en control y bajo en recuperación es una opción de precisión, no de pelea cuerpo a cuerpo. Una herramienta que puntúa alto en claridad de reacción pero bajo en consistencia probablemente esté sostenida por la suerte más que por tu puntería. Mantén las notas breves: arma, objetivo, distancia y la primera reacción tras el impacto.
+
+También ayuda comparar con arquetipos en lugar de con herramientas individuales. Los informes de la comunidad y la experiencia de los jugadores sugieren que las opciones rápidas, pesadas y a distancia fallan de maneras distintas, y saber qué modo de fallo estás viendo ahorra tiempo.
+
+| Arquetipo | Fortaleza típica | Debilidad típica | Mejor primera prueba |
+| --- | --- | --- | --- |
+| Familiar | Colocación predecible | Poco valor sorpresa | Comprobación de control de referencia |
+| Rápida | Tambaleo rápido, reinicios veloces | La puntería se desvía cuando te apresuras | Escalera de control de velocidad |
+| Pesada | Reacción fuerte, separación de extremidades | Recuperación lenta, mal espaciado | Ejercicio de reinicio tras dos golpes |
+| A distancia | Distancia de prueba segura | Más difícil confirmar la colocación en extremidades | Pasada de precisión a media distancia |
+
+La página oficial del juego no publica una clasificación universal de daño, así que trata cualquier lista de niveles —incluida esta— como una hipótesis inicial y no como un veredicto.
+
+## Ejercicios de práctica antes de comprometerte con una herramienta
+
+El equipo nuevo deja al descubierto una mecánica descuidada. Realiza estos tres ejercicios durante diez minutos cada uno y sabrás más sobre un arma de lo que te enseñaría una hora de golpes sin estructura.
+
+**Ciclo de objetivos controlado.** Pierna izquierda, pierna derecha, brazo izquierdo, torso. Un golpe limpio en cada uno y luego restablece tu posición. Si fallas un segmento, repite ese segmento en lugar de seguir avanzando. Diez repeticiones limpias superan un golpe espectacular seguido de cinco fallos.
+
+**Escalera de control de velocidad.** Empieza deliberadamente despacio y aumenta el ritmo solo cuando la versión lenta sea repetible.
+
+| Etapa | Ritmo de golpe | Objetivo | Condición de superación |
+| --- | --- | --- | --- |
+| Etapa 1 | Lento y deliberado | Colocar el golpe con precisión | Tres objetivos previstos alcanzados |
+| Etapa 2 | Moderado y constante | Mantener el control mientras te mueves | Dos ciclos limpios |
+| Etapa 3 | Igualar el ritmo normal de juego | Conservar la precisión bajo velocidad | Un ciclo limpio sin desviaciones |
+
+**Ejercicio de recuperación.** Después de cada golpe, haz una pausa lo bastante larga para restablecer tu posición e identificar la reacción. Esto importa sobre todo contra maniquíes que se tambalean, retroceden o se levantan, porque perseguirlos de inmediato convierte un experimento controlado en una refriega.
+
+Si el apuntado preciso a extremidades sigue siendo inconsistente después de estos ejercicios, el problema suele ser la posición y no el arma. Una [guía del juego Ragdoll Reality mantenida por la comunidad](https://ragdollreality.wiki/en/guides/ragdoll-reality-game-guide/) cubre los mismos fundamentos desde la perspectiva de un principiante y vale la pena leerla antes de culpar a una nueva herramienta de tus fallos.
+
+## Dónde encajan las nuevas armas de Ragdoll Reality en las partidas de patio de juegos y horda
+
+Probar con un maniquí estático es solo la mitad del trabajo. El patio de juegos añade física y sincronización —trituradoras, bolas de demolición, fosas de pinchos, el cañón humano, caídas desde torres y una configuración de torre alta—, mientras que el cementerio convierte a un maniquí lanzado en un zombi que puede perseguir, abalanzarse y morder.
+
+Un arma nueva cambia tu perfil de riesgo en cada área. Una herramienta pesada puede ser excelente para tambalear a un zombi rápido, pero terrible sobre una plataforma móvil. Una opción a distancia te permite probar reacciones en extremidades desde la seguridad, pero puede ser más difícil de confirmar sobre un objetivo que se abalanza.
+
+| Área | Variable principal | Qué cambia un arma nueva | Primer objetivo |
+| --- | --- | --- | --- |
+| Patio de maniquíes | Colocación del impacto | Precisión de alcance y arco | Reproducir una reacción conocida |
+| Patio de juegos | Física y sincronización | Ventana de recuperación tras un peligro | Completar un peligro sin fallos |
+| Torre | Altura e impacto de caída | Si puedes reiniciar a mitad de la preparación | Probar una caída controlada |
+| Cementerio | Conversión | Nada directamente; el espaciado importa más | Colocar un maniquí y observar |
+| Horda | Varios enemigos | Control de multitudes frente a enfoque en un solo objetivo | Sobrevivir a una oleada corta |
+
+Los zombis vienen en clases de velocidad lenta, normal y rápida, y la salud exacta, el daño de mordida y la población de las oleadas no están publicados, así que marca cualquier cifra que veas en informes de la comunidad como dependiente de la versión. La forma más segura de evaluar una incorporación en el modo Horda es el espaciado: separa a los zombis lentos de los rápidos y comprueba si la herramienta te permite controlar la distancia.
+
+## Errores comunes al probar las nuevas armas de Ragdoll Reality
+
+- **Cambiar dos cosas a la vez.** Un arma nueva más una zona objetivo nueva producen resultados que no puedes interpretar.
+- **Juzgar solo por la pose final.** Un maniquí que se arrastra puede haber recibido un golpe bajo; uno que sigue de pie puede simplemente haberse tambaleado.
+- **Ignorar el fallo.** Un fallo te dice dónde se rompió tu alineación, lo que a menudo es más valioso que un acierto.
+- **Saltarse la referencia.** Sin una pasada de control con un arma familiar, no tienes con qué comparar.
+- **Tratar una lista de niveles como definitiva.** La experiencia de los jugadores varía según la plataforma y la versión, y la página oficial no publica ninguna tabla de daño.
+
+Lleva un registro escrito breve de cada sesión: arma, zona del cuerpo, distancia y primera reacción. Dos semanas de notas superarán cualquier especulación sobre qué herramienta es la más fuerte.
+
+## Preguntas frecuentes
+
+**¿Cómo debo probar las nuevas armas de Ragdoll Reality sin desperdiciar una sesión?**
+
+Realiza cuatro pasadas con una sola variable modificada en cada una: un calentamiento con un arma familiar, una pasada de primer contacto con el mismo objetivo y distancia, una pasada de distancia y luego una pasada de movimiento. Puntúa control, consistencia, recuperación y claridad de reacción de uno a cinco para que los resultados sigan siendo comparables con el tiempo.
+
+**¿Las armas nuevas hacen más daño que las antiguas?**
+
+No hay una clasificación universal de daño publicada, así que la respuesta honesta es que nadie fuera de los desarrolladores lo sabe. Lo que puedes medir es la colocación, la velocidad de reinicio y la legibilidad de la reacción, y esas tres cosas suelen importar más que el daño bruto.
+
+**¿Qué debo practicar antes de llevar una nueva herramienta al modo Horda?**
+
+Practica primero el ciclo de objetivos controlado, la escalera de control de velocidad y el ejercicio de recuperación con maniquíes estáticos. Luego prueba el espaciado contra zombis lentos y rápidos por separado, porque el control de multitudes y la precisión contra un solo objetivo son habilidades distintas.
+
+**¿Un arma más pesada siempre es mejor en Ragdoll Reality?**
+
+No. Las herramientas pesadas tienden a producir reacciones más fuertes y más separación de extremidades, pero también ralentizan tu recuperación y pueden dejarte fuera de posición en el patio de juegos o durante una oleada. Un arma más rápida que puedas colocar con precisión suele ser la opción más fuerte en la práctica.

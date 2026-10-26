@@ -1,0 +1,135 @@
+export const metadata = {
+  title: "Dano de Queda no Ragdoll Reality Explicado: Altura, Impacto e Testes Seguros",
+  description: "Aprenda como o dano de queda do Ragdoll Reality funciona, como altura, postura e superfície alteram a aterrissagem e como testar quedas sem chutar.",
+  category: "mechanics",
+  date: "2026-10-26",
+}
+
+## Como o Dano de Queda do Ragdoll Reality Realmente Funciona
+
+Jogue um boneco da torre e ele raramente aterrissa do mesmo jeito duas vezes. Essa inconsistência é justamente o ponto: o **dano de queda do Ragdoll Reality** não é um único número escondido aplicado no momento do toque no chão. É a soma de cada colisão que o ragdoll faz durante a descida e no instante do impacto — qual membro bate primeiro, a que velocidade ele estava e sobre o que ele aterrissa.
+
+Entender o **dano de queda do Ragdoll Reality** muda como você testa perigos. Em vez de perguntar "até que altura posso soltar isso antes de quebrar", você começa a perguntar "qual parte do corpo absorveu a aterrissagem, e o que isso fez com o resto do ragdoll?"
+
+O próprio design do jogo sustenta isso. O guia oficial do jogo descreve reações por localização: impactos nas pernas deixam o boneco mancando ou rastejando, impactos nos braços deixam o braço pendurado, e os alvos se agarram às lesões. Uma queda é simplesmente uma cadeia rápida desses mesmos impactos localizados, entregues pela gravidade em vez da sua arma.
+
+É por isso que o material oficial nunca publica uma tabela de dano. Valores exatos de vida, dano por altura e limiares de falha não estão documentados em lugar oficial algum. Trate qualquer tabela do tipo "X studs equivale a Y de dano" que você encontrar como experiência de jogador, não como fato, e verifique você mesmo em um teste controlado.
+
+### Por que a ordem da aterrissagem importa mais do que a altura da queda
+
+Um boneco que aterrissa com os pés primeiro e se dobra em um rastejar absorveu o impacto pelas pernas. Um boneco que aterrissa de costas no chão absorveu o impacto pelo tronco e pela cabeça. Mesma altura, mesma superfície, resultado muito diferente — e comportamento seguinte muito diferente. A altura definiu a velocidade; a postura decidiu para onde essa velocidade foi.
+
+| Variável | Por que muda o resultado | Como controlá-la |
+| --- | --- | --- |
+| Altura da queda | Define a velocidade do impacto | Mude em incrementos pequenos e registrados |
+| Postura de lançamento | Decide qual membro contata primeiro | Solte o boneco do mesmo jeito em cada tentativa |
+| Superfície | Algumas superfícies absorvem, outras redirecionam | Teste uma superfície por trecho da sessão |
+| Momento horizontal | Transforma uma queda em um tombo | Ande, não corra, até a borda |
+| Arma em mãos | Adiciona massa e muda a posição dos membros | Repita com as mãos vazias como base |
+| Ordem de contato dos membros | Determina mancar, rastejar ou desabar | Observe o primeiro frame de contato |
+
+## A Escada de Alturas: Testando o Dano de Queda Passo a Passo
+
+O jeito mais rápido de aprender o comportamento do dano de queda é construir uma escada de alturas e subir um degrau por vez. Não mude nada além da altura entre as tentativas. Mantenha o mesmo boneco, o mesmo método de lançamento e a mesma superfície de aterrissagem.
+
+Comece em uma plataforma baixa onde o boneco quase não reage, depois suba em passos pequenos. Uma escada útil se parece com isto:
+
+| Degrau | Referência de altura | O que você está verificando | Suba quando |
+| --- | --- | --- | --- |
+| 1 | Pequena saliência | O boneco reage de alguma forma? | Você vê uma primeira reação consistente |
+| 2 | Plataforma baixa | Reação só nas pernas, mancar ou tropeçar | O resultado se repete três vezes |
+| 3 | Queda de altura média | Rastejar, desabar ou perda de membro | Você consegue nomear o membro de contato |
+| 4 | Queda da torre | Reação de corpo inteiro e tempo de recuperação | Você consegue prever a assinatura da aterrissagem |
+| 5 | A torre alta | Impacto máximo e sobrevivência | Você tem um registro escrito do resultado |
+
+A torre alta no playground é o degrau superior natural — ela oferece a queda mais longa do jogo e a diferença mais clara entre uma aterrissagem com os pés primeiro e uma aterrissagem plana. A experiência dos jogadores sugere que a diferença entre o degrau 3 e o degrau 5 não é só de gravidade, mas de *tipo*: quedas mais baixas tendem a produzir mancadas e rastejos, enquanto quedas longas são onde o desprendimento de membros e o desabamento pesado aparecem.
+
+Mantenha suas anotações da escada simples. Altura, postura de lançamento, superfície, primeiro membro de contato e a primeira reação do boneco depois que ele para de se mover. Cinco colunas, trinta segundos por tentativa.
+
+### Não pule os degraus do meio
+
+Pular direto para a torre mais alta quase não ensina nada, porque coisas demais acontecem ao mesmo tempo. Se o boneco perde um membro durante a descida, você não consegue dizer se foi a altura, a superfície ou o tombo que causou isso. Suba a escada, e cada resultado continua legível.
+
+## Lendo a Aterrissagem: Como o Dano de Queda se Manifesta
+
+O dano de queda no Ragdoll Reality raramente se anuncia com uma barra de vida. Ele aparece como uma mudança no comportamento do ragdoll depois. Aprenda a ler a assinatura, e você consegue diagnosticar a queda sem precisar repeti-la.
+
+| Assinatura da aterrissagem | Causa provável | O que testar em seguida |
+| --- | --- | --- |
+| Mancando, ainda em pé | A perna absorveu o impacto | Mesma altura, perna oposta primeiro |
+| Rastejando | As duas pernas comprometidas | Queda um pouco mais alta |
+| Cambaleia e depois se recupera | O tronco levou o golpe | Mesma altura, aterrissagem plana |
+| Desaba e não levanta | Impacto pesado em todo o corpo | Confirme a superfície, depois repita uma vez |
+| Membro desprendido | Impacto extremo ou ângulo ruim | Desça um degrau na altura |
+| Sangramento após a aterrissagem | Separação de membro, não só força | Pare de atacar e observe |
+
+Dois hábitos tornam essas leituras confiáveis:
+
+- **Observe o primeiro frame de contato.** O membro que toca primeiro normalmente é o que define o resultado.
+- **Espere o ciclo completo de recuperação.** Um boneco que se levanta de novo sofreu menos dano estrutural do que um que fica no chão, mesmo que o primeiro impacto tenha parecido dramático.
+
+Os bonecos também podem cambalear, recuar, revidar e se levantar. Se o seu começar a se afastar da zona de queda antes de você terminar de observar, reinicie-o e repita a tentativa em vez de persegui-lo. Uma segunda tentativa caótica ensina menos do que um reinício limpo.
+
+## Perigos do Playground que Combinam Dano de Queda com Outras Forças
+
+O playground é onde o dano de queda deixa de ser um experimento limpo. Cada perigo adiciona uma segunda força — giro, lançamento ou perfuração — em cima da queda.
+
+| Perigo | Componente de queda | O que ele realmente testa |
+| --- | --- | --- |
+| Queda da torre | Queda vertical pura | Dano de queda de base |
+| A torre alta | Altura máxima | Limites de impacto e perda de membros |
+| Bola de demolição | Queda mais força lateral | Impacto direcional em um ragdoll em queda |
+| Canhão humano | Lançamento mais aterrissagem | Momento carregado até o chão |
+| Fosso de espinhos | Queda mais perigo de superfície | Tipo de superfície versus velocidade bruta |
+| Triturador | Queda mais contato contínuo | Dano ao longo do tempo em vez de um único golpe |
+
+Trate cada um como um experimento separado. A bola de demolição e o canhão humano envolvem queda, mas o momento horizontal muda qual parte do corpo lidera a aterrissagem, então os resultados de um não se transferem para o outro.
+
+O fosso de espinhos merece atenção especial porque isola a variável da superfície. Se você conseguir encontrar duas alturas que produzem a mesma reação em um piso plano e no fosso, você mediu o quanto a superfície em si contribui — sem nunca tocar em uma fórmula de dano.
+
+## Montando uma Rotina de Testes de Dano de Queda
+
+Você não precisa de uma sessão longa para obter dados úteis. Vinte minutos focados valem mais do que uma hora soltando bonecos aleatoriamente.
+
+| Minutos | Atividade | O que registrar |
+| --- | --- | --- |
+| 0–5 | Degraus 1–2 da escada de alturas | Primeira reação e membro de contato |
+| 5–10 | Degraus 3–4, mesmo método de lançamento | Assinatura da aterrissagem por altura |
+| 10–15 | Repita o degrau 4 com uma postura diferente | Como a postura muda o resultado |
+| 15–20 | Um perigo, uma tentativa | Resultado do perigo versus queda limpa |
+| 20–25 | Conversão no cemitério após uma queda | Se um boneco danificado se converte diferente |
+
+Essa última linha vale ser testada por conta própria. O material oficial observa que um boneco jogado no cemitério se torna um zumbi, e os zumbis vêm em classes de velocidade lenta, normal e rápida. Relatos da comunidade sugerem que a condição do boneco na conversão pode influenciar o que você recebe — mas isso é experiência de jogador, não fato documentado, então verifique você mesmo antes de montar uma estratégia em cima disso.
+
+Termine cada sessão com um registro escrito. Uma lista curta de alturas, posturas, superfícies e resultados vale mais do que a memória de "a torre grande doeu bastante".
+
+## Erros Comuns com Dano de Queda
+
+| Erro | Por que estraga o teste | Correção |
+| --- | --- | --- |
+| Mudar altura e superfície juntas | Duas variáveis, um resultado | Uma mudança por tentativa |
+| Correr até a queda | Adiciona momento que você não mediu | Ande até a borda |
+| Julgar só pela pose final | Esconde a sequência de contato | Observe o primeiro frame do impacto |
+| Presumir que uma tabela é oficial | Nenhum valor de dano é publicado | Rotule estimativas como dados da comunidade |
+| Testar a torre alta primeiro | Forças simultâneas demais | Suba a escada desde o início |
+| Ignorar o tempo de recuperação | Perde a diferença entre cambalear e desabar | Espere o ciclo completo |
+
+Se seus resultados continuam se contradizendo, o problema geralmente é a configuração, não o jogo. O [guia do jogo Ragdoll Reality na wiki da comunidade](https://ragdollreality.wiki/en/guides/ragdoll-reality-game-guide/) apresenta um ciclo de testes controlado que combina bem com esta escada de alturas — boneco, uma arma, uma variável por vez.
+
+## FAQ
+
+**O dano de queda do Ragdoll Reality depende da altura ou da postura de aterrissagem?**
+
+Dos dois, mas a postura é a variável que a maioria dos jogadores ignora. A altura define a que velocidade o ragdoll está se movendo; a postura decide qual parte do corpo absorve essa velocidade. Duas quedas idênticas com ângulos de lançamento diferentes podem produzir resultados completamente diferentes, e é por isso que você deve manter a postura constante ao testar o dano de queda do Ragdoll Reality em novas alturas.
+
+**Existe uma tabela oficial de dano de queda para o Ragdoll Reality?**
+
+Não. O material oficial descreve reações por localização e lista os perigos do playground, mas não publica valores de dano, totais de vida ou limiares por altura. Quaisquer números que você encontrar online são estimativas da comunidade, então verifique-os com suas próprias quedas controladas antes de confiar neles.
+
+**Qual perigo é melhor para testar dano de queda primeiro?**
+
+A queda simples da torre, porque ela isola a gravidade. A bola de demolição, o canhão humano e o fosso de espinhos todos adicionam uma segunda força ou efeito de superfície. Obtenha uma base limpa a partir de uma queda vertical antes de combinar altura com qualquer outra coisa.
+
+**Por que meu boneco sobrevive a uma queda enorme mas desaba com uma pequena?**
+
+Confira a assinatura da aterrissagem. Um boneco que aterrissa com os pés primeiro pode absorver uma queda longa pelas pernas, enquanto uma queda curta sobre um ângulo estranho pode dobrar o tronco e encerrar a tentativa na hora. No Ragdoll Reality, o dano de queda segue a ordem de contato, não apenas a distância.

@@ -1,0 +1,158 @@
+export const metadata = {
+  title: "Ragdoll Reality NPC Physics Explained: How Every Dummy Hit Changes the Fight",
+  description: "Learn how Ragdoll Reality NPC physics works: hit locations, limb reactions, stagger, zombie behavior, and drills that make every test repeatable.",
+  category: "mechanics",
+  date: "2026-10-26",
+}
+
+## What Ragdoll Reality NPC Physics Actually Simulates
+
+A dummy that limps after a leg hit and clutches its shoulder after an arm strike isn't set dressing — it's a physics system telling you exactly what your swing accomplished. Understanding **Ragdoll Reality NPC physics** turns every punch into readable feedback, so you stop guessing whether a weapon is strong and start knowing why a target dropped. In a single-player sandbox built on cause and effect, that distinction is the whole game. **Ragdoll Reality NPC physics** rewards patience: one variable at a time, one clean impact, one recorded reaction.
+
+The core loop is simple on paper. You select a dummy, aim at a specific body area, watch what happens, then repeat with a different weapon, angle, or distance. What makes it interesting is that the target has no single invisible health bar doing all the work. Its joints, balance, and posture respond to where you actually connected.
+
+### The reaction set you'll see most often
+
+According to the [official Ragdoll Reality guide hub](https://ragdollreality.wiki/en/guides/ragdoll-reality-game-guide/), location-based reactions are the foundation of the game. In practice, that means a dummy can:
+
+- Limp or crawl after leg damage
+- Let an arm hang loose, or clutch the wounded side
+- Stagger backward from a torso hit
+- Snap into a violent full-body reaction from a head strike
+- Lose a limb and bleed
+- Retreat, retaliate, or climb back to its feet
+
+| Target area | Typical physics response | What it proves |
+| --- | --- | --- |
+| Leg | Limp, crawl, loss of balance | Your low placement connected |
+| Arm | Arm hangs, target guards the wound | Your precision was accurate |
+| Torso | Stagger or backward drift | Your impact force registered |
+| Head | Strong whole-body reaction | You hit a high-value zone |
+| Detached limb | Bleeding, changed posture | Damage exceeded the joint limit |
+
+That last row matters more than beginners expect. A detached limb is a state change, not just a visual flourish — the dummy's balance shifts permanently, and every follow-up hit behaves differently. Stop swinging and watch for a second.
+
+## How to Read NPC Reactions Instead of Chasing Falls
+
+Most new players judge a hit by whether the dummy fell over. That's the least informative outcome available. A fall can come from a heavy torso blow, a lucky head shot, or a target that was already off-balance before you swung. If you only track knockdowns, you can't tell which of those happened.
+
+The better habit is prediction. Before each strike, say out loud what you expect — "right leg goes limp," "torso staggers" — then compare the result. When the outcome doesn't match, you've learned something about your aim, your timing, or your distance rather than your damage number.
+
+| Observed behavior | Likely cause | What to change next |
+| --- | --- | --- |
+| Nothing happens | Missed the hitbox or out of range | Check crosshair placement |
+| Wrong limb reacts | Camera drift during the swing | Slow the swing down |
+| Target steps away or raises arms | Dummy is resisting the hit | Reset instead of chasing |
+| Target falls instantly | Heavy weapon plus high placement | Re-test at a lower zone |
+| Limb detaches | Damage threshold crossed | Observe the new posture |
+
+Resistant dummies deserve special mention. If your target retreats, blocks, or changes direction mid-test, pause and reset. A controlled second attempt teaches you more than ten wild swings at a moving object — and it keeps **Ragdoll Reality NPC physics** legible instead of turning it into noise.
+
+### Keep one baseline dummy
+
+Pick a single dummy, a single weapon, and a familiar distance. Record the body area, the impact type, and the target's first reaction. Written notes or a spoken checklist both work; what matters is that the variables stay frozen. Community reports consistently point to the same thing — players who test methodically improve faster than players who sample every weapon in the first five minutes.
+
+## Drills That Make Ragdoll Reality NPC Physics Repeatable
+
+Accuracy comes from repeatable movement, not from collecting tools. Isolate one skill, drill it until it's boring, then add a single new variable. This is the fastest route to understanding **Ragdoll Reality NPC physics** because each drill answers exactly one question.
+
+### The controlled target cycle
+
+Run this sequence in order, and don't advance until each step is clean:
+
+1. Strike the left leg with one deliberate swing.
+2. Repeat on the right leg.
+3. Move to the left arm.
+4. Finish with the torso.
+5. Increase distance slightly and restart the cycle with the same weapon.
+
+If a segment misses, repeat that segment rather than forcing your way through the full loop. Ten clean repetitions beat one dramatic knockdown followed by five whiffs.
+
+| Test variable | Hold constant | Change | Question answered |
+| --- | --- | --- | --- |
+| Weapon | Target and range | Tool | Which weapon is easiest to control? |
+| Body area | Tool and range | Impact point | Which reactions can I reproduce? |
+| Distance | Tool and target | Range | Where does placement fall apart? |
+| Swing pace | Tool and target | Speed | Does rushing hurt accuracy? |
+| Movement | Tool and target | Standing vs. moving | Can I aim while repositioning? |
+
+### The speed-control ladder
+
+| Stage | Swing rhythm | Goal | Pass condition |
+| --- | --- | --- | --- |
+| Stage 1 | Slow and deliberate | Place the hit exactly | Three intended zones struck |
+| Stage 2 | Moderate and steady | Keep control while moving | Two clean cycles |
+| Stage 3 | Full pace | Match live-play speed | No unplanned limb targets |
+
+### The recovery pause
+
+After every strike, wait long enough to re-establish your position and identify what the dummy did. This pause matters most against targets that stagger, run, or stand back up, because chasing a moving dummy converts a clean experiment into a scramble. Player experience suggests the recovery pause is the single most skipped step — and the one that costs the most accuracy.
+
+## Weapons, Range, and the Variables That Skew NPC Physics
+
+Once hit locations make sense, compare tools without changing your target. That isolates the weapon as the only variable. Start with whichever weapon feels most natural in your hands, land three strikes on the same leg, then three on the torso, then swap tools and repeat both sets.
+
+A slower weapon that produces a cleaner reaction tells you speed isn't the same thing as accuracy. Rate each tool on four things:
+
+| Rating category | What you're scoring | Practical question |
+| --- | --- | --- |
+| Control | Ease of placing the impact | Can I hit the same zone twice in a row? |
+| Consistency | Similarity between attempts | Does hit three match hit one? |
+| Recovery | How fast you can reset | Am I ready for the next target? |
+| Reaction clarity | Readability of the result | Do I know which hit caused what? |
+
+Distance is the second big lever. Increase range in small steps rather than jumping to maximum, because even a modest accuracy loss changes where your impact lands on the ragdoll. Sprinting during early tests is a trap — camera drift from momentum makes it nearly impossible to confirm a clean hit, so walk your first passes.
+
+If you're testing four tools, choose one familiar weapon, one fast one, one heavy one, and one ranged option. That spread covers the meaningful differences without turning your session into a spreadsheet. Note that no official damage ranking is published, so treat any tier list as community reporting rather than fact.
+
+## From Dummies to Hazards and Zombie NPC Physics
+
+Dummies are a laboratory. The playground adds force, timing, and moving parts — including a shredder, a wrecking ball, a spike pit, a human cannon, a tower drop, and an 80-stud tower. Each one changes the physics question from "where did I hit?" to "what forces are acting on this body?"
+
+| Area | Main variable | First objective | Common mistake |
+| --- | --- | --- | --- |
+| Dummy zone | Impact placement | Hit a chosen body area | Changing too many things at once |
+| Playground | Physics and timing | Watch, then attempt | Jumping in blind |
+| Tower | Height and landing | Set up a controlled drop | Ignoring the launch area |
+| Graveyard | Conversion | Place a dummy in the zone | Treating it as a normal target |
+| Horde | Multiple enemies | Survive a short wave | Fixating on one zombie |
+
+The graveyard is where **Ragdoll Reality NPC physics** gets genuinely strange: a dummy thrown into the zone becomes a zombie. Watch the conversion once without attacking, then place a dummy yourself and note the resulting movement speed.
+
+Zombie NPCs fall into three speed classes — slow, normal, and fast — and they chase, pounce, and bite. Exact health, bite damage, and wave population are not published, so treat community estimates as version-dependent.
+
+### Use the Horde as a spacing drill
+
+During wave survival, keep moving between engagements instead of planting in one crowded spot. Slow zombies separate from fast ones if you reposition, and pounce behavior punishes anyone staring at a single target. If limb targeting still feels inconsistent, go back to the dummy cycle before grinding waves — the Horde will only amplify bad habits.
+
+## A 45-Minute Session Plan for Learning NPC Physics
+
+You don't need an advanced objective to make progress. A focused session of roughly 30 to 45 minutes is enough to build a real foundation, and the single-player structure means every trial gives immediate feedback with nobody waiting on you.
+
+| Minutes | Focus | Completion target | What to record |
+| --- | --- | --- | --- |
+| 1–10 | Baseline reactions | Five predictable hits | Body area and outcome |
+| 11–20 | Weapon comparison | Two consistent tools | Control rating |
+| 20–30 | Range and movement | Same result at longer range | Distance and miss count |
+| 30–40 | Playground hazards | One controlled completion | Approach and result |
+| 40–45 | Graveyard and Horde | One short wave attempt | Enemy speed and failure point |
+
+End the session by writing down what you can reliably reproduce. If a leg hit produces a limp nine times out of ten at close range but only half the time at medium range, you've found your current accuracy ceiling — and you know exactly what to practice next.
+
+## FAQ
+
+**What does Ragdoll Reality NPC physics actually control?**
+
+It governs how targets respond to where you hit them: limping, hanging arms, staggering, limb loss, bleeding, and recovery. Each body zone produces a distinct reaction, so the system is really a set of joint and balance responses rather than a single health value.
+
+**Why do my hits sometimes produce no reaction at all?**
+
+Usually it's placement or range. If your crosshair drifted or the target moved during the swing, the impact may have landed outside the intended zone. Slow the swing down, reset the dummy's posture, and repeat the same strike before changing anything else.
+
+**Do heavier weapons always create better ragdoll reactions?**
+
+Not necessarily. A heavy weapon can generate a bigger stagger while being harder to place accurately, which makes your results less repeatable. Score tools on control and consistency first, then decide whether raw impact is worth the tradeoff.
+
+**How should I practice Ragdoll Reality NPC physics before the Horde?**
+
+Drill a fixed target cycle — left leg, right leg, left arm, torso — at close range, then extend the distance in small steps. Add side-steps only after the stationary cycle is clean. Spacing and reset timing matter more than damage output once multiple zombies are involved.

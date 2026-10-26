@@ -1,0 +1,135 @@
+export const metadata = {
+  title: "Comunidade de Ragdoll Reality: Como os Jogadores Compartilham Testes, Builds e Descobertas",
+  description: "Um guia prático sobre a comunidade de Ragdoll Reality — como os jogadores compartilham testes de local de impacto, notas sobre armas e descobertas sobre perigos para aprender o jogo mais rápido.",
+  category: "community",
+  date: "2026-10-26",
+}
+
+## Por Que Testes Compartilhados Superam o Chute Solo
+
+Ragdoll Reality recompensa jogadores que mudam uma variável por vez — e a comunidade de Ragdoll Reality transformou silenciosamente esse hábito em um projeto coletivo. Como cada impacto produz uma reação visível, um clipe cuidadosamente gravado pode ensinar dezenas de outros jogadores algo sobre mira em membros, controle de armas ou timing de perigos. Seja você alguém com dez minutos de primeira sessão ou alguém já comparando as classes de velocidade dos zumbis, entender como essa comunidade troca descobertas encurtará sua curva de aprendizado muito mais do que treinar sozinho.
+
+O design do jogo torna esse tipo de compartilhamento excepcionalmente produtivo. A página oficial do jogo descreve um loop single-player construído sobre causa e efeito: escolha um boneco, mire em uma área do corpo, observe o que acontece, depois repita com uma arma, ângulo ou distância diferente. Esse loop produz evidências limpas e comparáveis — exatamente o tipo de dado que outros jogadores podem reaproveitar.
+
+### O que torna uma descoberta digna de ser compartilhada
+
+Um relatório útil não é "essa arma é forte". É "arma pesada, perna direita, curta distância, boneco parado — mancando imediatamente, sem cambaleio". A segunda versão dá a outro jogador algo para reproduzir, e a reprodutibilidade é a moeda de toda boa discussão na comunidade de Ragdoll Reality.
+
+| Item compartilhado | Forma típica | Por que ajuda outros jogadores |
+| --- | --- | --- |
+| Clipes de local de impacto | Vídeo curto de um impacto | Mostra o colapso e a recuperação do membro em movimento |
+| Notas de controle de armas | Comparação escrita | Separa facilidade de mirar da reação bruta |
+| Timing de perigos | Clipe ou lista de passos | Revela janelas seguras para o triturador ou a bola de demolição |
+| Testes no cemitério | Descrição de antes/depois | Confirma como o posicionamento do boneco afeta a conversão |
+| Observações de espaçamento na Horda | Notas de onda | Mostra como zumbis lentos e rápidos se separam |
+| Perguntas de iniciantes | Posts curtos | Expõem lacunas que os guias não cobriram |
+
+## Lendo Relatos da Comunidade Sem Ser Enganado
+
+O maior risco em qualquer sandbox de física é tratar um post confiante como fato. A experiência dos jogadores é valiosa, mas também é situacional. Uma afirmação de que uma arma "sempre" derruba um boneco pode vir de um testador que só golpeou a curta distância contra um alvo parado.
+
+Os relatos da comunidade são mais confiáveis quando nomeiam as condições exatas. Quando um post omite a arma, a distância e a área do corpo, trate-o como opinião em vez de resultado. A comunidade de Ragdoll Reality está no seu melhor quando os membros fazem uma pergunta educada de acompanhamento: "Em que você estava mirando e de que distância?"
+
+| Alegação que você verá | Por que aparece | Como tratá-la |
+| --- | --- | --- |
+| "Essa arma é a melhor" | Conforto pessoal com o arco de golpe | Pergunte a área-alvo e a distância antes de confiar |
+| "Zumbis têm X de vida" | Estimado a partir de golpes repetidos | A página oficial não publica valores de vida — trate como dependente de versão |
+| "A onda 10 é impossível" | Falha de espaçamento de um jogador | A densidade de inimigos pode variar por plataforma ou atualização |
+| "Golpes na perna sempre causam rastejamento" | Tamanho de amostra limitado | Força e ângulo do impacto mudam a reação |
+| "A queda da torre é segura" | Uma tentativa bem-sucedida | Confirme a configuração, não apenas o resultado |
+
+### Separe fatos oficiais de folclore de jogador
+
+A página oficial do jogo confirma várias coisas nas quais você pode se basear: impactos na perna podem causar mancada ou rastejamento, impactos no braço podem deixar um membro pendurado enquanto o boneco segura a ferida, e bonecos podem cambalear, recuar, se levantar de novo, perder membros e sangrar. Também confirma um playground com triturador, bola de demolição, fosso de espinhos, canhão humano, queda da torre e uma torre de 80 studs, além de um cemitério que converte um boneco arremessado em zumbi.
+
+O que ela não publica é igualmente importante. Não há ranking oficial de dano, nem número de dano de mordida, nem contagem de população de ondas. Qualquer número que você veja além disso é estimativa da comunidade, e sempre deve ser rotulado como tal.
+
+## Como Escrever um Relatório de Teste Que Outros Jogadores Possam Reutilizar
+
+Os colaboradores mais respeitados na comunidade de Ragdoll Reality raramente são os jogadores mais chamativos — são aqueles cujas notas são entediantemente consistentes. Um modelo de cinco campos faz a maior parte do trabalho.
+
+### Os cinco campos que todo relatório precisa
+
+| Campo | Exemplo de entrada | Por que importa |
+| --- | --- | --- |
+| Arma | Montante pesado de duas mãos | A escolha da ferramenta muda a velocidade e a gravidade da reação |
+| Área-alvo | Perna direita, meio da coxa | O posicionamento é a variável central do jogo |
+| Distância | Curta distância, sem passo lateral | O alcance muda a precisão e o impacto |
+| Estado do alvo | Em pé, recém-reiniciado | Um boneco em movimento ou ferido distorce os resultados |
+| Reação observada | Mancada, cambaleio de dois passos, recuperação em ~2 segundos | Descreve a reação inteira, não apenas a queda |
+
+Adicione um sexto campo opcional — o número de repetições — e seu relatório se torna genuinamente reproduzível. Três golpes limpos que coincidem valem mais do que dez golpes descritos de memória.
+
+### Erros comuns de relato
+
+- **Relatar apenas a pose final.** Um boneco rastejando pode ter sido atingido em ponto baixo, não com força.
+- **Mudar duas variáveis ao mesmo tempo.** Uma arma nova e um alvo corporal novo não podem ser comparados com nada.
+- **Pular o reset.** A postura se mantém, então um boneco não recuperado produz dados não confiáveis.
+- **Tratar um erro de mira como resultado.** Erros são feedback de alinhamento, não dados de arma.
+- **Apresentar estimativas como fatos.** Se você não contou, diga isso.
+
+Para uma referência de base antes de postar, o [guia do jogo Ragdoll Reality na wiki da comunidade](https://ragdollreality.wiki/en/guides/ragdoll-reality-game-guide/) apresenta uma primeira sessão estruturada que você pode espelhar nas suas próprias notas.
+
+## Transformando Treinos Solos em Desafios da Comunidade de Ragdoll Reality
+
+Assim que um punhado de jogadores está testando a mesma coisa, um treino solo se torna um evento de comparação. O truque é concordar com as regras antes de qualquer golpe, para que os resultados permaneçam comparáveis entre sessões e níveis de habilidade.
+
+| Formato do desafio | Regras | Habilidade treinada |
+| --- | --- | --- |
+| Teste cego de arma | Mesmo alvo e distância, arma oculta até os resultados serem publicados | Controle versus reação bruta |
+| Escada de distância | Cinco alcances, uma área do corpo, três golpes em cada | Consistência de posicionamento |
+| Partida de três golpes | Relatar apenas rodadas em que os três golpes acertaram de forma idêntica | Reprodutibilidade |
+| Corrida de timing de perigo | Um perigo, três tentativas, anote a abordagem a cada vez | Timing e configuração |
+| Matriz do cemitério | Converter bonecos a partir de posições iniciais diferentes | Variáveis de conversão |
+| Escada de espaçamento | Sobreviver a uma tentativa curta de Horda, registre onde você foi cercado | Posicionamento sob pressão |
+
+Um evento justo precisa de uma regra acima de tudo: ninguém muda o alvo no meio do teste. Se um jogador troca de arma e de área do corpo entre tentativas, o resultado não diz nada ao grupo. Anuncie as variáveis fixas, colete os resultados e publique os registros brutos ao lado de qualquer conclusão.
+
+### Faça um debriefing curto e honesto
+
+Depois do evento, separe o que foi medido do que foi sentido. "A arma rápida produziu posicionamento mais limpo para quatro de seis testadores" é uma descoberta. "A arma rápida parece melhor" é uma preferência. Ambas são bem-vindas na comunidade de Ragdoll Reality — mas apenas uma pertence a uma tabela de comparação.
+
+## Onde a Comunidade de Ragdoll Reality Ainda Tem Lacunas
+
+Lacunas são oportunidades. Como a página oficial retém números precisos, várias questões são efetivamente tópicos de pesquisa abertos aos quais qualquer testador cuidadoso pode contribuir.
+
+| Questão em aberto | Como seria uma contribuição útil | Cuidado |
+| --- | --- | --- |
+| Quais armas reiniciam mais rápido? | Reset cronometrado entre golpes idênticos | A velocidade de reset depende da entrada do jogador |
+| A distância muda o cambaleio? | Mesmo golpe em três alcances fixos | Correr desloca a câmera |
+| Como as três classes de velocidade dos zumbis se comportam? | Clipe de cada classe perseguindo | Lento, normal e rápido são oficialmente nomeados; o dano não é |
+| A posição inicial do boneco afeta a conversão? | Testes pareados de antes/depois no cemitério | Uma tentativa não é um padrão |
+| Quais perigos permitem conclusão controlada? | Notas de abordagem, não apenas clipes de sucesso | As regras de falha não são publicadas |
+
+Observe a coluna de cuidado com atenção. Qualquer número que não seja publicado pelo próprio jogo deve ser marcado com a plataforma e a data em que você o testou, porque o comportamento da física pode mudar entre atualizações.
+
+## Etiqueta Que Mantém a Discussão Útil
+
+Comunidades saudáveis são construídas sobre pequenos hábitos, e esta não é diferente.
+
+- **Pergunte antes de corrigir.** "Você testou isso a curta distância?" abre uma conversa; "você está errado" a fecha.
+- **Dê crédito ao testador original** quando você reproduzir ou estender o resultado de alguém.
+- **Publique suas falhas também.** Um perigo que te derrotou é dado sobre timing, não vergonha.
+- **Mantenha as threads de iniciantes acolhedoras.** A primeira sessão de boneco de todo mundo parece desajeitada.
+- **Coloque data nas suas afirmações.** Um resultado de três atualizações atrás pode não valer mais.
+- **Linke a fonte ao citar um guia** em vez de parafraseá-lo em algo que ele nunca disse.
+
+A comunidade de Ragdoll Reality cresce mais rápido quando iniciantes se sentem seguros para postar um clipe imperfeito. Uma única resposta educada explicando como reiniciar a postura do boneco pode transformar um iniciante confuso em um colaborador frequente.
+
+## Perguntas Frequentes
+
+**Em que a comunidade de Ragdoll Reality é melhor?**
+
+Compartilhar resultados de testes reproduzíveis. Como cada impacto produz uma reação visível, os jogadores podem postar clipes curtos e notas escritas que outros realmente replicam. As contribuições mais fortes sempre nomeiam a arma, a área-alvo, a distância e o estado do boneco.
+
+**Como compartilho meus próprios resultados de teste sem um grande público?**
+
+Comece com um post claro: uma arma, uma área do corpo, uma distância, três golpes coincidentes e uma breve descrição da reação. Relatórios pequenos e precisos são reutilizados com muito mais frequência do que listas de tiers amplas, e outros testadores geralmente farão perguntas de acompanhamento que afiarão sua próxima rodada.
+
+**Os números de dano da comunidade são confiáveis?**
+
+Trate-os como estimativas. A página oficial do jogo não publica rankings de dano de armas, vida dos zumbis, dano de mordida ou populações de ondas, então qualquer número específico vem de testes de jogadores. Anote a plataforma e a data, e verifique você mesmo antes de confiar nele.
+
+**Preciso entrar em um grupo para me beneficiar das descobertas compartilhadas?**
+
+Não. A maior parte do material útil é pública — clipes, comparações escritas e páginas de guia que você pode ler antes da sua primeira sessão. Ler alguns relatórios estruturados e depois rodar seus próprios testes controlados com bonecos é suficiente para construir uma base sólida antes de você encostar no playground ou em uma onda de Horda.

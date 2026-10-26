@@ -1,0 +1,116 @@
+export const metadata = {
+  title: "Notas de parche de Ragdoll Reality: cómo seguir, leer y probar cada actualización",
+  description: "Una guía práctica sobre las notas de parche de Ragdoll Reality: dónde aparecen las actualizaciones, qué cambios importan en física, armas y zombis, y cómo probarlos.",
+  category: "updates",
+  date: "2026-10-26",
+}
+
+## Por qué las notas de parche de Ragdoll Reality importan más que en la mayoría de los juegos
+
+Una sola línea en un registro de cambios puede borrar una hora de práctica. En un sandbox de física, todo el bucle es causa y efecto: apuntas a una zona del cuerpo, observas cómo el maniquí cojea, se tambalea, se agarra una herida o se desploma, y luego cambias exactamente una variable. Por eso **las notas de parche de Ragdoll Reality** merecen una lectura cuidadosa en lugar de un vistazo rápido: te dicen cuál de tus suposiciones acaba de caducar.
+
+La mayoría de los juegos te permiten absorber una actualización con una partida o dos. Aquí, un ajuste silencioso en las reacciones de las extremidades o en el manejo de las armas invalida las comparaciones que hiciste la semana pasada, y sin la nota culparás a tu puntería en lugar de a la versión. Leer **las notas de parche de Ragdoll Reality** correctamente mantiene honesta tu línea base de pruebas.
+
+La superficie de contenido también es más amplia de lo que parece a primera vista. Los maniquíes, un patio de recreo lleno de peligros, la conversión del cementerio y las oleadas de Horda se asientan sobre la misma base física. Cualquiera de ellos puede cambiar entre versiones.
+
+| Superficie de cambio | Qué notan primero los jugadores | Por qué importa la nota |
+| --- | --- | --- |
+| Valores de reacción de extremidades | Las cojeras se convierten en tambaleos | Te indica que debes reconstruir tu línea base |
+| Manejo de armas | Mismo golpe, arco distinto | Evita que corrijas en exceso tu puntería |
+| Ritmo de los peligros | El compás de la bola de demolición se siente raro | Ahorra una docena de intentos por prueba y error |
+| Clases de velocidad de los zombis | Los enemigos rápidos acortan la distancia antes | Ajusta tus hábitos de espaciado |
+| Trabajo de rendimiento | Menos tirones en oleadas concurridas | Confirma que no era tu hardware |
+
+## Dónde aparecen realmente las notas de parche de Ragdoll Reality
+
+Las actualizaciones rara vez aterrizan en un único lugar ordenado. Según cómo se distribuya la versión actual, puedes encontrar notas en un registro de cambios de la pantalla de inicio, en un canal de anuncios del desarrollador, en una página de registro de cambios de una wiki comunitaria o resumidas en un vídeo de recapitulación de un creador. La habilidad está en saber qué fuente es autoritativa para la versión que realmente estás ejecutando.
+
+| Fuente | Mejor para | Fiabilidad | Ojo con |
+| --- | --- | --- | --- |
+| Registro de cambios o panel de actualización dentro del juego | Confirmar qué llegó con tu versión | Alta | A menudo abreviado a titulares |
+| Anuncios del desarrollador | La intención detrás de un cambio | Alta | Puede publicarse antes de que el despliegue termine |
+| Registro de cambios de la wiki comunitaria | Referenciar actualizaciones antiguas | Media a alta | Los voluntarios pueden ir por detrás de los hotfixes |
+| Recapitulaciones y streams de creadores | Demostraciones visuales | Media | Comentario mezclado con opinión |
+| Hilos de comentarios y capturas de pantalla | Señales tempranas | Baja | Las afirmaciones no verificadas se difunden rápido |
+
+Una breve pasada de verificación ahorra mucha confusión:
+
+- **Coincide la fecha y la etiqueta de versión** antes de fiarte de cualquier lista. Una nota de hace tres actualizaciones no explica nada sobre el comportamiento de hoy.
+- **Separa "corregido" de "ajustado".** Una corrección nombra un escenario roto específico; un ajuste significa que los números se movieron en algún sitio.
+- **Busca una sección de problemas conocidos.** Si tu error ya está listado, no estás probando: estás esperando.
+- **Trata las capturas de pantalla sin contexto como rumores** hasta que una segunda fuente las confirme.
+
+## Leer las notas de parche de Ragdoll Reality: descifrar la redacción
+
+Los registros de cambios se escriben por razones legales y competitivas tanto como para los jugadores, así que el lenguaje es deliberadamente limitado. "Ajustado" y "calibrado" te indican una dirección, no una magnitud. Aún tienes que medir el resultado tú mismo en la zona de maniquíes.
+
+| Tipo de nota | Significado en lenguaje llano | Vuelve a probar esto primero |
+| --- | --- | --- |
+| "Ajustado" o "calibrado" | Los números se movieron, tamaño desconocido | Tus golpes de referencia en pierna y torso |
+| "Corregido" | Un error nombrado está resuelto | El escenario exacto descrito |
+| "Añadido" | Contenido u opción nuevos | Explóralo una vez, luego pruébalo con método |
+| "Rendimiento mejorado" | Trabajo de optimización | Oleadas largas de Horda y zonas concurridas |
+| "Pasada de equilibrio" | Varias armas tocadas a la vez | Tu conjunto de comparación de cuatro herramientas |
+| "Problema conocido" | Reconocido, aún no resuelto | Nada: regístralo y espera |
+
+Un hábito útil: después de leer, anota los dos cambios con más probabilidad de afectar a tu rutina personal. Ignora el resto durante la sesión. Los jugadores que persiguen cada línea de las notas de parche de Ragdoll Reality a la vez acaban cambiando cinco variables y sin aprender nada.
+
+## Una rutina de prueba de diez minutos tras la actualización
+
+No necesitas una sesión larga para validar una versión. Diez minutos concentrados con una línea base consistente te dicen si los resultados de la semana pasada siguen siendo válidos. Mantén el mismo maniquí, el mismo arma y la misma distancia que usaste antes de la actualización.
+
+| Paso | Acción | Condición de superación |
+| --- | --- | --- |
+| 1 | Acierta tres golpes en la misma pierna a corta distancia | Las reacciones coinciden con tus notas previas a la actualización |
+| 2 | Repite en la pierna opuesta | La simetría no ha cambiado |
+| 3 | Golpea el torso tres veces | La distancia de tambaleo se siente familiar |
+| 4 | Prueba un golpe en un brazo | El brazo colgante o el agarre de herida sigue activándose |
+| 5 | Cambia a tu segunda arma favorita | La valoración de control se mantiene dentro de un punto |
+| 6 | Amplía el alcance en pequeños pasos | La pérdida de precisión aparece donde solía |
+
+Si un paso falla, no asumas inmediatamente un nerf. Repite el paso dos veces más antes de registrar una diferencia: los sandboxes de física producen resultados individuales ruidosos. Para un punto de partida estructurado, el [tutorial de primera sesión de la wiki de Ragdoll Reality](https://ragdollreality.wiki/en/guides/ragdoll-reality-game-guide/) presenta un orden de pruebas limpio que puedes reutilizar como plantilla de comparación tras cada actualización.
+
+Una vez que las comprobaciones con el maniquí pasan, pasa a un peligro del patio de recreo y a un intento corto de Horda. Esas zonas combinan física con tiempo, así que sacan a la superficie cambios que un maniquí estático oculta.
+
+## Informes de la comunidad frente a notas confirmadas
+
+No todo lo etiquetado como notas de parche de Ragdoll Reality es en realidad una nota de parche. La discusión de la comunidad es genuinamente útil, pero mezcla tres cosas diferentes: notas confirmadas de los desarrolladores, conjeturas de datamining e impresiones anecdóticas de "se siente diferente". Confundirlas lleva a conclusiones seguras pero equivocadas.
+
+| Afirmación que verás | Cómo comprobarla | Qué hacer |
+| --- | --- | --- |
+| "Han nerfeado el daño" | Ejecuta dos veces la misma prueba de tres golpes | Registra antes/después, no sensaciones |
+| "Los zombis se han vuelto más rápidos" | Compara las tres clases de velocidad lado a lado | Anota qué clase cambió |
+| "Han eliminado un peligro" | Recorre el patio de recreo tú mismo | Confírmalo visualmente antes de repetir la afirmación |
+| "Se ha filtrado un arma nueva" | Espera un anuncio oficial | No construyas un plan en torno a ello |
+
+Los informes de la comunidad son más valiosos cuando incluyen detalles: arma exacta, zona del cuerpo exacta, distancia exacta y plataforma. La experiencia de un jugador con esos detalles se acerca a datos de prueba. La experiencia de un jugador sin ellos es un estado de ánimo.
+
+## Comentarios que mejoran la siguiente ronda de notas
+
+Si quieres que tus hallazgos se reflejen en futuras notas de parche de Ragdoll Reality, escribe informes sobre los que los desarrolladores puedan actuar:
+
+- **Reprodúcelo dos veces** antes de informar, para saber que no es algo puntual.
+- **Nombra la configuración exacta**: arma, zona objetivo, distancia y si el maniquí estaba de pie o en movimiento.
+- **Describe el resultado esperado** y el resultado observado en frases separadas.
+- **Incluye la plataforma y la etiqueta de versión**, ya que el comportamiento puede diferir entre versiones.
+- **Adjunta un clip corto** cuando la reacción sea visual, como una extremidad que no se desprende.
+
+Los informes escritos así se clasifican rápido, y a menudo aparecen casi literalmente en una línea de "corregido" más adelante.
+
+## Preguntas frecuentes
+
+**¿Con qué frecuencia salen las notas de parche de Ragdoll Reality?**
+
+No hay un calendario público fijo con el que los jugadores puedan contar. Las actualizaciones parecen llegar en ráfagas, con adiciones de contenido separadas de pasadas más pequeñas de ajuste y corrección. Consulta el registro de cambios dentro del juego y los canales del desarrollador tras cualquier descarga, y trata los calendarios de la comunidad como estimaciones en lugar de compromisos.
+
+**¿Las notas de parche de Ragdoll Reality enumeran cifras exactas de daño?**
+
+Normalmente no. Las notas tienden a describir la dirección —"ajustado", "calibrado", "mejorado"— en lugar de publicar tablas completas de estadísticas. Por eso las pruebas personales en la zona de maniquíes siguen siendo la única forma fiable de medir cuánto ha cambiado un arma o una zona de impacto.
+
+**¿Qué debo volver a probar primero tras una actualización?**
+
+Empieza por tu línea base más practicada: un arma, corta distancia, alternando golpes en pierna y torso. Si esas reacciones no han cambiado, tu rutina de pruebas más amplia probablemente siga siendo válida. Si han cambiado, reconstruye la línea base antes de tocar el patio de recreo o el modo Horda.
+
+**¿Son fiables los cambios informados por la comunidad?**
+
+Son una señal temprana útil y una mala respuesta final. Los informes de la comunidad se vuelven fiables cuando varios jugadores describen la misma arma, zona objetivo y distancia. Hasta entonces, verifica la afirmación tú mismo con una prueba repetible en lugar de ajustar todo tu estilo de juego en torno a ella.

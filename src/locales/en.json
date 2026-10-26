@@ -6,7 +6,18 @@
     "description": "Explore Ragdoll Reality on Roblox with weapon unlocks, ragdoll physics, zombie horde survival, playground hazards, controls, and weekly update guides.",
     "legalNotice": "Non-official fan wiki for Ragdoll Reality on Roblox. Made by players, for players."
   },
-  "nav": {},
+  "nav": {
+    "guide": "Guide",
+    "mechanics": "Mechanics",
+    "combat": "Combat",
+    "modes": "Modes",
+    "updates": "Updates",
+    "community": "Community",
+    "codes": "Codes",
+    "home": "Home",
+    "menu": "Menu",
+    "toggleTheme": "Toggle theme"
+  },
   "home": {
     "meta": {
       "title": "Ragdoll Reality Wiki - Weapons, Zombies & Updates",
@@ -453,7 +464,34 @@
       "secondary": "Play on Roblox"
     }
   },
-  "bosses": {},
+  "guide": {
+    "overviewTitle": "Ragdoll Reality Guides",
+    "overviewDescription": "Start with Ragdoll Reality tutorials, beginner tips, controls, settings, and practical walkthroughs for the Roblox physics sandbox."
+  },
+  "mechanics": {
+    "overviewTitle": "Ragdoll Reality Mechanics",
+    "overviewDescription": "Understand Ragdoll Reality physics, damage reactions, blood effects, fall damage, NPC behavior, and the systems behind every impact."
+  },
+  "combat": {
+    "overviewTitle": "Ragdoll Reality Combat Guides",
+    "overviewDescription": "Learn Ragdoll Reality weapons, hit locations, grenades, melee options, and combat tactics built around readable physics reactions."
+  },
+  "modes": {
+    "overviewTitle": "Ragdoll Reality Game Modes",
+    "overviewDescription": "Compare Ragdoll Reality multiplayer, PvP, private server, co-op, and game mode guides for playing alone or with friends."
+  },
+  "updates": {
+    "overviewTitle": "Ragdoll Reality Updates",
+    "overviewDescription": "Track Ragdoll Reality patch notes, new weapons, seasonal events, and the latest feature changes in one place."
+  },
+  "community": {
+    "overviewTitle": "Ragdoll Reality Community",
+    "overviewDescription": "Find Ragdoll Reality community hubs, Discord and Reddit discussions, gameplay videos, and ways to share discoveries with other players."
+  },
+  "codes": {
+    "overviewTitle": "Ragdoll Reality Codes",
+    "overviewDescription": "Check the current Ragdoll Reality code status, learn safe redemption practices, and see where verified rewards would appear first."
+  },
   "shared": {
     "wikiNavigation": "Wiki Navigation",
     "activeCodes": "Active Codes",
@@ -484,9 +522,9 @@
     "officialYoutube": "Gameplay Video",
     "vvBuilder": "Ragdoll Reality Guide",
     "beginnerGuide": "Beginner Guide",
-    "raceGuides": "Race Guides",
-    "bossGuides": "Boss Guides",
-    "buildGuide": "Build Guide",
+    "mechanicsGuides": "Mechanics Guides",
+    "combatGuides": "Combat Guides",
+    "updatesGuides": "Updates & Patch Notes",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service"
   }

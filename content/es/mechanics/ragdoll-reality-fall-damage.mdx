@@ -1,0 +1,135 @@
+export const metadata = {
+  title: "Daño por caída en Ragdoll Reality explicado: altura, impacto y pruebas seguras",
+  description: "Descubre cómo funciona el daño por caída en Ragdoll Reality, cómo la altura, la postura y la superficie cambian el aterrizaje, y cómo probar caídas sin adivinar.",
+  category: "mechanics",
+  date: "2026-10-26",
+}
+
+## Cómo funciona realmente el daño por caída en Ragdoll Reality
+
+Suelta un muñeco desde la torre y rara vez aterriza de la misma manera dos veces. Esa inconsistencia es precisamente el punto: el **daño por caída en Ragdoll Reality** no es un único número oculto que se aplica en el momento del impacto. Es la suma de cada colisión que el ragdoll realiza durante la caída y en el instante del impacto: qué extremidad golpea primero, a qué velocidad se movía y sobre qué cae.
+
+Entender el **daño por caída en Ragdoll Reality** cambia la forma en que pruebas los peligros. En lugar de preguntarte "qué tan alto puedo soltarlo antes de que se rompa", empiezas a preguntarte "qué parte del cuerpo absorbió el aterrizaje y qué le hizo eso al resto del ragdoll".
+
+El propio diseño del juego lo respalda. La guía oficial del juego describe reacciones basadas en la ubicación: los impactos en las piernas dejan al muñeco cojeando o arrastrándose, los impactos en los brazos dejan el brazo colgando, y los objetivos se agarran las heridas. Una caída no es más que una cadena rápida de esos mismos impactos localizados, entregados por la gravedad en lugar de por tu arma.
+
+Por eso el material oficial nunca publica una tabla de daño. Los valores exactos de salud, el daño por altura y los umbrales de fallo no están documentados en ninguna fuente oficial. Trata cualquier tabla de "X studs equivalen a Y de daño" que veas como experiencia de jugadores y no como un hecho, y verifícala tú mismo en una prueba controlada.
+
+### Por qué el orden del aterrizaje importa más que la altura de la caída
+
+Un muñeco que aterriza de pie y se dobla hasta arrastrarse ha recibido el impacto a través de las piernas. Un muñeco que aterriza plano sobre su espalda lo ha recibido a través del torso y la cabeza. Misma altura, misma superficie, resultado muy diferente, y comportamiento posterior muy diferente. La altura fijó la velocidad; la postura decidió hacia dónde fue esa velocidad.
+
+| Variable | Por qué cambia el resultado | Cómo controlarla |
+| --- | --- | --- |
+| Altura de caída | Determina la velocidad de impacto | Cambia en incrementos pequeños y registrados |
+| Postura de lanzamiento | Decide qué extremidad contacta primero | Suelta el muñeco de la misma forma en cada prueba |
+| Superficie | Algunas superficies absorben, otras redirigen | Prueba una superficie por segmento de sesión |
+| Impulso horizontal | Convierte una caída en un revolcón | Camina, no corras, hacia el borde |
+| Arma en mano | Añade masa y cambia la posición de las extremidades | Repite con las manos vacías como referencia |
+| Orden de contacto de las extremidades | Determina cojera, arrastre o colapso | Observa el primer fotograma del contacto |
+
+## La escalera de alturas: probar el daño por caída paso a paso
+
+La forma más rápida de aprender cómo se comporta el daño por caída es construir una escalera de alturas y subirla peldaño a peldaño. No cambies nada excepto la altura entre pruebas. Mantén el mismo muñeco, el mismo método de lanzamiento y la misma superficie de aterrizaje.
+
+Empieza en una plataforma baja donde el muñeco apenas reaccione, y luego sube en pasos pequeños. Una escalera útil se ve así:
+
+| Peldaño | Referencia de altura | Qué estás comprobando | Sube cuando |
+| --- | --- | --- | --- |
+| 1 | Borde pequeño | ¿Reacciona el muñeco en absoluto? | Veas una primera reacción consistente |
+| 2 | Plataforma baja | Reacción solo de piernas, cojera o tropiezo | El resultado se repita tres veces |
+| 3 | Caída de altura media | Arrastre, colapso o pérdida de extremidad | Puedas nombrar la extremidad de contacto |
+| 4 | Caída desde la torre | Reacción de todo el cuerpo y tiempo de recuperación | Puedas predecir la firma del aterrizaje |
+| 5 | La torre alta | Impacto máximo y supervivencia | Tengas un registro escrito del resultado |
+
+La torre alta del patio de juegos es el peldaño superior natural: te da la caída más larga del juego y la diferencia más clara entre un aterrizaje de pie y uno plano. La experiencia de los jugadores sugiere que la diferencia entre el peldaño 3 y el peldaño 5 no es solo de gravedad sino de *tipo*: las caídas más bajas tienden a producir cojeras y arrastres, mientras que en las caídas largas aparecen el desprendimiento de extremidades y el colapso severo.
+
+Mantén simples tus notas de la escalera. Altura, postura de lanzamiento, superficie, primera extremidad de contacto y la primera reacción del muñeco después de que deja de moverse. Cinco columnas, treinta segundos por prueba.
+
+### No te saltes los peldaños intermedios
+
+Saltar directamente a la torre más alta no te enseña casi nada, porque ocurren demasiadas cosas a la vez. Si el muñeco pierde una extremidad durante la caída, no puedes saber si lo causó la altura, la superficie o el revolcón. Sube la escalera, y cada resultado se mantiene legible.
+
+## Leer el aterrizaje: cómo se ve el daño por caída
+
+El daño por caída en Ragdoll Reality rara vez se anuncia con una barra de salud. Se manifiesta como un cambio en cómo se comporta el ragdoll después. Aprende a leer la firma, y podrás diagnosticar la caída sin repetirla.
+
+| Firma del aterrizaje | Causa probable | Qué probar después |
+| --- | --- | --- |
+| Cojea, aún erguido | La pierna absorbió el impacto | Misma altura, la pierna opuesta primero |
+| Se arrastra | Ambas piernas comprometidas | Caída ligeramente más alta |
+| Tambaleo y luego recuperación | El torso recibió el golpe | Misma altura, aterrizaje plano |
+| Colapso sin levantarse | Impacto pesado en todo el cuerpo | Confirma la superficie y repite una vez |
+| Extremidad desprendida | Impacto extremo o mal ángulo | Baja la altura un peldaño |
+| Sangrado tras el aterrizaje | Separación de extremidad, no solo fuerza | Deja de atacar y observa |
+
+Dos hábitos hacen fiables estas lecturas:
+
+- **Observa el primer fotograma del contacto.** La extremidad que toca primero suele ser la que define el resultado.
+- **Espera el ciclo completo de recuperación.** Un muñeco que vuelve a levantarse sufrió menos daño estructural que uno que se queda en el suelo, incluso si el primer golpe pareció dramático.
+
+Los muñecos también pueden tambalearse, retroceder, contraatacar y levantarse. Si el tuyo empieza a alejarse de la zona de caída antes de que termines de observar, reinícialo y repite la prueba en lugar de perseguirlo. Un segundo intento caótico te dice menos que un reinicio limpio.
+
+## Peligros del patio de juegos que combinan el daño por caída con otras fuerzas
+
+El patio de juegos es donde el daño por caída deja de ser un experimento limpio. Cada peligro añade una segunda fuerza —giro, lanzamiento o perforación— sobre la caída.
+
+| Peligro | Componente de caída | Qué prueba realmente |
+| --- | --- | --- |
+| Caída desde la torre | Caída vertical pura | Daño por caída de referencia |
+| La torre alta | Altura máxima | Límites de impacto y pérdida de extremidades |
+| Bola de demolición | Caída más fuerza lateral | Impacto direccional sobre un ragdoll en caída |
+| Cañón humano | Lanzamiento más aterrizaje | Impulso llevado contra el suelo |
+| Foso de pinchos | Caída más peligro de superficie | Tipo de superficie frente a velocidad bruta |
+| Trituradora | Caída más contacto continuo | Daño a lo largo del tiempo en lugar de un solo golpe |
+
+Trata cada uno como un experimento separado. La bola de demolición y el cañón humano implican ambos una caída, pero el impulso horizontal cambia qué parte del cuerpo lidera el aterrizaje, así que los resultados de uno no se trasladan al otro.
+
+El foso de pinchos merece especial atención porque aísla la variable de la superficie. Si puedes encontrar dos alturas que produzcan la misma reacción en un suelo plano y en el foso, habrás medido cuánto aporta la superficie en sí, sin necesidad de tocar jamás una fórmula de daño.
+
+## Crear una rutina de pruebas de daño por caída
+
+No necesitas una sesión larga para obtener datos útiles. Veinte minutos enfocados superan a una hora de caídas aleatorias.
+
+| Minutos | Actividad | Qué registrar |
+| --- | --- | --- |
+| 0–5 | Peldaños 1–2 de la escalera de alturas | Primera reacción y extremidad de contacto |
+| 5–10 | Peldaños 3–4, mismo método de lanzamiento | Firma del aterrizaje por altura |
+| 10–15 | Repetir el peldaño 4 con otra postura | Cómo cambia la postura el resultado |
+| 15–20 | Un peligro, un intento | Resultado del peligro frente a caída limpia |
+| 20–25 | Conversión en el cementerio tras una caída | Si un muñeco dañado se convierte de forma diferente |
+
+Vale la pena probar esa última fila por sí sola. El material oficial señala que un muñeco arrojado al cementerio se convierte en zombi, y los zombis vienen en clases de velocidad lenta, normal y rápida. Los informes de la comunidad sugieren que el estado del muñeco en el momento de la conversión podría influir en lo que obtienes, pero esto es experiencia de jugadores y no un hecho documentado, así que verifícalo tú mismo antes de construir una estrategia en torno a ello.
+
+Termina cada sesión con un registro escrito. Una lista corta de alturas, posturas, superficies y resultados vale más que el recuerdo de "la torre grande dolía mucho".
+
+## Errores comunes con el daño por caída
+
+| Error | Por qué arruina la prueba | Solución |
+| --- | --- | --- |
+| Cambiar altura y superficie a la vez | Dos variables, un resultado | Un cambio por prueba |
+| Correr hacia la caída | Añade impulso que no mediste | Camina hacia el borde |
+| Juzgar solo por la pose final | Oculta la secuencia de contacto | Observa el primer fotograma del impacto |
+| Suponer que una tabla es oficial | No se publican valores de daño | Etiqueta las estimaciones como datos de la comunidad |
+| Probar la torre alta primero | Demasiadas fuerzas simultáneas | Sube la escalera desde abajo |
+| Ignorar el tiempo de recuperación | Pierde la diferencia entre tambaleo y colapso | Espera el ciclo completo |
+
+Si tus resultados siguen contradiciéndose entre sí, el problema suele ser la configuración y no el juego. La [guía del juego Ragdoll Reality en la wiki de la comunidad](https://ragdollreality.wiki/en/guides/ragdoll-reality-game-guide/) presenta un bucle de pruebas controlado que combina bien con esta escalera de alturas: muñeco, un arma, una variable a la vez.
+
+## Preguntas frecuentes
+
+**¿El daño por caída en Ragdoll Reality depende de la altura o de la postura del aterrizaje?**
+
+De ambas, pero la postura es la variable que la mayoría de los jugadores ignora. La altura fija la velocidad a la que se mueve el ragdoll; la postura decide qué parte del cuerpo absorbe esa velocidad. Dos caídas idénticas con ángulos de lanzamiento diferentes pueden producir resultados completamente distintos, por eso debes mantener la postura constante al probar el daño por caída en Ragdoll Reality a nuevas alturas.
+
+**¿Existe una tabla oficial de daño por caída para Ragdoll Reality?**
+
+No. El material oficial describe reacciones basadas en la ubicación y enumera los peligros del patio de juegos, pero no publica valores de daño, totales de salud ni umbrales por altura. Cualquier número que encuentres en línea son estimaciones de la comunidad, así que verifícalos con tus propias caídas controladas antes de confiar en ellos.
+
+**¿Qué peligro es mejor para probar el daño por caída primero?**
+
+La caída simple desde la torre, porque aísla la gravedad. La bola de demolición, el cañón humano y el foso de pinchos añaden todos una segunda fuerza o un efecto de superficie. Consigue una referencia limpia con una caída vertical antes de combinar la altura con cualquier otra cosa.
+
+**¿Por qué mi muñeco sobrevive a una caída enorme pero se derrumba con una pequeña?**
+
+Revisa la firma del aterrizaje. Un muñeco que aterriza de pie puede absorber una caída larga a través de sus piernas, mientras que una caída corta sobre un ángulo incómodo puede doblar el torso y terminar el intento de inmediato. En Ragdoll Reality, el daño por caída sigue el orden de contacto, no solo la distancia.

@@ -1,0 +1,141 @@
+export const metadata = {
+  title: "La física ragdoll de Ragdoll Reality explicada: guía práctica de mecánicas",
+  description: "La física ragdoll de Ragdoll Reality explicada: cómo las zonas de impacto, la fuerza del golpe y los ejercicios de prueba cambian cada reacción del muñeco, más un plan de práctica de 45 minutos.",
+  category: "mechanics",
+  date: "2026-10-26",
+}
+
+Un golpe puede dejar a un muñeco de pie; el siguiente puede tumbarlo en una torpe arrastrada. Esa diferencia entre entradas similares y resultados radicalmente distintos es el corazón de la **física ragdoll de Ragdoll Reality**, y es exactamente por lo que el juego recompensa a quienes prueban con método en lugar de golpear rápido. Cuando entiendes cómo interactúan el punto de impacto, la fuerza y los límites articulares, puedes predecir cómo se plegará un cuerpo antes de comprometerte con un golpe, y esa predicción es el verdadero techo de habilidad en este sandbox para un solo jugador.
+
+La buena noticia es que la **física ragdoll de Ragdoll Reality** se puede aprender con nada más que un muñeco, un arma y un método repetible. Esta guía descompone el sistema en piezas comprobables: primero las zonas de impacto, luego el comportamiento de las armas, la distancia, el movimiento y, por último, los peligros del patio de juegos y los zombis que añaden variables extra a la simulación.
+
+## Cómo las zonas de impacto gobiernan la física ragdoll de Ragdoll Reality
+
+Los impactos en este juego se resuelven por región corporal, no por una única barra de vida. La página oficial del juego describe reacciones según la zona: un golpe en la pierna puede dejar al muñeco cojeando o arrastrándose, un golpe en el brazo puede dejar ese miembro colgando mientras el objetivo se agarra la herida, y los impactos en torso o cabeza producen sus propios patrones de colapso. Como cada región introduce fuerzas distintas en la simulación, la misma arma puede dar resultados completamente diferentes según dónde aterrice.
+
+Esa es la lección central de la física ragdoll de Ragdoll Reality: el punto de impacto es la entrada y la reacción de todo el cuerpo es la salida.
+
+| Zona objetivo | Reacción típica | Qué observar | Por qué importa |
+| --- | --- | --- | --- |
+| Pierna | Cojera, arrastre o pérdida de equilibrio | Si la pierna sigue soportando peso | Establece tu referencia del tren inferior |
+| Brazo | El miembro cuelga, el objetivo se agarra la herida | Si el muñeco protege ese lado | Pone a prueba la precisión de colocación |
+| Torso | Tambaleo o desplazamiento hacia atrás | Distancia recorrida tras el impacto | Comparación limpia para golpes más pesados |
+| Cabeza | Reacción fuerte de todo el cuerpo | Latigazo y seguimiento | Mantenla separada de las pruebas corporales |
+| Miembro separado | Sangrado, el miembro se desprende | Cuándo empieza realmente la reacción | Confirma los umbrales de fuerza |
+
+### Lee la reacción, no solo la caída
+
+Un derribo es solo uno de los resultados posibles y, por sí solo, te dice muy poco. Un muñeco que se arrastra puede haber recibido un golpe bajo; un muñeco que sigue de pie puede haber absorbido un impacto más pesado en el torso. Antes de cada golpe, predice qué debería ocurrir y luego compara el resultado con tu predicción.
+
+- **Predice primero.** Decide qué miembro debería reaccionar antes de golpear.
+- **Observa el primer fotograma.** El movimiento inicial revela el punto de impacto de forma más fiable que la postura final.
+- **Reinicia en lugar de perseguir.** Si un muñeco se aleja, levanta los brazos o cambia de dirección, pausa y vuelve a establecer la prueba.
+- **Detente cuando un miembro se separa.** El sangrado y el desprendimiento alteran la masa del cuerpo, así que el ensayo ya no es comparable.
+
+## Construye una referencia: el método de prueba de una sola variable
+
+La mayoría de los principiantes mejoran despacio porque cambian tres cosas a la vez —un arma nueva, una distancia nueva y un objetivo nuevo— y luego no pueden explicar el resultado. La solución es simple: mantén todo estable excepto una variable y reinicia la postura del muñeco entre ensayos para que los patrones de cojera, colapso y recuperación sigan siendo comparables.
+
+| Variable de prueba | Mantener sin cambios | Cambiar | Pregunta que responde |
+| --- | --- | --- | --- |
+| Arma | Zona objetivo y distancia | Herramienta | ¿Qué arma es más fácil de controlar? |
+| Zona objetivo | Arma y distancia | Región corporal | ¿Qué reacciones puedo reproducir a voluntad? |
+| Distancia | Arma y objetivo | Alcance | ¿Dónde empieza a fallar la colocación? |
+| Velocidad del golpe | Arma y objetivo | Ritmo | ¿Me cuesta precisión por ir con prisa? |
+| Movimiento | Arma y objetivo | Quieto vs. en movimiento | ¿Puedo apuntar mientras me reposiciono? |
+
+### Una secuencia de apertura repetible
+
+1. Aparece en la zona principal de pruebas y selecciona un muñeco.
+2. Registra su postura inicial antes de tocarlo.
+3. Golpea una pierna desprotegida y repite el mismo impacto en la pierna opuesta.
+4. Prueba un brazo, luego el torso y luego la cabeza, por separado.
+5. Cambia de arma manteniendo fija la zona objetivo.
+6. Aumenta la distancia en incrementos pequeños.
+7. Compara los impactos con el muñeco quieto frente a los impactos en movimiento.
+8. Visita un peligro del patio de juegos solo cuando puedas nombrar la reacción del muñeco de forma consistente.
+
+Para una versión estructurada de esta rutina, la [guía para principiantes de Ragdoll Reality de la wiki de la comunidad](https://ragdollreality.wiki/en/guides/ragdoll-reality-game-guide/) recorre un plan similar para la primera sesión. Trata cualquier referencia externa como un punto de partida y verifícala en tu propia sesión, porque pequeñas diferencias de ángulo y sincronización cambian los resultados.
+
+## Armas, ángulos y distancia en la física ragdoll de Ragdoll Reality
+
+Las armas no se limitan a escalar el daño hacia arriba o hacia abajo: entregan la fuerza de forma distinta. Una herramienta pesada concentra el momento en un arco corto, una herramienta rápida lo reparte en un golpe más amplio y las opciones a distancia introducen tiempo de desplazamiento y retraso en la colocación. La página oficial no publica una clasificación universal de daño, así que la experiencia de los jugadores es actualmente la fuente de comparación más fiable.
+
+Prueba cuatro herramientas representativas en lugar de todo el arsenal: un arma conocida, una rápida, una pesada y una opción a distancia. Usa el mismo objetivo y la misma distancia para las cuatro y luego puntúa cada resultado.
+
+| Categoría de valoración | Qué puntuar | Pregunta práctica |
+| --- | --- | --- |
+| Control | Facilidad para colocar el impacto | ¿Puedo acertar en el miembro deseado dos veces seguidas? |
+| Consistencia | Similitud entre repeticiones | ¿El tercer golpe coincide con el primero? |
+| Recuperación | Velocidad de reinicio tras un golpe | ¿Estoy listo para el siguiente objetivo con rapidez? |
+| Claridad de reacción | Legibilidad del resultado | ¿Sé qué golpe causó qué? |
+
+La distancia es la siguiente capa. Incluso una pequeña pérdida de precisión desplaza el punto donde la fuerza entra en el cuerpo, lo que cambia cómo lo absorben las articulaciones del muñeco. Añade alcance en pasos cortos y completa un ciclo objetivo completo en cada paso antes de volver a extenderte. Si un golpe falla, ese fallo es información: realinea y repite el mismo ensayo en lugar de encadenar un segundo golpe a ciegas.
+
+## Ejercicios que entrenan el control de la física ragdoll de Ragdoll Reality
+
+La precisión nace del movimiento repetible, no de la variedad. Aísla una habilidad por ejercicio y luego acumula variables hasta que el ejercicio se parezca al juego real.
+
+### El ciclo objetivo controlado
+
+Trabaja en un orden fijo: pierna izquierda, pierna derecha, brazo izquierdo, torso. Después aumenta ligeramente la distancia y repite el mismo orden sin cambiar de arma. Si un segmento falla, repite ese segmento en lugar de seguir avanzando: un bucle corto de corrección construye precisión más rápido que forzar un ciclo completo.
+
+### Escalera de control de velocidad
+
+| Etapa | Ritmo de golpe | Objetivo | Condición para superarla |
+| --- | --- | --- | --- |
+| Etapa 1 | Lento y deliberado | Colocar el golpe exactamente donde se pretende | Tres objetivos deseados acertados |
+| Etapa 2 | Moderado y constante | Mantener el control mientras te reposicionas | Dos ciclos completos limpios |
+| Etapa 3 | Velocidad de juego | Igualar el ritmo normal sin perder colocación | Cinco golpes limpios seguidos |
+
+### La pausa de recuperación
+
+Después de cada golpe, haz una pausa lo bastante larga para identificar qué ocurrió y volver a centrar tu puntería. Esto importa sobre todo contra muñecos que se tambalean, retroceden o se ponen de pie de nuevo: perseguirlos de inmediato convierte un experimento controlado en una refriega y borra la información que acabas de obtener.
+
+## De los muñecos a los peligros y los zombis
+
+Los muñecos son un laboratorio; el patio de juegos añade fuerzas externas. La página oficial enumera una trituradora, una bola de demolición, un foso de pinchos, un cañón humano, una caída desde una torre y una torre alta de 80 studs, junto con un cementerio donde un muñeco lanzado a la zona se convierte en zombi.
+
+| Zona | Variable principal | Primer objetivo | Error habitual |
+| --- | --- | --- | --- |
+| Zona de muñecos | Colocación del impacto | Acertar limpiamente en una zona corporal elegida | Cambiar demasiadas variables |
+| Patio de juegos | Física y sincronización | Completar un obstáculo de forma deliberada | Lanzarse sin observar el ciclo |
+| Torre | Altura y aterrizaje | Probar una caída controlada | Ignorar la posición de preparación |
+| Cementerio | Conversión | Colocar un muñeco en la zona | Tratarlo como un objetivo normal |
+| Horda | Varios enemigos | Sobrevivir a una oleada corta | Fijarse en un solo zombi |
+
+Los zombis vienen en clases de velocidad lenta, normal y rápida, y pueden perseguir, abalanzarse y morder. La salud exacta, el daño de mordida y la población de las oleadas no están publicados por los desarrolladores, así que cualquier cifra que veas circulando son informes de la comunidad: márcalas como dependientes de la versión o la plataforma en lugar de valores fijos.
+
+Entra al cementerio por etapas: observa la zona de conversión sin atacar, coloca un muñeco, anota la clase de velocidad del zombi resultante y repite desde una posición inicial distinta. En las oleadas de horda, sigue moviéndote entre enfrentamientos para que los enemigos lentos y rápidos se separen, y vigila el espacio justo delante de ti para detectar los saltos.
+
+## Plan de 45 minutos para la primera sesión
+
+No necesitas un objetivo avanzado para sacar valor de una sesión. La estructura para un solo jugador hace que cada ensayo devuelva información inmediata, y puedes terminar con un registro escrito de lo que puedes reproducir de forma fiable.
+
+| Minutos | Enfoque | Habilidad entrenada | Evidencia que conservar |
+| --- | --- | --- | --- |
+| 1–10 | Reacciones de referencia en un muñeco | Colocación del objetivo | Cinco resultados predecibles |
+| 11–20 | Dos o tres armas, mismo objetivo | Comparación de herramientas | Valoraciones de control y consistencia |
+| 21–30 | Mayor alcance y pasos laterales | Apuntar mientras te mueves | Número de fallos por ciclo |
+| 31–40 | Un peligro del patio de juegos | Sincronización y posicionamiento | Aproximación y resultado |
+| 41–45 | Una conversión en el cementerio, horda corta | Distancias y lectura de reacciones | Velocidad del enemigo y punto de fallo |
+
+Si al final tu colocación sigue siendo inconsistente, quédate en el ciclo de muñecos otra sesión. Unos fundamentos limpios hacen que cada peligro y cada encuentro con zombis sea más fácil de leer, porque ya sabrás cómo se mueve la fuerza a través de un cuerpo.
+
+## FAQ
+
+**¿Qué hace que la física ragdoll de Ragdoll Reality sea distinta de un sistema de derribo estándar?**
+
+Los impactos se resuelven por región corporal y se propagan por articulaciones simuladas, así que el daño en los miembros, el tambaleo, el sangrado y la pérdida de extremidades surgen de dónde golpeas y con cuánta fuerza. El resultado es una reacción que puedes leer y predecir en lugar de un único estado de "muerto".
+
+**¿Cuántas veces debo golpear a un muñeco antes de cambiar de arma?**
+
+Tres golpes intencionados en una misma zona objetivo es un mínimo práctico. Si el tercer golpe coincide con el primero, tu resultado es repetible y puedes cambiar una variable con seguridad.
+
+**¿Por qué mis golpes dejan de acertar cuando retrocedo?**
+
+Las pequeñas pérdidas de precisión desplazan el punto de impacto, y la respuesta de centrado del muñeco cambia con él. Retrocede en incrementos más pequeños, vuelve a apuntar con deliberación y completa un ciclo objetivo completo en cada nueva distancia.
+
+**¿Los principiantes deberían empezar con zombis o con los peligros del patio de juegos?**
+
+Con ninguno de los dos. Construye consistencia primero con muñecos quietos, luego prueba un peligro a la vez y deja el cementerio y el modo horda para el final. Los informes de la comunidad sugieren que, una vez que empiezan las oleadas, la distancia y la colocación importan mucho más que la velocidad bruta del golpe.

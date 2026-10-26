@@ -1,0 +1,126 @@
+export const metadata = {
+  title: "Guía de servidores privados de Ragdoll Reality: modos, configuración y qué probar primero",
+  description: "Un análisis práctico de los modos de servidor privado de Ragdoll Reality, cómo evaluar un anfitrión antes de unirte y qué pruebas de física realizar primero para obtener resultados más limpios.",
+  category: "modes",
+  date: "2026-10-26",
+}
+
+La mayoría de los jugadores aprenden Ragdoll Reality a la mala: primero golpean y luego leen la física. Un servidor privado de Ragdoll Reality invierte ese orden: te ofrece un espacio más tranquilo y con reglas definidas donde puedes aislar una variable a la vez antes del caos de los peligros y las oleadas de zombis. Eso importa porque todo el bucle de retroalimentación del juego depende de la comparación. Si tu objetivo, arma y distancia cambian constantemente, nunca aprendes qué entrada produjo el resultado. Encontrar un servidor privado de Ragdoll Reality bien gestionado se trata sobre todo de localizar ese entorno controlado, y de saber qué preguntas hacer antes de aparecer.
+
+## Qué cambia realmente un servidor privado de Ragdoll Reality
+
+El bucle base es simple y está bien documentado: elige un muñeco, apunta a una zona corporal específica, observa la reacción, cambia una cosa y repite. La [guía del juego Ragdoll Reality sobre los conceptos básicos de la primera sesión](https://ragdollreality.wiki/en/guides/ragdoll-reality-game-guide/) lo plantea como un método de prueba en lugar de un recorrido por características, y esa es exactamente la razón por la que los servidores privados atraen a jugadores que ya entienden lo básico.
+
+Una instancia alojada por la comunidad no reescribe la física. Los impactos en las piernas siguen produciendo cojera o arrastre, los impactos en los brazos siguen dejando una extremidad colgando mientras el objetivo se agarra la herida, y los muñecos siguen tambaleándose, retrocediendo, sangrando, perdiendo extremidades y levantándose de nuevo. Lo que cambia es todo lo que rodea a esas reacciones: quién establece las reglas, si el mundo persiste entre sesiones y si puedes repetir una prueba con otras personas observando.
+
+| Factor | Experiencia oficial para un jugador | Servidor típico alojado por la comunidad |
+| --- | --- | --- |
+| Dependencia del progreso | Exclusivamente tuya | Compartida con otros jugadores presentes |
+| Establecimiento de reglas | Fijado por el juego | Establecido por el anfitrión y los moderadores |
+| Repetibilidad de las pruebas | Fácil: reinicia cuando quieras | Depende de los reinicios y de la afluencia |
+| Capa social | Ninguna | Espectadores, entrenadores, pruebas en grupo |
+| Estabilidad de la física | Consistente | Varía según el rendimiento del anfitrión |
+| Documentación | La página oficial describe el bucle | Solo informes de la comunidad |
+
+La experiencia de los jugadores sugiere que la diferencia más importante es la responsabilidad. En un servidor con público, una prueba descuidada se señala, y esa presión tiende a producir hábitos más limpios. La contrapartida es que las instancias concurridas pueden introducir lag, y en un juego impulsado por la física, una conexión inestable hace que los resultados específicos por extremidad no sean fiables.
+
+## Modos de servidor privado que vale la pena probar
+
+No todos los servidores admiten todos los modos, y la disponibilidad cambia a medida que el juego se actualiza, así que trata cualquier lista como una instantánea y no como un menú. Dicho esto, los informes de la comunidad tienden a agruparse en torno a cinco formatos reconocibles.
+
+| Modo | Variable principal | Mejor práctica | Error común |
+| --- | --- | --- | --- |
+| Laboratorio de pruebas sandbox | Colocación del impacto | Un muñeco, un arma, una distancia | Cambiar tres cosas a la vez |
+| Circuito de peligros | Física y sincronización | Observar la animación antes de intentarlo | Lanzarse a ciegas |
+| Conversión en el cementerio | Reglas de transición | Observar la zona antes de lanzar | Tratar a los zombis como muñecos normales |
+| Noche de horda | Espaciado y control de multitudes | Moverse entre enfrentamientos | Fijarse en un solo objetivo |
+| Noche de comparación de armas | Elección de herramienta | Mantener fija la zona objetivo | Cambiar objetivo y arma a la vez |
+
+### Laboratorios de pruebas sandbox
+
+Estos son lo más parecido al área de pruebas oficial, solo que con compañía. Los buenos anfitriones mantienen un conjunto fijo de muñecos, desaconsejan las interrupciones a mitad de prueba e imponen un reinicio antes de cada nuevo intento. Si un servidor permite que cualquiera golpee en cualquier momento, tu línea base desaparece en cuestión de minutos.
+
+### Circuitos de peligros y caídas desde torres
+
+El contenido del parque de juegos —la trituradora, la bola de demolición, el foso de pinchos, el cañón humano, la caída desde la torre— es donde la sincronización importa más que la puntería. En un servidor privado, estos suelen convertirse en circuitos ordenados, con un jugador intentándolo mientras los demás observan. El valor está en la repetición: ves el mismo peligro diez veces en lugar de adivinar una sola vez.
+
+### Formatos de cementerio y horda
+
+Convertir un muñeco en el cementerio y luego sobrevivir a una oleada es la escalada natural. Los zombis vienen en clases lenta, normal y rápida, y pueden perseguir, abalanzarse y morder. La salud exacta, el daño de mordida y la población de las oleadas no se publican, así que cualquier cifra que anuncie un servidor debe tratarse como una estimación dependiente de la versión y no como un hecho fijo.
+
+## Cómo evaluar un servidor privado de Ragdoll Reality antes de comprometerte
+
+La mayoría de las sesiones decepcionantes se reducen a un desajuste entre lo que promete el anfitrión y lo que la instancia entrega realmente. Dedica cinco minutos a la selección antes de invertir una hora.
+
+- **Coincidencia de versión.** Confirma que el servidor ejecuta la misma compilación que la tuya. Las compilaciones desajustadas crean diferencias fantasma que parecen problemas de habilidad.
+- **Política de reinicio.** Pregunta cómo se reinician los muñecos y quién puede activarlo. Sin un reinicio, las comparaciones se derrumban.
+- **Presencia de moderación.** Un anfitrión que impone pruebas de una sola variable vale más que cualquier lista de características.
+- **Cambios divulgados.** Si el anfitrión ha alterado los aparecimientos, el comportamiento de los peligros o la durabilidad de los muñecos, eso debería indicarse por adelantado.
+- **Estabilidad bajo carga.** Únete en hora punta y observa si las reacciones ragdoll se mantienen nítidas o empiezan a fallar.
+
+| Pregunta de selección | Buena respuesta | Señal de advertencia |
+| --- | --- | --- |
+| "¿Qué compilación es esta?" | Una versión específica y actual | "No estoy seguro, simplemente funciona" |
+| "¿Quién puede reiniciar los muñecos?" | Cualquiera, con un tiempo de espera | "Solo el dueño, cuando está conectado" |
+| "¿Se cambian las reglas aquí?" | Listadas en un mensaje fijado | "Ya lo averiguarás" |
+| "¿Cuántos jugadores hay en hora punta?" | Un número realista | Esquivar la pregunta |
+| "¿Cómo es el ping?" | Alojamiento regional | "Está bien para todos" |
+
+Los informes de la comunidad también mencionan que los servidores aparecen y desaparecen con frecuencia, así que un enlace que guardaste el mes pasado puede estar muerto. Mantén una lista corta en lugar de un solo favorito.
+
+## Una rutina de pruebas que funciona en cualquier servidor privado de Ragdoll Reality
+
+La rutina no cambia porque cambie el lugar. Lo que cambia es que ahora tienes testigos, lo cual es útil para detectar los errores que no puedes ver tú mismo.
+
+### Ciclo de línea base
+
+Empieza con un muñeco de bajo riesgo y registra su postura. Golpea una pierna desprotegida, luego la pierna opuesta, luego un brazo, luego el torso y luego la cabeza: un golpe limpio cada vez, reiniciando entre medias. Predice la reacción antes de golpear. Si esperabas que la pierna derecha se doblara y en cambio el torso se tambaleó, tu colocación estaba mal, y esa corrección vale más que un golpe más rápido.
+
+### Comparación de armas con un objetivo fijo
+
+Elige una zona corporal y mantenla para cada herramienta. Prueba un arma familiar, una rápida, una pesada y una opción a distancia si está disponible. Puntúa cada una de uno a cinco en control, consistencia, velocidad de recuperación y con qué claridad pudiste leer la reacción.
+
+| Puntuación | Pregunta que responde | Estándar de aprobación |
+| --- | --- | --- |
+| Control | ¿Puedo golpear la zona deseada dos veces seguidas? | Dos golpes limpios consecutivos |
+| Consistencia | ¿El tercer golpe coincide con el primero? | Sin variación inexplicable |
+| Recuperación | ¿Con qué rapidez puedo reiniciar y golpear de nuevo? | De vuelta en el objetivo en un instante |
+| Claridad | ¿Sé qué golpe causó el resultado? | La reacción coincide con la zona deseada |
+
+### Escalera de distancias
+
+Amplía el alcance en pequeños incrementos en lugar de saltar al máximo. Completa un ciclo limpio a corta distancia, añade un paso lateral, repite el ciclo y luego amplía la distancia. Si el muñeco deja de reaccionar como lo hacía de cerca, has encontrado tu techo de precisión: haz una pausa y vuelve a apuntar en lugar de perseguir con un golpe a ciegas.
+
+## Tu primera hora en un servidor nuevo
+
+La estructura vence al entusiasmo, especialmente cuando otros jugadores están observando. Este horario mantiene una sesión en unos cuarenta y cinco minutos y te deja con resultados que puedes reproducir.
+
+| Minutos | Enfoque | Objetivo de finalización | Qué registrar |
+| --- | --- | --- | --- |
+| 1–10 | Reacciones de línea base | Cinco golpes predecibles | Zona corporal y primer movimiento |
+| 11–20 | Comparación de armas | Dos herramientas en las que confías | Puntuaciones de control |
+| 21–30 | Alcance y movimiento | El mismo resultado a mayor distancia | Recuento de fallos y distancia |
+| 31–40 | Un peligro | Una única finalización controlada | Aproximación y resultado |
+| 41–45 | Cementerio u horda | Un intento corto | Velocidad del enemigo y punto de fallo |
+
+Dos hábitos separan las sesiones productivas de las caóticas. Primero, reinicia antes de cada prueba: un muñeco que ya está cojeando no puede darte una línea base limpia. Segundo, detente cuando la acción se vuelva frenética. Si el apuntado preciso a extremidades sigue siendo inconsistente, vuelve al ciclo con el muñeco en lugar de culpar al servidor.
+
+Por último, recuerda que un servidor privado de Ragdoll Reality es un espacio compartido. Pregunta antes de realizar una prueba larga sobre un muñeco que otra persona está usando, ofrece tus hallazgos cuando termines y anota la compilación en la que probaste. Ese único detalle es lo que hace que los datos de la comunidad sean útiles en lugar de ruido.
+
+## Preguntas frecuentes
+
+**¿Para qué se utiliza un servidor privado de Ragdoll Reality?**
+
+Es una instancia alojada por la comunidad donde los jugadores prueban la física del juego juntos bajo reglas acordadas. El bucle central sigue siendo el mismo —apuntar a una zona corporal, observar la reacción, cambiar una variable—, pero el entorno social añade testigos, entrenamiento y presión para mantener las pruebas limpias.
+
+**¿Los servidores privados tienen soporte oficial?**
+
+El soporte varía según la plataforma y la compilación, y no existe un directorio publicado de anfitriones aprobados. Verifica cualquier servidor con la información oficial actual del juego antes de unirte, y trata las afirmaciones de la comunidad sobre características o valores de daño como dependientes de la versión.
+
+**¿Cómo sé si un servidor vale la pena para quedarme?**
+
+Comprueba cuatro cosas: coincidencia de versión, quién puede reiniciar los muñecos, si los cambios de reglas se divulgan y qué tan estable se siente la física en horas punta. Un anfitrión que impone pruebas de una sola variable es más valioso que uno que anuncia una larga lista de características.
+
+**¿Qué debo practicar antes de unirme a una noche de horda en un servidor privado?**
+
+La colocación del objetivo, la sincronización de los reinicios y el espaciado. Los zombis persiguen, se abalanzan y muerden, y las poblaciones de las oleadas no se publican, así que trata un fallo temprano como información sobre tu posicionamiento en lugar de un veredicto sobre la dificultad.
